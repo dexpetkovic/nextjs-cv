@@ -1,0 +1,45 @@
+<project version="4">
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Documents/Edukacija/Coursera/Scala/example" value="PREVIEW" />
+        <entry key="$USER_HOME$/Documents/Edukacija/Coursera/Scala/recfun" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Razno/howtographql-sangria" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/commons-scala-dsh-akka" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/commons-scala-dsh-connector" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/commons-scala-dsh-flink" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/commons-scala-dsh-mqtt" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/commons-scala-iuc" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/commons-scala-sxp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-customer-recognition" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-discovery-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-dsc-bootstrap/average-handling-time-processor" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-dsc-bootstrap/model-scoring-processor" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-dsc-bootstrap/modeler" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-dsc-bootstrap/queuers-and-callers-processor" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-es-ingest" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-gb-commons" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-kafka-loadtester" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-lotte-flink-demo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/dsh-lotte-loadtester" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/greenboxing/dsh-gb-poc" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/greenboxing/dsh-gb-source-input-validation" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/incubator/dsh-prom-disco" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/incubator/incubator-scala-app" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/klarrio/dsh-mgmt-amp-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../kpn/scala-workshop-basics-footballmania" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../scala/play-samples-play-scala-hello-world-tutorial" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../scala/play-samples/play-java-streaming-example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../scala/play-samples/play-scala-streaming-example" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../scala/scala-play-slick" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../scala/scala-play-slick-playlist" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ScalaSbtSettings">
+    <option name="customVMPath" />
+  </component>
+</project>

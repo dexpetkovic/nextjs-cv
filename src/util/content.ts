@@ -7,20 +7,22 @@ export const content = {
   ],
   experiences: [
     {
-      from: '01-12-2021',
-      role: 'Lead Fullstack Software Engineer at Hurricane Studio',
+      from: '2021-12-01',
+      role: 'Lead Fullstack Software Engineer: Fertifa, Grndhouse',
       company: 'Hurricane Studio',
-      summary: 'Team lead in a small startup studio, leading a team of 5 backend and frontend developers',
+      summary:
+        'Team lead in a small startup studio, leading a team of 5 backend and frontend developers on fertifa.com and grndhouse.com',
       keyTakeaway: '',
       highlights: [
         'Architected solutions in React Native, NodeJS and AWS',
+        'Acting as mentor to junior members of the team, unblocking them and making sure the project gets done',
         'Many "popular" tools are used for the projects, such as TypeORM, Sentry for events monitoring, RevenueCat for payments, Strapi for content management, Google Analytics, Meta Pixel, Drip, Amplitude and Mixpanel for analytics',
         'Doing App Store and Play store releases',
       ],
     },
     {
-      from: '01-05-2018',
-      to: '01-12-2021',
+      from: '2018-05-01',
+      to: '2021-12-01',
       role: 'Senior Software Engineer, Data Platform for Batch and Streaming Data',
       company: 'KPN Technium B.V',
       summary: '',
@@ -35,8 +37,8 @@ export const content = {
       ],
     },
     {
-      from: '01-02-2017',
-      to: '01-05-2018',
+      from: '2017-02-01',
+      to: '2018-05-01',
       role: 'Software Engineer, Cognitive Implementation',
       company: 'IPsoft B.V.',
       summary: '',
@@ -52,8 +54,8 @@ export const content = {
       ],
     },
     {
-      from: '01-06-2012',
-      to: '01-01-2017',
+      from: '2012-06-01',
+      to: '2017-01-01',
       role: 'Senior System Engineer',
       company: 'Liberty Global B.V.',
       summary:

@@ -1,8 +1,9 @@
 'use client'
-import React, { createContext, useEffect, useState } from 'react'
-import { config } from '@/util/config'
 import * as amp from '@amplitude/analytics-browser'
 import { BrowserClient } from '@amplitude/analytics-types'
+import React, { createContext, useEffect, useState } from 'react'
+
+import { config } from '@/util/config'
 
 export type AmplitudeData = {
   trackEvent: (message: string) => void

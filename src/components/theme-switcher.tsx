@@ -1,6 +1,6 @@
 'use client'
-import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
+import { useState, useEffect } from 'react'
 
 export const ThemeSwitcher = () => {
   const [isMounted, setIsMounted] = useState(false)

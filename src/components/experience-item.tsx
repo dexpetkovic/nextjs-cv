@@ -1,5 +1,6 @@
-import { timeUtil } from '@/util/timeUtil'
 import React from 'react'
+
+import { timeUtil } from '@/util/timeUtil'
 
 export const ExperienceItem = (props: {
   role: string

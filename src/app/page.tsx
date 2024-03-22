@@ -3,13 +3,14 @@
 import * as amp from '@amplitude/analytics-browser'
 import { NextUIProvider } from '@nextui-org/react'
 import { motion } from 'framer-motion'
+import React from 'react'
 
-import { AboutMe } from '@/components/about-me'
-import { AmplitudeContextProvider } from '@/components/amplitude-context'
-import { ExperienceItem } from '@/components/experience-item'
+import { ContactForm } from '@/components/contact-form'
+import { Experiences } from '@/components/experiences'
+import { Profile } from '@/components/profile'
 import { Title } from '@/components/title'
-import { content } from '@/util/content'
-import { timeUtil } from '@/util/timeUtil'
+import { Video } from '@/components/video'
+import { AmplitudeContextProvider } from '@/context/amplitude-context'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -22,21 +23,15 @@ const containerVariants = {
   },
 }
 
-const itemVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-}
-
-export default function Home() {
+const App = (): React.ReactElement => {
   amp.track('HomePage')
   return (
     <NextUIProvider>
       <AmplitudeContextProvider>
         <main className="flex min-h-screen flex-col items-center justify-items-start sm:p-8 md:p-24">
           <Title title={'Dejan Petković'} subtitle={'Curriculum Vitae'} />
-          {content.profile.map((content, index) => (
-            <AboutMe key={index} content={content} />
-          ))}
+          <Profile />
+          <Video />
           <motion.div
             className={'flex flex-col items-start justify-between px-24'}
             variants={containerVariants}
@@ -44,23 +39,13 @@ export default function Home() {
             animate="visible"
             whileInView={{ opacity: 1 }}
           >
-            <div className={'flex flex-col items-start justify-between sm:p-8 md:px-24'}>
-              {content.experiences.map((e) => (
-                <motion.div key={e.company} variants={itemVariants} whileInView={{ opacity: 1 }}>
-                  <ExperienceItem
-                    key={e.company}
-                    role={e.role}
-                    company={e.company}
-                    from={new Date(e.from)}
-                    to={new Date(e.to ?? timeUtil.now())}
-                    highlights={e.highlights}
-                  />
-                </motion.div>
-              ))}
-            </div>
+            <Experiences />
           </motion.div>
+          {/*<ContactForm />*/}
         </main>
       </AmplitudeContextProvider>
     </NextUIProvider>
   )
 }
+
+export default App

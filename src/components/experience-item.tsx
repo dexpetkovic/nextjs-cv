@@ -14,11 +14,11 @@ export const ExperienceItem = (props: {
   return (
     <div className={'flex flex-col items-start p-4 mb-4 md:mb-16'}>
       <div className="flex flex-row items-start mb-8">
-        <p className="md:text-xl dark:text-white light:text-black mr-8">
+        <p className="md:text-xl dark:text-white light:text-black">
           {timeUtil.formatToReadableDate(from)} - {timeUtil.formatToReadableDate(to)}:
         </p>
         <p className="md:text-xl dark:text-white light:text-black">
-          {role} {company}
+          {role} at {company}
         </p>
       </div>
       <ul className="list-disc pl-8">

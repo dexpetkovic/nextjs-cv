@@ -25,15 +25,16 @@ const containerVariants = {
 
 const App = (): React.ReactElement => {
   amp.track('HomePage')
+
   return (
     <NextUIProvider>
       <AmplitudeContextProvider>
-        <main className="flex min-h-screen flex-col items-center justify-items-start sm:p-8 md:p-24">
+        <main className="flex min-h-screen flex-col items-center justify-items-start sm:px-8 md:px-32 lg:px:64">
           <Title title={'Dejan Petković'} subtitle={'Curriculum Vitae'} />
           <Profile />
           <Video />
           <motion.div
-            className={'flex flex-col items-start justify-between px-24'}
+            className={'flex flex-col items-start justify-between'}
             variants={containerVariants}
             initial="hidden"
             animate="visible"

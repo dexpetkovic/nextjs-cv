@@ -29,10 +29,8 @@ const App = (): React.ReactElement => {
   return (
     <NextUIProvider>
       <AmplitudeContextProvider>
-        <main className="flex min-h-screen flex-col items-center justify-items-start sm:px-8 md:px-32 lg:px:64">
+        <main className="flex min-h-screen flex-col items-center justify-items-start sm:px-16 md:px-64">
           <Title title={'Dejan Petković'} subtitle={'Curriculum Vitae'} />
-          <Profile />
-          <Video />
           <motion.div
             className={'flex flex-col items-start justify-between'}
             variants={containerVariants}
@@ -40,6 +38,8 @@ const App = (): React.ReactElement => {
             animate="visible"
             whileInView={{ opacity: 1 }}
           >
+            <Profile />
+            <Video />
             <Experiences />
           </motion.div>
           {/*<ContactForm />*/}

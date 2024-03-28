@@ -28,7 +28,7 @@ export const content = {
       summary: '',
       keyTakeaway: 'This role was a deep dive into data and taught me the intricacies of customer journey analysis.',
       highlights: [
-        'Development of ETL automation framework and platform in Azure, based on Hadoop & Kafka ecosystem, automated by Terraform',
+        'I was senior engineer in team that was developing ETL automation framework and platform in Azure, based on Hadoop & Kafka ecosystem, automated by Terraform',
         'The rendering framework was built with Python, Flask and SQLAlchemy',
         'Led story mapping for migration of on-premise data platform services to Azure',
         'Development of distributed event sourcing application for “real-time” analysis of KPN customer journey where multiple touchpoints are combined, analyzed and visualized',
@@ -45,12 +45,12 @@ export const content = {
       keyTakeaway:
         'This role enabled me to learn much more about machine learning, prompt engineering and making data-driven decisions',
       highlights: [
-        'A part of the role was data analysis with Pandas, Jupyter and visualisation with d3.js, and making new features (or refactoring) decisions from the insights',
         'As technical lead of a 3-member agile team I was responsible for development of human-machine interaction on artificial intelligence framework "Amelia".',
         'I was mostly busy with hands-on development, code reviewing, mentoring and Scrum rituals',
         'The role included managing business requirements and solution architecting',
         'Development was done mostly in Groovy/Python and in Java',
         'The technical stack included Kafka, Camel, Mule, ElasticSearch, Spring, Grails, Docker',
+        'A part of the role was data analysis with Pandas, Jupyter and visualisation with d3.js, and making new features (or refactoring) decisions from the insights',
       ],
     },
     {

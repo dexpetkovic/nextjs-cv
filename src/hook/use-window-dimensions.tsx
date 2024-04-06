@@ -12,7 +12,7 @@ export const useWindowDimensions = (): Dimensions => {
     const updateDimensions = () => {
       const windowWidth = window.innerWidth
       if (windowWidth < 600) {
-        setDimensions({ width: 392, height: 220 })
+        setDimensions({ width: 333, height: 187 })
       } else if (windowWidth < 900) {
         setDimensions({ width: 560, height: 315 })
       } else {

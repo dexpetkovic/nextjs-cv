@@ -29,7 +29,7 @@ const App = (): React.ReactElement => {
   return (
     <NextUIProvider>
       <AmplitudeContextProvider>
-        <main className="flex min-h-screen flex-col items-center justify-items-start sm:px-16 md:px-64">
+        <main className="flex min-h-screen flex-col flex-wrap items-center justify-items-start p-4 sm:px-16 md:px-64">
           <Title title={'Dejan Petković'} subtitle={'Curriculum Vitae'} />
           <motion.div
             className={'flex flex-col items-start justify-between'}

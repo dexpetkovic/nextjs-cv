@@ -17,7 +17,7 @@ export const content = {
         'Architected and engineered solutions in React Native, NodeJS and AWS',
         'Acting as mentor to junior members of the team, unblocking them and making sure the project gets done',
         'Many "popular" tools are used for the projects, such as TypeORM, Sentry for events monitoring, RevenueCat for payments, Strapi for content management, Google Analytics, Meta Pixel, Drip, Amplitude and Mixpanel for analytics',
-        'Doing App Store and Play store releases',
+        'Managing App Store and Play store releases',
       ],
     },
     {
@@ -26,7 +26,8 @@ export const content = {
       role: 'Senior Software Engineer, Batch and Streaming Data',
       company: 'KPN Technium B.V',
       summary: '',
-      keyTakeaway: 'This role was a deep dive into data and taught me the intricacies of customer journey analysis.',
+      keyTakeaway:
+        'This role was a deep dive into data platforms and taught me the intricacies of transformation to a data driven company',
       highlights: [
         'I was senior engineer in team that was developing ETL automation framework and platform in Azure, based on Hadoop & Kafka ecosystem, automated by Terraform',
         'The rendering framework was built with Python, Flask and SQLAlchemy',
@@ -50,7 +51,7 @@ export const content = {
         'The role included managing business requirements and solution architecting',
         'Development was done mostly in Groovy/Python and in Java',
         'The technical stack included Kafka, Camel, Mule, ElasticSearch, Spring, Grails, Docker',
-        'A part of the role was data analysis with Pandas, Jupyter and visualisation with d3.js, and making new features (or refactoring) decisions from the insights',
+        'Data analysis with Pandas, Jupyter and visualisation with d3.js, and making new features (or refactoring) decisions from the insights',
       ],
     },
     {
@@ -98,34 +99,24 @@ export const content = {
     ' Wireshark',
   ],
   languages: ['English', 'Dutch', 'Russian', 'Serbian', 'Intermediate level in:', 'German'],
+  other: {
+    softwareEngineering: {
+      learningNext: ['Using Expo', 'Integrating chatGPT in the workflows'],
+    },
+    organizationalToolset: ['Atlassian', 'Jira', 'Confluence', 'Bitbucket'],
+    education: [
+      {
+        duration: '09/2009 – 02/2011',
+        degree: 'Masters Course: System Engineering and Radio Communications',
+        institution: 'Faculty of Electrical Engineering, University of Belgrade',
+        specialization: 'Telecommunications and software engineering',
+      },
+      {
+        duration: '10/2002 – 08/2007',
+        degree: 'BSc of Electrical Engineering',
+        institution: 'Faculty of Electrical Engineering, University of Belgrade',
+        specialization: 'Telecommunications and computer science',
+      },
+    ],
+  },
 }
-
-// * 01/2012 – 05/2012 System/Network Engineer IPTV – Consultant at T-Mobile Netherlands B.V.
-// * As member of T-Mobile Network Engineering team, I was building functional specifications, architecture and performing hands-on system integration of Huawei IPTV platform
-// * 07/2009 – 12/2011 Senior IPTV Network Engineer at Intracom Telecom Serbia
-// * I was leading a 3-member team lead that was busy with designing and building the platform over the years to 100000+ users in Telecom Serbia
-// * Responsibilities included reviewing of system architecture, full-scale system & network hands-on troubleshooting, development of Perl/Python/Bash system management and monitoring solutions.
-// * 01/2008 – 06/2009 Junior Radio/System Engineer at Intracom Telecom Serbia
-// * As junior engineer I was busy with system integration and technical support of Intracom Telecom fs|cdn IPTV Middleware project and Axxcelera WiMax network in Telecom Serbia
-//
-// # Technical knowledge and other skills
-// ## Software engineering
-// ### What I am learning next
-// * Using Expo
-// * Integrating chatGPT in the workflows
-// ### Programming languages
-// ## Software platforms
-
-// ## Organizational toolset
-// * Atlassian
-// * Jira
-// * Confluence
-// * Bitbucket
-// ## Languages
-// * Fluent in:
-
-//
-// # Education
-// * 09/2009 – 02/2011 Masters Course: System Engineering and Radio Communications – Faculty of Electrical Engineering, University of Belgrade. Specialization: Telecommunications and software engineering
-// * 10/2002 – 08/2007 BSc of Electrical Engineering - Faculty of Electrical Engineering, University of Belgrade. Specialization: Telecommunications and computer science
-// }

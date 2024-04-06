@@ -19,6 +19,8 @@ export const Experiences = (): React.ReactElement => {
             key={e.company}
             role={e.role}
             company={e.company}
+            summary={e.summary}
+            keyTakeaway={e.keyTakeaway}
             from={new Date(e.from)}
             to={new Date(e.to ?? timeUtil.now())}
             highlights={e.highlights}

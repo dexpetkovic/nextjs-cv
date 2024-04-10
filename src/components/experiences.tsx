@@ -12,7 +12,7 @@ const itemVariants = {
 
 export const Experiences = (): React.ReactElement => {
   return (
-    <div className={'flex flex-col items-start justify-between'}>
+    <div className={'flex flex-col justify-between'}>
       {content.experiences.map((e) => (
         <motion.div key={e.company} variants={itemVariants} whileInView={{ opacity: 1 }}>
           <ExperienceItem

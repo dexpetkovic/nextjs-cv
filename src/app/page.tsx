@@ -32,7 +32,7 @@ const App = (): React.ReactElement => {
         <main className="flex min-h-screen flex-col flex-wrap items-center justify-items-start p-4 sm:px-16 md:px-64">
           <Title title={'Dejan Petković'} subtitle={'Curriculum Vitae'} />
           <motion.div
-            className={'flex flex-col items-start justify-between'}
+            className={'flex flex-col justify-between'}
             variants={containerVariants}
             initial="hidden"
             animate="visible"

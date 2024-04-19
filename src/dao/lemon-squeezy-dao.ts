@@ -1,27 +1,25 @@
-import { LemonsqueezyClient } from 'lemonsqueezy.ts'
-import { ListAllProductsResult, RetrieveProductResult } from 'lemonsqueezy.ts/dist/types'
+import { lemonSqueezySetup, type ListProducts, listProducts, type Product, getProduct } from '@lemonsqueezy/lemonsqueezy.js'
 
 import { config } from '@/util/config'
 import { singletonUtil } from '@/util/singleton-util'
 
 export class LemonSqueezyDao {
-  protected instance: LemonsqueezyClient
-
   constructor(params: { apiKey: string }) {
     const { apiKey } = params
-    this.instance = new LemonsqueezyClient(apiKey)
+    lemonSqueezySetup({ apiKey })
   }
 
-  async getAllProducts(): Promise<ListAllProductsResult> {
-    return await this.instance.listAllProducts()
+  async getAllProducts(): Promise<ListProducts | null> {
+    const result = await listProducts()
+    if (result.error) throw new Error(result.error.message)
+    return result.data
   }
 
-  async getProduct(params: { id: string }): Promise<RetrieveProductResult> {
-    return await this.instance.retrieveProduct(params)
-  }
-
-  public get Client(): LemonsqueezyClient {
-    return this.instance
+  async getProduct(params: { id: string }): Promise<Product | null> {
+    const { id } = params
+    const result = await getProduct(id)
+    if (result.error) throw new Error(result.error.message)
+    return result.data
   }
 }
 

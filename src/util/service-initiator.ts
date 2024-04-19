@@ -1,4 +1,4 @@
-import { Service } from 'src/util/service'
+import { Service } from '@/util/service'
 
 export abstract class ServiceInitiator {
   private services: Service[]

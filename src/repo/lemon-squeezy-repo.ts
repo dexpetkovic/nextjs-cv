@@ -1,4 +1,4 @@
-import { ListAllProductsResult, RetrieveProductResult } from 'lemonsqueezy.ts/dist/types'
+import { ListProducts, Product } from '@lemonsqueezy/lemonsqueezy.js'
 
 import { AxiosDao } from '@/dao/axios-dao'
 import { singletonUtil } from '@/util/singleton-util'
@@ -12,12 +12,12 @@ export class LemonSqueezyRepo extends AxiosDao {
     })
   }
 
-  async getAllProducts(): Promise<ListAllProductsResult> {
+  async getAllProducts(): Promise<ListProducts> {
     const response = await this.axios.get('purchases/products')
     return response.data
   }
 
-  async getProduct(id: string): Promise<RetrieveProductResult> {
+  async getProduct(id: string): Promise<Product> {
     const response = await this.axios.get(`purchases/products/${id}`)
     return response.data
   }

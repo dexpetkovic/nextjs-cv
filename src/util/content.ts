@@ -1,9 +1,9 @@
 export const content = {
   profile: [
-    "From system integrations to AI frameworks and full-stack development, I've been diving deep into the world of tech since 2008, continually evolving with the rapid pace of the industry.",
-    'As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked extensively with Dutch 🇳🇱, American 🇺🇸 and British 🇬🇧 customers as well as cooperated closely with development services providers from Eastern Europe.',
-    "My journey began in Serbia, integrating IPTV systems, and took me to the Netherlands where I embraced cloud development for streaming platforms. From there, I ventured into AI-human interactions, data processing, and now, I'm harnessing the power of the full-stack ecosystem with React and NodeJS.",
-    "When I'm not coding, I'm cherishing moments with my family, exploring new tech toys and trying to lead a healthy and active lifestyle.",
+    'I have wide tech hard and soft skills experinence, and am in business since 2008. It goes from system integrations to AI frameworks and full-stack development.',
+    'I am Dutch citizen and fluent speaker of English, Dutch, Russian and Serbian. In the past, I have worked extensively with Dutch, American and British customers as well as cooperated closely with development services providers from Eastern Europe.',
+    "My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I embraced cloud development for streaming platforms. From there, I ventured into AI-human interactions, data processing, and now, I'm harnessing the power of the full-stack ecosystem with React and NodeJS.",
+    "When I'm not coding, I'm cherishing moments with my family, exploring new tech toys, and occasionally daydreaming about the next big thing in software engineering.",
   ],
   experiences: [
     {

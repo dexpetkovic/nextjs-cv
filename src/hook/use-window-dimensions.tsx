@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from 'react'
 
 interface Dimensions {
@@ -9,7 +11,7 @@ export const useWindowDimensions = (): Dimensions => {
   const [dimensions, setDimensions] = useState<Dimensions>({ width: 560, height: 315 })
 
   useEffect(() => {
-    const updateDimensions = () => {
+    const updateDimensions = (): void => {
       const windowWidth = window.innerWidth
       if (windowWidth < 600) {
         setDimensions({ width: 333, height: 187 })

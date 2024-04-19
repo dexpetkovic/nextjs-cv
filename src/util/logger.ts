@@ -1,18 +1,27 @@
-import winston from 'winston'
+import { logger as RNLogger, consoleTransport } from 'react-native-logs'
 
-export const logger = winston.createLogger({
-  level: 'info',
-  format: winston.format.json(),
-  transports: [
-    new winston.transports.File({ filename: 'error.log', level: 'error' }),
-    new winston.transports.File({ filename: 'combined.log' }),
-  ],
-})
-
-if (process.env.NODE_ENV !== 'production') {
-  logger.add(
-    new winston.transports.Console({
-      format: winston.format.simple(),
-    }),
-  )
+const defaultConfig = {
+  levels: {
+    debug: 0,
+    info: 1,
+    warn: 2,
+    error: 3,
+  },
+  severity: 'debug',
+  transport: consoleTransport,
+  transportOptions: {
+    colors: {
+      info: 'blueBright',
+      warn: 'yellowBright',
+      error: 'redBright',
+    },
+  },
+  async: true,
+  dateFormat: 'time',
+  printLevel: true,
+  printDate: true,
+  fixedExtLvlLength: false,
+  enabled: true,
 }
+
+export const logger = RNLogger.createLogger<'debug' | 'info' | 'warn' | 'error'>(defaultConfig)

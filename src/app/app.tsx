@@ -29,7 +29,7 @@ const App = (): React.ReactElement => {
     <main className="flex min-h-screen flex-col flex-wrap items-center justify-items-start p-4 sm:px-16 md:px-64">
       <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="lazyOnload"></Script>
       <Title title={'Hello, my name is Dejan!'} subtitle={'I am an Engineer, Developer and proud father'} />
-      <PurchaseProduct />
+      {/*<PurchaseProduct />*/}
       <motion.div
         className={'flex flex-col justify-between'}
         variants={containerVariants}

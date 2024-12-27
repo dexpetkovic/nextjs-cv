@@ -9,9 +9,9 @@ export const content = {
     {
       from: '2021-12-01',
       role: 'Lead Fullstack Software Engineer',
-      company: 'Fertifa & Grndhouse',
+      company: 'Fertifa, Grndhouse & Totally Gifts',
       summary:
-        'Team lead in a small startup studio, leading a team of 5 backend and frontend developers on fertifa.com and grndhouse.com',
+        'Team lead in a small startup studio, leading a team of 5 backend and frontend developers on fertifa.com and grndhouse.com. Helping out to build a new gift redemption platform for Totally Gifts.',
       keyTakeaway: '',
       highlights: [
         'Architected and engineered solutions in React Native, NodeJS and AWS',

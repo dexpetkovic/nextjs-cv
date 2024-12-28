@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import Script from 'next/script'
 import React from 'react'
 
-import { PurchaseProduct } from '@/components/billing/purchase-product'
 import { Experiences } from '@/components/experiences'
 import { Profile } from '@/components/profile'
 import { Title } from '@/components/title'
@@ -29,7 +28,6 @@ const App = (): React.ReactElement => {
     <main className="flex min-h-screen flex-col flex-wrap items-center justify-items-start p-4 sm:px-16 md:px-64">
       <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="lazyOnload"></Script>
       <Title title={'Hello, my name is Dejan!'} subtitle={'I am an Engineer, Developer and proud father'} />
-      {/*<PurchaseProduct />*/}
       <motion.div
         className={'flex flex-col justify-between'}
         variants={containerVariants}

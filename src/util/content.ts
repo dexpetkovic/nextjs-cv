@@ -7,11 +7,26 @@ export const content = {
   ],
   experiences: [
     {
-      from: '2021-12-01',
-      role: 'Lead Fullstack Software Engineer',
-      company: 'Fertifa, Grndhouse & Totally Gifts',
+      from: '2024-09-01',
+      to: '2025-05-01',
+      role: 'Expert Software Engineer',
+      company: 'Totally Gifts',
       summary:
-        'Team lead in a small startup studio, leading a team of 5 backend and frontend developers on fertifa.com and grndhouse.com. Helping out to build a new gift redemption platform for Totally Gifts.',
+        'Helping out to build a new gift redemption platform for Totally Gifts, fully from scratch.',
+      keyTakeaway: '',
+      highlights: [
+        'NextJS, TailwindCSS, Clerk, Sentry, NestJS, PostgreSQL, Docker, AWS have been used to build the solution.',
+        'Event-driven architecture was used to capture gift card events and process them in real-time',
+        'I was working both in frontend and backend within team of three engineers, designer and product owner',
+      ],
+    },
+    {
+      from: '2021-12-01',
+      to: '2024-09-01',
+      role: 'Lead Fullstack Software Engineer',
+      company: 'Fertifa, Grndhouse',
+      summary:
+        'Team lead in a small startup studio, leading a team of 5 backend and frontend developers on fertifa.com and grndhouse.com.',
       keyTakeaway: '',
       highlights: [
         'Architected and engineered solutions in React Native, NodeJS and AWS',

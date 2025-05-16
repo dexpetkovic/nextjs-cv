@@ -5,10 +5,14 @@ import React, { useState } from 'react'
 export const ContactForm = (): React.ReactElement => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [name, setName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [isSending, setIsSending] = useState(false)
+  const [sendResult, setSendResult] = useState<null | 'success' | 'error'>(null)
 
   const emailSchema = Joi.string().email({ tlds: { allow: false } })
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
 
     const { error } = emailSchema.validate(email)
@@ -17,7 +21,31 @@ export const ContactForm = (): React.ReactElement => {
       return
     }
 
-    // Handle form submission here
+    setIsSending(true)
+    setSendResult(null)
+    const payload = {
+      sender: {
+        email,
+        name,
+        lastName,
+        message,
+      },
+    }
+
+    try {
+      const res = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (!res.ok) throw new Error('Failed to send')
+      setSendResult('success')
+    } catch (err) {
+      console.error(err)
+      setSendResult('error')
+    } finally {
+      setIsSending(false)
+    }
   }
 
   return (
@@ -31,6 +59,20 @@ export const ContactForm = (): React.ReactElement => {
             placeholder="Enter your email"
             className="py-2 w-full"
             onChange={(e) => setEmail(e.target.value)}
+          />
+          <Input
+            type="text"
+            label="Name"
+            placeholder="Enter your name"
+            className="py-2 w-full"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Input
+            type="text"
+            label="Last Name"
+            placeholder="Enter your last name"
+            className="py-2 w-full"
+            onChange={(e) => setLastName(e.target.value)}
           />
           <Textarea
             variant={'flat'}
@@ -48,6 +90,19 @@ export const ContactForm = (): React.ReactElement => {
           </Button>
         </div>
       </form>
+      {isSending && (
+        <div className="flex justify-center items-center mt-4">
+          <span className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-blue-500 mr-2"></span>
+          <span>Sending...</span>
+        </div>
+      )}
+      {sendResult === 'success' && (
+        <div className="text-green-600 text-center mt-4">Message sent successfully!</div>
+      )}
+      {sendResult === 'error' && (
+        <div className="text-red-600 text-center mt-4">Failed to send message. Try again.</div>
+      )}
     </div>
   )
 }
+ 

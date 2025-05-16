@@ -8,5 +8,8 @@ export const config = singletonUtil(() => {
     lemonSqueezy: {
       apiKey: process.env.LEMON_SQUEEZY_API_KEY ?? '',
     },
+    resend: {
+      apiKey: process.env.RESEND_API_KEY ?? '',
+    },
   })
 })

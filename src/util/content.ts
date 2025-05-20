@@ -1,9 +1,9 @@
 export const content = {
   profile: [
-    'I have wide tech hard and soft skills experinence, and am in business since 2008. It goes from system integrations to AI frameworks and full-stack development.',
-    'I am Dutch citizen and fluent speaker of English, Dutch, Russian and Serbian. In the past, I have worked extensively with Dutch, American and British customers as well as cooperated closely with development services providers from Eastern Europe.',
-    "My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I embraced cloud development for streaming platforms. From there, I ventured into AI-human interactions, data processing, and now, I'm harnessing the power of the full-stack ecosystem with React and NodeJS.",
-    "When I'm not coding, I'm cherishing moments with my family, exploring new tech toys, and occasionally daydreaming about the next big thing in software engineering.",
+    'Since 2008, I have bridged business and tech, from system integrations to AI frameworks and full-stack development, delivering solutions that drive real impact.',
+    'I am a Dutch citizen and fluent speaker of English, Dutch, Russian and Serbian. In the past, I have worked extensively with Dutch, American and British customers as well as cooperated closely with development services providers from Eastern Europe.',
+    'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I embraced cloud development for streaming platforms. From there, I ventured into AI-human interaction, data processing, and now focus on full-stack development using React and NodeJS.',
+    "When I'm not coding, I'm cherishing moments with my family, exploring emerging technologies, and occasionally daydreaming about the next big thing in software engineering.",
   ],
   experiences: [
     {
@@ -13,11 +13,11 @@ export const content = {
       company: 'Totally Gifts',
       summary:
         'Helping out to build a new gift redemption platform for Totally Gifts, fully from scratch.',
-      keyTakeaway: '',
+      keyTakeaway: 'Development of a greenfield project with a new tech stack, from scratch',
       highlights: [
         'NextJS, TailwindCSS, Clerk, Sentry, NestJS, PostgreSQL, Docker, AWS have been used to build the solution.',
         'Event-driven architecture was used to capture gift card events and process them in real-time',
-        'I was working both in frontend and backend within team of three engineers, designer and product owner',
+        'I contributed across the stack, collaborating closely with a cross-functional team of three engineers, a designer, and a product owner',
       ],
     },
     {
@@ -26,13 +26,13 @@ export const content = {
       role: 'Lead Fullstack Software Engineer',
       company: 'Fertifa, Grndhouse',
       summary:
-        'Team lead in a small startup studio, leading a team of 5 backend and frontend developers on fertifa.com and grndhouse.com.',
-      keyTakeaway: '',
+        'Team lead in a small startup studio, managing a team of 5 backend and frontend developers on fertifa.com and grndhouse.com.',
+      keyTakeaway: 'Rapid development of features for two startups after their successful funding rounds',
       highlights: [
         'Architected and engineered solutions in React Native, NodeJS and AWS',
-        'Acting as mentor to junior members of the team, unblocking them and making sure the project gets done',
-        'Many "popular" tools are used for the projects, such as TypeORM, Sentry for events monitoring, RevenueCat for payments, Strapi for content management, Google Analytics, Meta Pixel, Drip, Amplitude and Mixpanel for analytics',
-        'Managing App Store and Play store releases',
+        'Mentored junior developers, resolved blockers, and ensured timely project delivery',
+        'Used a wide array of modern tools and services, such as TypeORM, Sentry for events monitoring, RevenueCat for payments, Strapi for content management, Google Analytics, Meta Pixel, Drip, Amplitude and Mixpanel for analytics',
+        'Using Expo to manage App lifecycle and deployments without App Store and Play store releases (but also with them when needed)',
       ],
     },
     {
@@ -44,9 +44,9 @@ export const content = {
       keyTakeaway:
         'This role was a deep dive into data platforms and taught me the intricacies of transformation to a data driven company',
       highlights: [
-        'I was senior engineer in team that was developing ETL automation framework and platform in Azure, based on Hadoop & Kafka ecosystem, automated by Terraform',
+        'Senior engineer in a team developing ETL automation framework and platform in Azure, based on Hadoop & Kafka ecosystem, automated by Terraform',
         'The rendering framework was built with Python, Flask and SQLAlchemy',
-        'Led story mapping for migration of on-premise data platform services to Azure',
+        'I led a part of story mapping for migration of on-premise data platform services to Azure. Built automation for deploying services on Azure Kubernetes cluster',
         'Development of distributed event sourcing application for “real-time” analysis of KPN customer journey where multiple touchpoints are combined, analyzed and visualized',
         'Scala stack with Akka/Alpakka is used to build microservices and Flink applications',
         'Utilizing DevOps methodology with fully automated CI/CD, monitoring and alerting',
@@ -59,10 +59,10 @@ export const content = {
       company: 'IPsoft B.V.',
       summary: '',
       keyTakeaway:
-        'This role enabled me to learn much more about machine learning, prompt engineering and making data-driven decisions',
+        "This role enabled me to learn much more about machine learning, prompt engineering and making data-driven decisions. Led a team that automated Vodafone's customer service agents using Amelia AI framework.",
       highlights: [
         'As technical lead of a 3-member agile team I was responsible for development of human-machine interaction on artificial intelligence framework "Amelia".',
-        'I was mostly busy with hands-on development, code reviewing, mentoring and Scrum rituals',
+        'Focused on hands-on development, code reviewing, mentoring and Scrum rituals',
         'The role included managing business requirements and solution architecting',
         'Development was done mostly in Groovy/Python and in Java',
         'The technical stack included Kafka, Camel, Mule, ElasticSearch, Spring, Grails, Docker',
@@ -75,7 +75,7 @@ export const content = {
       role: 'Senior System Engineer',
       company: 'Liberty Global B.V.',
       summary:
-        'As member of Liberty Global OTT streaming solution architecture & engineering team, I learned how to mix software and system engineering skills to solve hard tasks',
+        'As member of Liberty Global OTT streaming solution architecture & engineering team, I gained deep experience in combining software and system engineering to solve complex infrastructure challenges',
       keyTakeaway:
         'Through work with high availability services I acquired deep knowledge of web and backend application design, streaming technologies, HA scalable infrastructure, AWS cloud and full stack network protocols',
       highlights: [
@@ -96,9 +96,9 @@ export const content = {
     'Akka',
     'Protobuf/Avro',
     'Camel',
-    'Jenkins',
-    'Terraform',
-    'Git',
+    'Jenkins (CI/CD)',
+    'Terraform (Infrastructure as Code)',
+    'Git (version control)',
   ],
   softwarePlatforms: [
     ' AWS',
@@ -113,10 +113,13 @@ export const content = {
     ' Linux',
     ' Wireshark',
   ],
-  languages: ['English', 'Dutch', 'Russian', 'Serbian', 'Intermediate level in:', 'German'],
+  languages: ['English (Proficient)', 'Dutch (Proficient)', 'Serbian (Proficient)', 'German (Intermediate)', 'Russian (Basic)'],
   other: {
     softwareEngineering: {
-      learningNext: ['Using Expo', 'Integrating chatGPT in the workflows'],
+      learningNext: [
+        'Leveraging Expo for rapid mobile app prototyping and deployments',
+        'Using AI tools like ChatGPT to accelerate development and decision-making workflows',
+      ],
     },
     organizationalToolset: ['Atlassian', 'Jira', 'Confluence', 'Bitbucket'],
     education: [

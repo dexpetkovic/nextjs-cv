@@ -3,7 +3,7 @@ export const content = {
     'Since 2008, I have bridged business and tech, from system integrations to AI frameworks and full-stack development, delivering solutions that drive real impact.',
     'I am a Dutch citizen and fluent speaker of English, Dutch, Russian and Serbian. In the past, I have worked extensively with Dutch, American and British customers as well as cooperated closely with development services providers from Eastern Europe.',
     'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I embraced cloud development for streaming platforms. From there, I ventured into AI-human interaction, data processing, and now focus on full-stack development using React and NodeJS.',
-    "When I'm not coding, I'm cherishing moments with my family, exploring emerging technologies, and occasionally daydreaming about the next big thing in software engineering.",
+    "When I'm not coding, I'm cherishing moments with my family, exploring emerging technologies and occasionally daydreaming about the next big thing in software engineering.",
   ],
   experiences: [
     {

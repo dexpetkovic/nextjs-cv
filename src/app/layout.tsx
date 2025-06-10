@@ -15,9 +15,25 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:title" content="Dejan Petković CV" />
+        <meta property="og:description" content="Just a short intro about me" />
+        {/* <meta property="og:image" content="https://dejan.petkovic.nl/preview-image.png" /> */}
+        <meta property="og:url" content="https://dejan.petkovic.nl/" />
+        <meta property="og:type" content="website" />
+
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ThemeSwitcher />
+          <div className="flex flex-row justify-end items-center gap-6 py-4 w-full max-w-5xl mx-auto">
+            <nav className="flex flex-row gap-6">
+              <a href="#video" className="text-base font-medium hover:underline">Elevator Pitch</a>
+              <a href="#experiences" className="text-base font-medium hover:underline">Experiences</a>
+              <a href="#recruiters" className="text-base font-medium hover:underline">Recruiters</a>
+              <a href="#contact" className="text-base font-medium hover:underline">Contact</a>
+            </nav>
+            <ThemeSwitcher />
+          </div>
           <main>{children}</main>
         </ThemeProvider>
       </body>

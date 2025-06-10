@@ -1,7 +1,7 @@
 export const content = {
   profile: [
     'Since 2008, I have bridged business and tech, from system integrations to AI frameworks and full-stack development, delivering solutions that drive real impact.',
-    'I am a Dutch citizen and fluent speaker of English, Dutch, Russian and Serbian. In the past, I have worked extensively with Dutch, American and British customers as well as cooperated closely with development services providers from Eastern Europe.',
+    'As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked extensively with Dutch 🇳🇱, American 🇺🇸 and British 🇬🇧 customers as well as cooperated closely with development services providers from Eastern Europe.',
     'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I embraced cloud development for streaming platforms. From there, I ventured into AI-human interaction, data processing, and now focus on full-stack development using React and NodeJS.',
     "When I'm not coding, I'm cherishing moments with my family, exploring emerging technologies and occasionally daydreaming about the next big thing in software engineering.",
   ],
@@ -12,7 +12,7 @@ export const content = {
       role: 'Expert Software Engineer',
       company: 'Totally Gifts',
       summary:
-        'Helping out to build a new gift redemption platform for Totally Gifts, fully from scratch.',
+        'Helping out to build a new gift redemption platform for <a href="https://app.live.totallygiftcards.com" target="_blank" class="text-blue-700">Totally Gifts</a>, fully from scratch.',
       keyTakeaway: 'Development of a greenfield project with a new tech stack, from scratch',
       highlights: [
         'NextJS, TailwindCSS, Clerk, Sentry, NestJS, PostgreSQL, Docker, AWS have been used to build the solution.',
@@ -26,7 +26,7 @@ export const content = {
       role: 'Lead Fullstack Software Engineer',
       company: 'Fertifa, Grndhouse',
       summary:
-        'Team lead in a small startup studio, managing a team of 5 backend and frontend developers on fertifa.com and grndhouse.com.',
+        'Team lead in a small startup studio, managing a team of 5 backend and frontend developers on <a href="https://fertifa.com" target="_blank" class="text-blue-700">Fertifa</a> and <a href="https://grndhouse.com" target="_blank" class="text-blue-700">Grndhouse</a>.',
       keyTakeaway: 'Rapid development of features for two startups after their successful funding rounds',
       highlights: [
         'Architected and engineered solutions in React Native, NodeJS and AWS',
@@ -61,7 +61,7 @@ export const content = {
       keyTakeaway:
         "This role enabled me to learn much more about machine learning, prompt engineering and making data-driven decisions. Led a team that automated Vodafone's customer service agents using Amelia AI framework.",
       highlights: [
-        'As technical lead of a 3-member agile team I was responsible for development of human-machine interaction on artificial intelligence framework "Amelia".',
+        'As technical lead of a 3-member agile team I was responsible for development of human-machine interaction on artificial intelligence framework <a href="https://amelia.ai/" target="_blank" class="text-blue-700">Amelia</a>.',
         'Focused on hands-on development, code reviewing, mentoring and Scrum rituals',
         'The role included managing business requirements and solution architecting',
         'Development was done mostly in Groovy/Python and in Java',
@@ -75,7 +75,7 @@ export const content = {
       role: 'Senior System Engineer',
       company: 'Liberty Global B.V.',
       summary:
-        'As member of Liberty Global OTT streaming solution architecture & engineering team, I gained deep experience in combining software and system engineering to solve complex infrastructure challenges',
+        'As member of <a href="https://www.libertyglobal.com/" target="_blank" class="text-blue-700">Liberty Global</a> <a href="https://www.ziggogo.tv/" target="_blank" class="text-orange-500">OTT streaming</a> solution architecture & engineering team, I gained deep experience in combining software and system engineering to solve complex infrastructure challenges',
       keyTakeaway:
         'Through work with high availability services I acquired deep knowledge of web and backend application design, streaming technologies, HA scalable infrastructure, AWS cloud and full stack network protocols',
       highlights: [
@@ -113,7 +113,7 @@ export const content = {
     ' Linux',
     ' Wireshark',
   ],
-  languages: ['English (Proficient)', 'Dutch (Proficient)', 'Serbian (Proficient)', 'German (Intermediate)', 'Russian (Basic)'],
+  languages: ['English (Proficient)', 'Dutch (Proficient)', 'Serbian (Proficient)', 'German (Intermediate)', 'Russian (Intermediate)'],
   other: {
     softwareEngineering: {
       learningNext: [

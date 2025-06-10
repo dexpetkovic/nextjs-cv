@@ -23,7 +23,7 @@ export const ExperienceItem = (props: {
           {role} at {company}
         </p>
       </div>
-      <p className="md:text-l font-bold dark:text-white light:text-black mb-2">{summary}</p>
+      <p className="md:text-l font-bold dark:text-white light:text-black mb-2" dangerouslySetInnerHTML={{ __html: summary }} />
       <p className="md:text-l font-bold dark:text-white light:text-black mb-2">{keyTakeaway}</p>{' '}
       <ul className="list-disc pl-8">
         {highlights.map((h, index) => (

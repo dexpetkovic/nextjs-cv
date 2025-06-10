@@ -2,6 +2,8 @@ import { Button, Input, Textarea } from '@nextui-org/react'
 import Joi from 'joi'
 import React, { useState } from 'react'
 
+import { Socials } from '@/components/socials'
+
 export const ContactForm = (): React.ReactElement => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -49,28 +51,28 @@ export const ContactForm = (): React.ReactElement => {
   }
 
   return (
-    <div className={'flex flex-col w-full h-full p-4'}>
-      <p className="text-2xl md:text-4xl dark:text-white light:text-black text-center">Let's keep in touch!</p>
+    <div  id="contact" className={'flex flex-col w-full h-full p-4'}>
+      <p className="text-xl md:text-4xl dark:text-white light:text-black text-center mb-4">Contact</p>
+      <p className="text-sm md:text-lg dark:text-white light:text-black text-center">Want to get in touch? Send me a message!</p>
+      <Socials />
+      <p className="text-sm md:text-lg dark:text-white light:text-black text-center">Or send me an email:</p>
       <form onSubmit={handleSubmit} className={'flex flex-col h-full'}>
         <div>
           <Input
             type="email"
             label="Email"
-            placeholder="Enter your email"
             className="py-2 w-full"
             onChange={(e) => setEmail(e.target.value)}
           />
           <Input
             type="text"
             label="Name"
-            placeholder="Enter your name"
             className="py-2 w-full"
             onChange={(e) => setName(e.target.value)}
           />
           <Input
             type="text"
             label="Last Name"
-            placeholder="Enter your last name"
             className="py-2 w-full"
             onChange={(e) => setLastName(e.target.value)}
           />
@@ -78,7 +80,6 @@ export const ContactForm = (): React.ReactElement => {
             variant={'flat'}
             label="Message"
             labelPlacement="inside"
-            placeholder="Enter your message here 🚀"
             className="py-2 w-full"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -105,4 +106,3 @@ export const ContactForm = (): React.ReactElement => {
     </div>
   )
 }
- 

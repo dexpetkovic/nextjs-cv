@@ -6,7 +6,7 @@ export const Video = (): React.ReactElement => {
   const { width, height } = useWindowDimensions()
 
   return (
-    <div className="flex w-full mb-16 justify-center items-center">
+    <div id="video" className="flex w-full mb-16 justify-center items-center">
       <iframe
         width={width}
         height={height}

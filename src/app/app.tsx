@@ -7,8 +7,9 @@ import React from 'react'
 
 import { ContactForm } from '@/components/contact-form'
 import { Experiences } from '@/components/experiences'
+import { Footer } from '@/components/footer'
 import { Profile } from '@/components/profile'
-import { Socials } from '@/components/socials'
+import { Recruiters } from '@/components/recruiters'
 import { Title } from '@/components/title'
 import { Video } from '@/components/video'
 
@@ -29,9 +30,9 @@ const App = (): React.ReactElement => {
   return (
     <main className="flex min-h-screen flex-col flex-wrap items-center justify-items-start p-4 sm:px-16 md:px-64">
       <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="lazyOnload"></Script>
-      <Title title={'Hello, my name is Dejan!'} subtitle={'I am an Engineer, Developer and proud father'} />
-      <Socials />
+      <Title title={'Hello, I am Dejan!'} subtitle={'I am an Engineer, Allround Developer and proud father'} />
       <motion.div
+        id="experiences"
         className={'flex flex-col justify-between'}
         variants={containerVariants}
         initial="hidden"
@@ -42,7 +43,9 @@ const App = (): React.ReactElement => {
         <Video />
         <Experiences />
       </motion.div>
-      <ContactForm />
+      <Recruiters />
+      <ContactForm/>
+      <Footer />
     </main>
   )
 }

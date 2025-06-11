@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+import { NavMenu } from '@/components/nav-menu'
 import { ThemeSwitcher } from '@/components/theme-switcher'
 import { ThemeProvider } from '@/context/theme-context'
 
@@ -26,13 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-row justify-end items-center gap-6 py-4 w-full max-w-5xl mx-auto">
-            <nav className="flex flex-row gap-6">
-              <a href="#video" className="text-base font-medium hover:underline">Elevator Pitch</a>
-              <a href="#experiences" className="text-base font-medium hover:underline">Experiences</a>
-              <a href="#recruiters" className="text-base font-medium hover:underline">Recruiters</a>
-              <a href="#contact" className="text-base font-medium hover:underline">Contact</a>
-            </nav>
-            <ThemeSwitcher />
+            <NavMenu />
           </div>
           <main>{children}</main>
         </ThemeProvider>

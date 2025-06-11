@@ -1,32 +1,29 @@
-import { motion } from 'framer-motion'
 import React from 'react'
 
 import { ExperienceItem } from '@/components/experience-item'
 import { content } from '@/util/content'
 import { timeUtil } from '@/util/timeUtil'
 
-const itemVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-}
-
 export const Experiences = (): React.ReactElement => {
   return (
-    <div className={'flex flex-col justify-between'}>
-      {content.experiences.map((e) => (
-        <motion.div key={e.company} variants={itemVariants} whileInView={{ opacity: 1 }}>
-          <ExperienceItem
-            key={e.company}
-            role={e.role}
-            company={e.company}
-            summary={e.summary}
-            keyTakeaway={e.keyTakeaway}
-            from={new Date(e.from)}
-            to={new Date(e.to ?? timeUtil.now())}
-            highlights={e.highlights}
-          />
-        </motion.div>
-      ))}
+    <div className="mb-16">
+      <p className="text-xl md:text-4xl dark:text-white light:text-black text-center mt-16 mb-16">Experience</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        {content.experiences.map((e) => (
+          <div key={e.company}>
+            <ExperienceItem
+              key={e.company}
+              role={e.role}
+              company={e.company}
+              summary={e.summary}
+              keyTakeaway={e.keyTakeaway}
+              from={new Date(e.from)}
+              to={new Date(e.to ?? timeUtil.now())}
+              highlights={e.highlights}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

@@ -10,6 +10,7 @@ import { Experiences } from '@/components/experiences'
 import { Footer } from '@/components/footer'
 import { Profile } from '@/components/profile'
 import { Recruiters } from '@/components/recruiters'
+import { Skills } from '@/components/skills'
 import { Title } from '@/components/title'
 import { Video } from '@/components/video'
 
@@ -28,7 +29,7 @@ const App = (): React.ReactElement => {
   amp.track('HomePage')
 
   return (
-    <main className="flex min-h-screen flex-col flex-wrap items-center justify-items-start p-4 sm:px-16 md:px-64">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:w-3/4 mx-auto">
       <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="lazyOnload"></Script>
       <Title title={'Hello, I am Dejan!'} subtitle={'I am an Engineer, Allround Developer and proud father'} />
       <motion.div
@@ -39,12 +40,17 @@ const App = (): React.ReactElement => {
         animate="visible"
         whileInView={{ opacity: 1 }}
       >
-        <Profile />
-        <Video />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+          <Profile />
+          <Video />
+        </div>
+        <Skills />
         <Experiences />
       </motion.div>
-      <Recruiters />
-      <ContactForm/>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full justify-items-center">
+        <Recruiters />
+        <ContactForm/>
+      </div>
       <Footer />
     </main>
   )

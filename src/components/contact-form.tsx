@@ -51,7 +51,7 @@ export const ContactForm = (): React.ReactElement => {
   }
 
   return (
-    <div  id="contact" className={'flex flex-col w-full h-full p-4'}>
+    <div  id="contact" className={'flex flex-col w-full md:w-1/2 h-full p-4'}>
       <p className="text-xl md:text-4xl dark:text-white light:text-black text-center mb-4">Contact</p>
       <p className="text-sm md:text-lg dark:text-white light:text-black text-center">Want to get in touch? Send me a message!</p>
       <Socials />

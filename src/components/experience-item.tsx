@@ -14,20 +14,20 @@ export const ExperienceItem = (props: {
   const { role, company, summary, keyTakeaway, from, to, highlights } = props
 
   return (
-    <div className={'flex flex-col items-start mb-4 md:mb-16 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md'}>
-      <div className="flex flex-row flex-wrap items-start mb-8">
-        <p className="md:text-xl font-bold dark:text-white light:text-black mr-2">
-          {timeUtil.formatToReadableDate(from)} - {timeUtil.formatToReadableDate(to)}:
+    <div className={'bg-white shadow-lg rounded-xl p-8 flex flex-col items-center w-full mb-4'}>
+      <div className="flex flex-col items-center mb-8 w-full">
+        <p className="text-xl font-bold text-center mb-2 dark:text-white light:text-black">
+          {timeUtil.formatToReadableDate(from)} - {timeUtil.formatToReadableDate(to)}
         </p>
-        <p className="md:text-xl font-semibold dark:text-white light:text-black">
+        <p className="text-xl font-semibold text-center dark:text-white light:text-black mb-2">
           {role} at {company}
         </p>
       </div>
-      <p className="md:text-l font-bold dark:text-white light:text-black mb-2" dangerouslySetInnerHTML={{ __html: summary }} />
-      <p className="md:text-l font-bold dark:text-white light:text-black mb-2">{keyTakeaway}</p>{' '}
-      <ul className="list-disc pl-8">
+      <p className="font-bold text-center dark:text-white light:text-black mb-2" dangerouslySetInnerHTML={{ __html: summary }} />
+      <p className="font-bold text-center dark:text-white light:text-black mb-2">{keyTakeaway}</p>
+      <ul className="list-disc pl-8 w-full flex flex-col items-start">
         {highlights.map((h, index) => (
-          <li key={index} className="md:text-sm dark:text-gray-300 light:text-gray-700">
+          <li key={index} className="text-sm dark:text-gray-300 light:text-gray-700 mb-1">
             {h}
           </li>
         ))}

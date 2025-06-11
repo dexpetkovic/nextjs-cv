@@ -3,7 +3,7 @@ import React from 'react'
 import { content } from '@/util/content'
 
 const Skill = ({ title, items }: { title: string; items: string[] }) => (
-  <div className="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center w-full">
+  <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 flex flex-col items-center w-full">
     <h2 className="text-2xl font-semibold mb-4 text-center">{title}</h2>
     <div className="flex flex-wrap justify-center gap-2">
       {items.map((item) => (

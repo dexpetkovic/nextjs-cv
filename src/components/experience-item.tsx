@@ -14,7 +14,7 @@ export const ExperienceItem = (props: {
   const { role, company, summary, keyTakeaway, from, to, highlights } = props
 
   return (
-    <div className={'bg-white shadow-lg rounded-xl p-8 flex flex-col items-center w-full mb-4'}>
+    <div className={'bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 flex flex-col items-center w-full mb-4'}>
       <div className="flex flex-col items-center mb-8 w-full">
         <p className="text-xl font-bold text-center mb-2 dark:text-white light:text-black">
           {timeUtil.formatToReadableDate(from)} - {timeUtil.formatToReadableDate(to)}

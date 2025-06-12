@@ -7,7 +7,7 @@ const Skill = ({ title, items }: { title: string; items: string[] }) => (
     <h2 className="text-2xl font-semibold mb-4 text-center">{title}</h2>
     <div className="flex flex-wrap justify-center gap-2">
       {items.map((item) => (
-        <span key={item} className="bg-gray-100 text-gray-800 px-3 py-1 rounded-md text-sm font-medium">
+        <span key={item} className="bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-white px-3 py-1 rounded-md text-sm font-medium">
           {item.trim()}
         </span>
       ))}

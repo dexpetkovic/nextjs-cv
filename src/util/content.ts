@@ -1,10 +1,11 @@
 export const content = {
   profile: [
-    'Since 2008, I have bridged business and tech, from system integrations to AI frameworks and full-stack development, delivering solutions that drive real impact.',
-    'As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked extensively with Dutch 🇳🇱, American 🇺🇸 and British 🇬🇧 customers as well as cooperated closely with development services providers from Eastern Europe.',
-    'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I dived into cloud development for streaming platforms. From there, I ventured into development of AI-human interaction, data processing, and now focus on full-stack development using React and NodeJS.',
-    'Generative AI and extension of AI model capabilities are my current focus, and I am exploring how to leverage them to build better solutions.',
-    'I am cherishing moments with my family in my free time, learning Dutch, exploring emerging technologies and taking care of my health via balanced diet and strenght training.',
+    'I have started my career as a system engineer back in 2008, and since then have grown into a seasoned full-stack developer, working on a wide range of projects, from traditional IPTV systems to modern AI-human interaction frameworks.',
+    'As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked extensively with Dutch 🇳🇱, American 🇺🇸 and British 🇬🇧 customers.',
+    'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I did cloud development and DevOps for Liberty Global OTT streaming platform. From there, I ventured into development of AI-human interaction in Amelia AI framework, development of data processing frameworks in KPN, and I now do full-stack development using React, React Native (Expo) and NodeJS.',
+    'Generative AI and extension of AI model capabilities are my current learning focus, and I am exploring how to leverage them to build better solutions. See my <a href="https://github.com/dexpetkovic" target="_blank" class="text-blue-700">GitHub repository</a> for more details on <a href="https://github.com/dexpetkovic/brAIn-demo" target="_blank" class="text-blue-700">agentic usage with MCP servers</a>.',
+    'I spend my free time with family, learning Dutch, exploring emerging technologies and taking care of my health via balanced diet and strenght training.',
+    'And as a Dutchman, I ride kids to school in our Urban Arrow bakfiets (cargobike) - so fun and "gezellig" 🎉 (joyful in Dutch)',
   ],
   experiences: [
     {

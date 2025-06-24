@@ -11,10 +11,10 @@ export const Title = (props: { title: string; subtitle: string }): React.ReactEl
         src="/amsterdam-canal-back.jpg"
         alt="Amsterdam background"
         fill
-        style={{ objectFit: 'cover', opacity: 0.5, zIndex: -10 }}
+        style={{ objectFit: 'cover', zIndex: -10 }}
         priority
       />
-      <div className="p-8 flex flex-col items-start justify-start dark:bg-black dark:bg-opacity-40 bg-white bg-opacity-40 rounded-xl">
+      <div className="p-8 flex flex-col items-start justify-start dark:bg-black bg-white rounded-xl">
         <p className="text-2xl md:text-4xl text-left mb-4">{title}</p>
         <p className="text-xl md:text-2xl font-medium dark:text-white light:text-black text-left">{subtitle}</p>
         <Button as={Link} href="#contact" color="primary" className="mt-4">

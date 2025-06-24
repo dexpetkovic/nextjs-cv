@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-row justify-end items-center gap-6 py-4 w-full max-w-5xl mx-auto">
+          <div className="flex flex-row justify-end items-center gap-6 py-4 w-full mx-auto">
             <NavMenu />
           </div>
           <main>{children}</main>

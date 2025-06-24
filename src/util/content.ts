@@ -3,7 +3,7 @@ export const content = {
     'I have started my career as a system engineer back in 2008, and since then have grown into a seasoned full-stack developer, working on a wide range of projects, from traditional IPTV systems to modern AI-human interaction frameworks.',
     'As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked extensively with Dutch 🇳🇱, American 🇺🇸 and British 🇬🇧 customers.',
     'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I did cloud development and DevOps for Liberty Global OTT streaming platform. From there, I ventured into development of AI-human interaction in Amelia AI framework, development of data processing frameworks in KPN, and I now do full-stack development using React, React Native (Expo) and NodeJS.',
-    'Generative AI and extension of AI model capabilities are my current learning focus, and I am exploring how to leverage them to build better solutions. See my <a href="https://github.com/dexpetkovic" target="_blank" class="text-blue-700">GitHub repository</a> for more details on <a href="https://github.com/dexpetkovic/brAIn-demo" target="_blank" class="text-blue-700">agentic usage with MCP servers</a>.',
+    'Generative AI and the extension of AI model capabilities are my current learning focus. I am exploring how to leverage them to build better solutions. See my <a href="https://github.com/dexpetkovic" target="_blank" class="text-blue-700">GitHub repository</a> for more details on <a href="https://github.com/dexpetkovic/brAIn-demo" target="_blank" class="text-blue-700">agentic usage with MCP servers</a>.',
     'I spend my free time with family, learning Dutch, exploring emerging technologies and taking care of my health via balanced diet and strenght training.',
     'And as a Dutchman, I ride kids to school in our Urban Arrow bakfiets (cargobike) - so fun and "gezellig" 🎉 (joyful in Dutch)',
   ],
@@ -17,24 +17,38 @@ export const content = {
         'Helping out to build a new gift redemption platform for <a href="https://app.live.totallygiftcards.com" target="_blank" class="text-blue-700">Totally Gifts</a>, fully from scratch.',
       keyTakeaway: 'Development of a greenfield project with a new tech stack, from scratch',
       highlights: [
+        'Applied genAI to generate images and videos for the platform (Replicate, HuggingFace, OpenAI)',
         'NextJS, TailwindCSS, Clerk, Sentry, NestJS, PostgreSQL, Docker, AWS have been used to build the solution.',
         'Event-driven architecture was used to capture gift card events and process them in real-time',
         'I contributed across the stack, collaborating closely with a cross-functional team of three engineers, a designer, and a product owner',
       ],
     },
     {
-      from: '2021-12-01',
+      from: '2023-11-01',
       to: '2024-09-01',
       role: 'Lead Fullstack Software Engineer',
-      company: 'Fertifa, Grndhouse',
+      company: 'Grndhouse',
       summary:
-        'Team lead in a small startup studio, managing a team of 5 backend and frontend developers on <a href="https://fertifa.com" target="_blank" class="text-blue-700">Fertifa</a> and <a href="https://grndhouse.com" target="_blank" class="text-blue-700">Grndhouse</a>.',
-      keyTakeaway: 'Rapid development of features for two startups after their successful funding rounds',
+        'Team lead managing a team of 5 backend and frontend developers on <a href="https://grndhouse.com" target="_blank" class="text-blue-700">Grndhouse</a>. Grndhouse is a platform for on-demand strength training.',
+      keyTakeaway: 'Taking regular meetings with stakeholders to streamline the development of features for the initial MVP of Grndhouse, including video streaming, payment processing, and user management.',
       highlights: [
         'Architected and engineered solutions in React Native, NodeJS and AWS',
         'Mentored junior developers, resolved blockers, and ensured timely project delivery',
-        'Used a wide array of modern tools and services, such as TypeORM, Sentry for events monitoring, RevenueCat for payments, Strapi for content management, Google Analytics, Meta Pixel, Drip, Amplitude and Mixpanel for analytics',
-        'Using Expo to manage App lifecycle and deployments without App Store and Play store releases (but also with them when needed)',
+        'Used a wide array of modern tools and services, such as Sentry for events monitoring, RevenueCat for payments, Mixpanel for analytics',
+        'Used Expo to manage App lifecycle and deployments without App Store and Play store releases (but also with them when needed)',
+      ],
+    },
+    {
+      from: '2021-12-01',
+      to: '2023-11-01',
+      role: 'Fullstack Software Engineer',
+      company: 'Fertifa',
+      summary: 'Individual contributor and then a team lead, managing a team of 5 backend and frontend developers on <a href="https://fertifa.com" target="_blank" class="text-blue-700">Fertifa</a>. Fertifa is Europe\'s most comprehensive reproductive healthcare provider.',
+      keyTakeaway: 'Development of features for Fertifa, defining the features together with the product owner and stakeholders, mentoring the team.',
+      highlights: [
+        'Engineered solutions in React Native, NodeJS and AWS',
+        'Used a wide array of modern tools and services, such as Sentry for events monitoring, Strapi for content management, Google Analytics, Meta Pixel, Drip, Amplitude for analytics',
+        'Manually managed App lifecycle and deployments',
       ],
     },
     {
@@ -115,7 +129,7 @@ export const content = {
     ' Linux',
     ' Wireshark',
   ],
-  languages: ['English (Proficient)', 'Dutch (Proficient)', 'Serbian (Proficient)', 'German (Intermediate)', 'Russian (Intermediate)'],
+  languages: ['English (Proficient)', 'Dutch (Proficient, NT2)', 'Serbian (Proficient)', 'German (Intermediate)', 'Russian (Intermediate)'],
   other: {
     softwareEngineering: {
       learningNext: [

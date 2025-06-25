@@ -8,6 +8,7 @@ import React from 'react'
 import { ContactForm } from '@/components/contact-form'
 import { Experiences } from '@/components/experiences'
 import { Footer } from '@/components/footer'
+import { PersonalProjects } from '@/components/personal-projects'
 import { Profile } from '@/components/profile'
 import { Recruiters } from '@/components/recruiters'
 import { Skills } from '@/components/skills'
@@ -44,12 +45,13 @@ const App = (): React.ReactElement => {
           <Profile />
           <Video />
         </div>
+        <PersonalProjects />
         <Skills />
         <Experiences />
       </motion.div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full justify-items-center">
         <Recruiters />
-        <ContactForm/>
+        <ContactForm />
       </div>
       <Footer />
     </main>

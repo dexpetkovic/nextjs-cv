@@ -10,7 +10,22 @@ export const content = {
   experiences: [
     {
       from: '2024-09-01',
-      to: '2025-05-01',
+      role: 'Lead AI Engineer',
+      company: 'Delphyr B.V.',
+      summary:
+        "At Delphyr AI, I'm leading the design and development of a next-gen AI platform built specifically for the medical field. We're creating a secure, scalable SaaS platform that brings AI into real clinical workflows, from hospitals to GP practices without compromising on usability, privacy, or compliance.",
+      keyTakeaway:
+        'I’m working across the full stack with Next.js, FastAPI, TypeScript, and Python, building everything from infrastructure to user-facing apps. This includes robust MLOps tooling, model serving, secure APIs, and privacy-by-design features like anonymization, access control, and audit logging.',
+      highlights: [
+        'Architecting and building a cloud-native AI serving platform tailored for healthcare',
+        'Developing intuitive medical applications using Next.js and FastAPI',
+        'Building production-grade ML systems: from data strategy and model evaluation to monitoring, retraining, and scalable serving (incl. RAG & continual learning)',
+        'Designing AI systems that are robust, testable, and aligned with real-world use cases, including guardrails, human-in-the-loop, and deployment best practices',
+      ],
+    },
+    {
+      from: '2024-09-01',
+      to: '2025-07-01',
       role: 'Expert Software Engineer',
       company: 'Totally Gifts',
       summary:
@@ -30,7 +45,8 @@ export const content = {
       company: 'Grndhouse',
       summary:
         'Team lead managing a team of 5 backend and frontend developers on <a href="https://grndhouse.com" target="_blank" class="text-blue-700">Grndhouse</a>. Grndhouse is a platform for on-demand strength training.',
-      keyTakeaway: 'Taking regular meetings with stakeholders to streamline the development of features for the initial MVP of Grndhouse, including video streaming, payment processing, and user management.',
+      keyTakeaway:
+        'Taking regular meetings with stakeholders to streamline the development of features for the initial MVP of Grndhouse, including video streaming, payment processing, and user management.',
       highlights: [
         'Architected and engineered solutions in React Native, NodeJS and AWS',
         'Mentored junior developers, resolved blockers, and ensured timely project delivery',
@@ -43,8 +59,10 @@ export const content = {
       to: '2023-11-01',
       role: 'Fullstack Software Engineer',
       company: 'Fertifa',
-      summary: 'Individual contributor and then a team lead, managing a team of 5 backend and frontend developers on <a href="https://fertifa.com" target="_blank" class="text-blue-700">Fertifa</a>. Fertifa is Europe\'s most comprehensive reproductive healthcare provider.',
-      keyTakeaway: 'Development of features for Fertifa, defining the features together with the product owner and stakeholders, mentoring the team.',
+      summary:
+        'Individual contributor and then a team lead, managing a team of 5 backend and frontend developers on <a href="https://fertifa.com" target="_blank" class="text-blue-700">Fertifa</a>. Fertifa is Europe\'s most comprehensive reproductive healthcare provider.',
+      keyTakeaway:
+        'Development of features for Fertifa, defining the features together with the product owner and stakeholders, mentoring the team.',
       highlights: [
         'Engineered solutions in React Native, NodeJS and AWS',
         'Used a wide array of modern tools and services, such as Sentry for events monitoring, Strapi for content management, Google Analytics, Meta Pixel, Drip, Amplitude for analytics',
@@ -129,7 +147,13 @@ export const content = {
     ' Linux',
     ' Wireshark',
   ],
-  languages: ['English (Proficient)', 'Dutch (Proficient, NT2)', 'Serbian (Proficient)', 'German (Intermediate)', 'Russian (Intermediate)'],
+  languages: [
+    'English (Proficient)',
+    'Dutch (Proficient, NT2)',
+    'Serbian (Proficient)',
+    'German (Intermediate)',
+    'Russian (Intermediate)',
+  ],
   other: {
     softwareEngineering: {
       learningNext: [

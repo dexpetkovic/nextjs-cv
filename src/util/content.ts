@@ -1,6 +1,6 @@
 export const content = {
   profile: [
-    'I started my career as a system engineer back in 2008, and over the years grew into an AI engineer. I am the founder of Elands AI, where we design and deliver intelligent systems tailored to our clients\' needs, working primarily with startups and small companies.',
+    'I started my career as a system engineer back in 2008, and over the years built up deep fullstack engineering experience across React, Node.js, Python, and cloud platforms. That hands-on breadth is what I now bring to AI engineering as the founder of Elands AI, where we design and deliver intelligent systems for startups and small companies.',
     'As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked extensively with Dutch 🇳🇱, American 🇺🇸 and British 🇬🇧 customers.',
     'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I did cloud development and DevOps for Liberty Global OTT streaming platform. From there, I ventured into development of AI-human interaction in Amelia AI framework, data processing frameworks in KPN, and have since built on that foundation to focus fully on AI systems, founding Elands AI and working with clients like Delphyr to bring production-grade AI into real-world workflows.',
     'Building with generative AI is no longer just a learning interest: it is my day job. Through Elands AI, I design and ship LLM-based applications, MLOps infrastructure, and real-time AI services for clients. You can browse some of my experiments on <a href="https://github.com/dexpetkovic" target="_blank" class="text-blue-700">GitHub</a>, including <a href="https://github.com/dexpetkovic/brAIn-demo" target="_blank" class="text-blue-700">agentic usage with MCP servers</a>.',
@@ -24,7 +24,7 @@ export const content = {
       ],
     },
     {
-      from: '2024-09-01',
+      from: '2025-07-01',
       role: 'Lead AI Engineer',
       company: 'Delphyr B.V.',
       summary:

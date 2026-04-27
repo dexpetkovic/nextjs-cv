@@ -1,13 +1,28 @@
 export const content = {
   profile: [
-    'I have started my career as a system engineer back in 2008, and since then have grown into a seasoned full-stack developer, working on a wide range of projects, from traditional IPTV systems to modern AI-human interaction frameworks.',
+    'I started my career as a system engineer back in 2008, and over the years grew into an AI engineer. I am the founder of Elands AI, where we design and deliver intelligent systems tailored to our clients\' needs, working primarily with startups and small companies.',
     'As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked extensively with Dutch 🇳🇱, American 🇺🇸 and British 🇬🇧 customers.',
-    'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I did cloud development and DevOps for Liberty Global OTT streaming platform. From there, I ventured into development of AI-human interaction in Amelia AI framework, development of data processing frameworks in KPN, and I now do full-stack development using React, React Native (Expo) and NodeJS.',
-    'Generative AI and the extension of AI model capabilities are my current learning focus. I am exploring how to leverage them to build better solutions. See my <a href="https://github.com/dexpetkovic" target="_blank" class="text-blue-700">GitHub repository</a> for more details on <a href="https://github.com/dexpetkovic/brAIn-demo" target="_blank" class="text-blue-700">agentic usage with MCP servers</a>.',
+    'My journey began in Serbia, integrating traditional IPTV systems, and took me to the Netherlands where I did cloud development and DevOps for Liberty Global OTT streaming platform. From there, I ventured into development of AI-human interaction in Amelia AI framework, data processing frameworks in KPN, and have since built on that foundation to focus fully on AI systems, founding Elands AI and working with clients like Delphyr to bring production-grade AI into real-world workflows.',
+    'Building with generative AI is no longer just a learning interest: it is my day job. Through Elands AI, I design and ship LLM-based applications, MLOps infrastructure, and real-time AI services for clients. You can browse some of my experiments on <a href="https://github.com/dexpetkovic" target="_blank" class="text-blue-700">GitHub</a>, including <a href="https://github.com/dexpetkovic/brAIn-demo" target="_blank" class="text-blue-700">agentic usage with MCP servers</a>.',
     'I spend my free time with family, learning Dutch, exploring emerging technologies and taking care of my health via balanced diet and strenght training.',
     'And as a Dutchman, I ride kids to school in our Urban Arrow bakfiets (cargobike) - so fun and "gezellig" 🎉 (joyful in Dutch)',
   ],
   experiences: [
+    {
+      from: '2025-01-01',
+      role: 'Founder & AI Engineer',
+      company: 'Elands AI',
+      summary:
+        "I founded Elands AI to design and deliver intelligent systems tailored to our clients' needs. We work primarily with startups and small companies, specialising in turnkey AI platforms and machine learning systems, handling everything from architecture to production deployment.",
+      keyTakeaway:
+        'End-to-end AI solutions: custom LLM-based applications, data pipelines, MLOps infrastructure, and real-time AI services, built across the full stack with TypeScript and Python.',
+      highlights: [
+        'Designing and delivering custom LLM-based applications and AI platforms for clients',
+        'Building MLOps infrastructure and data pipelines from scratch to production',
+        'Working across the full stack with TypeScript and Python, combining cloud-native engineering with cutting-edge AI capabilities',
+        'Shipping robust, scalable products that deliver real business value',
+      ],
+    },
     {
       from: '2024-09-01',
       role: 'Lead AI Engineer',
@@ -19,8 +34,7 @@ export const content = {
       highlights: [
         'Architecting and building a cloud-native AI serving platform tailored for healthcare',
         'Developing intuitive medical applications using Next.js and FastAPI',
-        'Building production-grade ML systems: from data strategy and model evaluation to monitoring, retraining, and scalable serving (incl. RAG & continual learning)',
-        'Designing AI systems that are robust, testable, and aligned with real-world use cases, including guardrails, human-in-the-loop, and deployment best practices',
+        'Building production-grade ML systems: from data strategy and model evaluation to monitoring, retraining, guardrails and scalable serving (RAG & continual learning)',
       ],
     },
     {
@@ -121,6 +135,8 @@ export const content = {
   ],
   programmingLanguages: ['Typescript', 'Python', 'Scala', 'Groovy', 'Java'],
   frameworks: [
+    'Next.js',
+    'FastAPI',
     'React Native',
     'ReactJS',
     'Strapi',
@@ -137,6 +153,7 @@ export const content = {
   softwarePlatforms: [
     ' AWS',
     ' Azure',
+    ' MLOps tooling',
     ' Kubernetes',
     ' Docker',
     ' Kafka',
@@ -157,8 +174,8 @@ export const content = {
   other: {
     softwareEngineering: {
       learningNext: [
-        'Leveraging Expo for rapid mobile app prototyping and deployments',
-        'Using AI tools like ChatGPT to accelerate development and decision-making workflows',
+        'Building and deploying production LLM applications with RAG, tool use, and agentic patterns',
+        'MLOps: model evaluation, monitoring, retraining pipelines, and guardrails',
       ],
     },
     organizationalToolset: ['Atlassian', 'Jira', 'Confluence', 'Bitbucket'],

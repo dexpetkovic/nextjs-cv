@@ -2,7 +2,7 @@ import { Button, Link } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
 
-export const Title = (props: { title: string; subtitle: string }): React.ReactElement => {
+export const Title = (props: { title: string; subtitle: React.ReactNode }): React.ReactElement => {
   const { title, subtitle } = props
 
   return (

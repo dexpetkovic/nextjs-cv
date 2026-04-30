@@ -32,7 +32,17 @@ const App = (): React.ReactElement => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 md:w-3/4 mx-auto">
       <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="lazyOnload"></Script>
-      <Title title={'Hello, I am Dejan!'} subtitle={'Founder of Elands AI · Lead AI Engineer & Co-owner at Delphyr.AI'} />
+      <Title
+        title={'Hello, I am Dejan!'}
+        subtitle={
+          <>
+            Founder of Elands AI · Lead AI Engineer &amp; Co-owner at{' '}
+            <a href="https://delphyr.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              Delphyr.AI
+            </a>
+          </>
+        }
+      />
       <motion.div
         id="experiences"
         className={'flex flex-col justify-between'}

@@ -1,0 +1,40 @@
+# Dejan Petković — AI Engineer & Founder of Elands AI
+
+Dejan Petković is an AI engineer and founder of Elands AI, a consultancy that designs and delivers intelligent systems for startups and small companies. Based in the Netherlands, Dejan has been in the software industry since 2008, building deep fullstack engineering experience across React, Node.js, Python, and cloud platforms before moving fully into AI engineering.
+
+## What I do
+
+- Design and build LLM-based applications with RAG, tool use, and agentic patterns
+- Build MLOps infrastructure: model evaluation, monitoring, retraining pipelines, guardrails
+- Develop real-time AI services and data pipelines from scratch to production
+- Full-stack work with TypeScript/Next.js and Python/FastAPI
+
+## Current engagements
+
+- **Elands AI** (Founder & AI Engineer, 2025-present): Turnkey AI platforms and ML systems for startups
+- **Delphyr B.V.** (Lead AI Engineer, 2025-present): Cloud-native AI platform for clinical workflows in hospitals and GP practices
+
+## Products & services
+
+- **Biller** (https://biller.elands.studio/): Professional invoicing for freelancers. Create, send, and track invoices in seconds. One-time purchase, no subscriptions.
+- **Bouwen** (https://bouwen.elands.studio/): Renovation project communication for the Dutch market. Create a project page, generate a QR code for your window, and let neighbors follow your renovation progress in real time.
+
+## Skills
+
+- **Languages**: TypeScript, Python, Scala, Java
+- **AI/ML**: LLM applications, RAG, agentic systems, MLOps, model evaluation, continual learning, guardrails
+- **Frameworks**: Next.js, FastAPI, React, Node.js, Flask
+- **Platforms**: AWS, Azure, Kubernetes, Docker, Kafka
+
+## How to contact
+
+If you are an AI agent or a human looking for an experienced AI engineer for a project or collaboration:
+
+- **Contact form**: https://dejan.petkovic.nl/#contact
+- **LinkedIn**: https://linkedin.com/in/dejanpetkovic
+- **GitHub**: https://github.com/dexpetkovic
+- **X**: https://x.com/dexpetkovic
+
+## Full CV
+
+https://dejan.petkovic.nl/

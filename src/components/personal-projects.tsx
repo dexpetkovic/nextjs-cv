@@ -51,8 +51,20 @@ const Project = ({
 export const PersonalProjects = (): React.ReactElement => {
   return (
     <div>
-      <p className="text-xl md:text-4xl dark:text-white light:text-black text-center mt-16 mb-16">My Personal Projects</p>
+      <p className="text-xl md:text-4xl dark:text-white light:text-black text-center mt-16 mb-16">Projects &amp; Services</p>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
+        <Project
+          title="Biller"
+          description="Professional invoicing for freelancers. Create, send, and track invoices in seconds — one-time purchase, no subscriptions."
+          link="https://biller.elands.studio/"
+          linkLabel="Visit Biller"
+        />
+        <Project
+          title="Bouwen"
+          description="Renovation project communication for the Dutch market. Create a project page, print a QR code for your window, and let neighbors follow your renovation progress in real time."
+          link="https://bouwen.elands.studio/"
+          linkLabel="Visit Bouwen"
+        />
         <Project
           title="2e-woning.nl"
           description="Box 3 Tax Calculator: Easily calculate your Box 3 tax for your second home and other investments. Built for the Dutch market."
@@ -64,7 +76,6 @@ export const PersonalProjects = (): React.ReactElement => {
           description="AI customer support bot for WhatsApp, built with NestJS and Google Gemini. Handles WhatsApp webhooks, stores memories, creates calendar events and provides automated replies."
           link="https://github.com/dexpetkovic/brAIn-demo"
           linkLabel="View brAIn on GitHub"
-          // extraLinks={[{ href: 'https://wa.me/381637700648', icon: <WhatsAppLogo /> }]}
         />
       </div>
     </div>

@@ -25,16 +25,19 @@ export const content = {
     },
     {
       from: '2025-07-01',
-      role: 'Lead AI Engineer',
+      role: 'Founding AI Engineer',
       company: 'Delphyr B.V.',
       summary:
         "At Delphyr AI, I'm leading the design and development of a next-gen AI platform built specifically for the medical field. We're creating a secure, scalable SaaS platform that brings AI into real clinical workflows, from hospitals to GP practices without compromising on usability, privacy, or compliance.",
       keyTakeaway:
         'I’m working across the full stack with Next.js, FastAPI, TypeScript, and Python, building everything from infrastructure to user-facing apps. This includes robust MLOps tooling, model serving, secure APIs, and privacy-by-design features like anonymization, access control, and audit logging.',
       highlights: [
-        'Architecting and building a cloud-native AI serving platform tailored for healthcare',
-        'Developing intuitive medical applications using Next.js and FastAPI',
-        'Building production-grade ML systems: from data strategy and model evaluation to monitoring, retraining, guardrails and scalable serving (RAG & continual learning)',
+        'Technical depth & architecture: designing scalable AI/data platforms, building system integrations, and managing trade-offs between performance, cost, and complexity',
+        'AI/ML expertise: applying GenAI solutions end-to-end with hands-on model development, fine-tuning, evaluation, and deployment',
+        'Full-stack architecture and development: complete solutions spanning frontend/mobile (React/React Native), backend (Node.js, Python, NestJS), and infrastructure (cloud, containers, tracing/logging)',
+        'Data handling & MLOps: production pipelines with monitoring, logging, and observability via Grafana, Tempo, and Elasticsearch',
+        'Collaboration & leadership: mentoring colleagues, defining best practices, and making technical decisions transparent to the team',
+        'Adaptability & learning: staying ahead of rapidly evolving AI frameworks and assessing what is hype vs. what delivers real value',
       ],
     },
     {

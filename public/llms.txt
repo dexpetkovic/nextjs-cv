@@ -12,7 +12,7 @@ Dejan Petković is an AI engineer and founder of Elands AI, a consultancy that d
 ## Current engagements
 
 - **Elands AI** (Founder & AI Engineer, 2025-present): Turnkey AI platforms and ML systems for startups
-- **Delphyr B.V.** (Lead AI Engineer, 2025-present): Cloud-native AI platform for clinical workflows in hospitals and GP practices
+- **Delphyr B.V.** (Founding AI Engineer, 2025-present): Cloud-native AI platform for clinical workflows in hospitals and GP practices
 
 ## Products & services
 

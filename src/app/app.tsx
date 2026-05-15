@@ -36,7 +36,7 @@ const App = (): React.ReactElement => {
         title={'Hello, I am Dejan!'}
         subtitle={
           <>
-            Founder of Elands AI · Lead AI Engineer &amp; Co-owner at{' '}
+            Founder of Elands AI · Founding AI Engineer at{' '}
             <a href="https://delphyr.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
               Delphyr.AI
             </a>

@@ -1,21 +1,38 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Instrument_Serif, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google'
 
-import { NavMenu } from '@/components/nav-menu'
-import { ThemeSwitcher } from '@/components/theme-switcher'
-import { ThemeProvider } from '@/context/theme-context'
+const instrumentSerif = Instrument_Serif({
+  weight: '400',
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-instrument-serif',
+  display: 'swap',
+})
 
-const inter = Inter({ subsets: ['latin'] })
+const plexSans = IBM_Plex_Sans({
+  weight: ['300', '400', '500', '600'],
+  subsets: ['latin'],
+  variable: '--font-plex-sans',
+  display: 'swap',
+})
+
+const plexMono = IBM_Plex_Mono({
+  weight: ['400', '500'],
+  subsets: ['latin'],
+  variable: '--font-plex-mono',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'Dejan Petković | AI Engineer & Founder of Elands AI',
+  title: 'Dejan Petković — End-to-end Product & AI Engineer',
   description:
-    'AI engineer and founder of Elands AI, building LLM-based applications, MLOps infrastructure, and real-time AI services for startups. Based in the Netherlands.',
+    'End-to-end product and AI engineer. Founder of Elands AI, Founding AI Engineer at Delphyr.AI. Architecture, infrastructure, backend, frontend, mobile, and the AI/ML pipeline — seventeen years across the full stack.',
   keywords: [
     'AI engineer',
     'LLM',
-    'machine learning',
+    'fullstack engineer',
+    'product engineer',
     'MLOps',
     'RAG',
     'Next.js',
@@ -23,16 +40,17 @@ export const metadata: Metadata = {
     'TypeScript',
     'Python',
     'Elands AI',
+    'Delphyr',
+    'Amsterdam',
     'Netherlands',
-    'AI consultant',
     'generative AI',
   ],
   authors: [{ name: 'Dejan Petković', url: 'https://dejan.petkovic.nl' }],
   creator: 'Dejan Petković',
   openGraph: {
-    title: 'Dejan Petković | AI Engineer & Founder of Elands AI',
+    title: 'Dejan Petković — End-to-end Product & AI Engineer',
     description:
-      'AI engineer building LLM applications, MLOps infrastructure, and real-time AI services for startups.',
+      'Founder of Elands AI, Founding AI Engineer at Delphyr.AI. End-to-end product and AI engineering — architecture, infrastructure, and the AI/ML pipeline.',
     url: 'https://dejan.petkovic.nl/',
     type: 'profile',
     siteName: 'Dejan Petković',
@@ -42,9 +60,9 @@ export const metadata: Metadata = {
     card: 'summary',
     site: '@dexpetkovic',
     creator: '@dexpetkovic',
-    title: 'Dejan Petković | AI Engineer & Founder of Elands AI',
+    title: 'Dejan Petković — End-to-end Product & AI Engineer',
     description:
-      'AI engineer building LLM applications, MLOps infrastructure, and real-time AI services for startups.',
+      'Founder of Elands AI, Founding AI Engineer at Delphyr.AI. End-to-end product and AI engineering.',
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://dejan.petkovic.nl/' },
@@ -54,7 +72,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Dejan Petković',
-  jobTitle: 'AI Engineer & Founder',
+  jobTitle: 'End-to-end Product & AI Engineer',
   worksFor: {
     '@type': 'Organization',
     name: 'Elands AI',
@@ -69,7 +87,7 @@ const jsonLd = {
   },
   url: 'https://dejan.petkovic.nl/',
   description:
-    'AI engineer and founder of Elands AI, building LLM-based applications, MLOps infrastructure, and real-time AI services for startups and small companies. Based in the Netherlands.',
+    'End-to-end product and AI engineer. Founder of Elands AI, Founding AI Engineer at Delphyr.AI. Architecture, infrastructure, backend, frontend, mobile, and the AI/ML pipeline.',
   knowsAbout: [
     'LLM applications',
     'RAG',
@@ -98,21 +116,17 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${instrumentSerif.variable} ${plexSans.variable} ${plexMono.variable}`}
+    >
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-row justify-end items-center gap-6 py-4 w-full mx-auto">
-            <NavMenu />
-          </div>
-          <main>{children}</main>
-        </ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

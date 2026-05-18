@@ -1,4 +1,5 @@
-import { Button, Input, Textarea } from '@nextui-org/react'
+'use client'
+
 import Joi from 'joi'
 import React, { useState } from 'react'
 
@@ -19,31 +20,22 @@ export const ContactForm = (): React.ReactElement => {
 
     const { error } = emailSchema.validate(email)
     if (error) {
-      console.error(error.details[0].message)
+      setSendResult('error')
       return
     }
 
     setIsSending(true)
     setSendResult(null)
-    const payload = {
-      sender: {
-        email,
-        name,
-        lastName,
-        message,
-      },
-    }
 
     try {
       const res = await fetch('/api/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ sender: { email, name, lastName, message } }),
       })
       if (!res.ok) throw new Error('Failed to send')
       setSendResult('success')
-    } catch (err) {
-      console.error(err)
+    } catch {
       setSendResult('error')
     } finally {
       setIsSending(false)
@@ -51,58 +43,71 @@ export const ContactForm = (): React.ReactElement => {
   }
 
   return (
-    <div  id="contact" className={'flex flex-col w-full md:w-1/2 h-full p-4'}>
-      <p className="text-xl md:text-4xl dark:text-white light:text-black text-center mb-4">Contact</p>
-      <p className="text-sm md:text-lg dark:text-white light:text-black text-center">Want to get in touch? Send me a message!</p>
-      <Socials />
-      <p className="text-sm md:text-lg dark:text-white light:text-black text-center">Or send me an email:</p>
-      <form onSubmit={handleSubmit} className={'flex flex-col h-full'}>
-        <div>
-          <Input
-            type="email"
-            label="Email"
-            className="py-2 w-full"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <Input
-            type="text"
-            label="Name"
-            className="py-2 w-full"
-            onChange={(e) => setName(e.target.value)}
-          />
-          <Input
-            type="text"
-            label="Last Name"
-            className="py-2 w-full"
-            onChange={(e) => setLastName(e.target.value)}
-          />
-          <Textarea
-            variant={'flat'}
-            label="Message"
-            labelPlacement="inside"
-            className="py-2 w-full"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
+    <section id="contact">
+      <div className="eyebrow">§ 05 — Contact</div>
+      <h2 className="section-title">
+        Say <em>hello</em>.
+      </h2>
+
+      <div className="contact-grid">
+        <div className="contact-info">
+          <p>
+            Want to get in touch? Send a message — about a project, a role, or just to say hi. I
+            read everything.
+          </p>
+          <Socials />
         </div>
-        <div className="flex my-4 justify-center">
-          <Button type="submit" color="primary">
-            Submit
-          </Button>
-        </div>
-      </form>
-      {isSending && (
-        <div className="flex justify-center items-center mt-4">
-          <span className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-blue-500 mr-2"></span>
-          <span>Sending...</span>
-        </div>
-      )}
-      {sendResult === 'success' && (
-        <div className="text-green-600 text-center mt-4">Message sent successfully!</div>
-      )}
-      {sendResult === 'error' && (
-        <div className="text-red-600 text-center mt-4">Failed to send message. Try again.</div>
-      )}
-    </div>
+
+        <form className="contact" onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="field">
+              <label htmlFor="contact-first">First name</label>
+              <input
+                id="contact-first"
+                type="text"
+                placeholder="Dejan"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
+            <div className="field">
+              <label htmlFor="contact-last">Last name</label>
+              <input
+                id="contact-last"
+                type="text"
+                placeholder="Petković"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+            </div>
+          </div>
+          <div className="field">
+            <label htmlFor="contact-email">Email</label>
+            <input
+              id="contact-email"
+              type="email"
+              placeholder="you@company.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="field">
+            <label htmlFor="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              placeholder="Tell me about your project, role, or idea…"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </div>
+          <button type="submit" disabled={isSending}>
+            {isSending ? 'Sending…' : sendResult === 'success' ? 'Sent ✓' : 'Send message →'}
+          </button>
+          {sendResult === 'error' ? (
+            <div className="form-status error">Could not send. Please try again.</div>
+          ) : null}
+        </form>
+      </div>
+    </section>
   )
 }

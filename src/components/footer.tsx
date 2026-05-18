@@ -2,9 +2,11 @@ import React from 'react'
 
 export const Footer = (): React.ReactElement => {
   return (
-    <div className="text-center text-md text-gray-500">
-      <p>Dejan Petković, Elands Studio</p>
-      <p>Made with passion in ❌❌❌</p>
-    </div>
+    <footer className="site-footer">
+      <div>© 2026 Dejan Petković · Elands Studio</div>
+      <div>
+        Made with <span className="heart">passion</span> in ❌❌❌
+      </div>
+    </footer>
   )
 }

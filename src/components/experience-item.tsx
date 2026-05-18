@@ -1,37 +1,57 @@
+import { format } from 'date-fns'
 import React from 'react'
 
-import { timeUtil } from '@/util/timeUtil'
-
-export const ExperienceItem = (props: {
+export type ExperienceItemProps = {
   role: string
   company: string
+  companyHref?: string
+  companyDescriptor?: string
   summary: string
-  keyTakeaway: string
-  from: Date
-  to: Date
   highlights: string[]
-}): React.ReactElement => {
-  const { role, company, summary, keyTakeaway, from, to, highlights } = props
+  from: Date
+  to?: Date
+}
+
+export const ExperienceItem = ({
+  role,
+  company,
+  companyHref,
+  companyDescriptor,
+  summary,
+  highlights,
+  from,
+  to,
+}: ExperienceItemProps): React.ReactElement => {
+  const isCurrent = !to
+  const yr = format(from, 'yyyy')
+  const range = `${format(from, 'MMM yyyy')} — ${isCurrent ? 'Present' : format(to!, 'MMM yyyy')}`
 
   return (
-    <div className={'bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 flex flex-col items-center w-full mb-4'}>
-      <div className="flex flex-col items-center mb-8 w-full">
-        <p className="text-xl font-bold text-center mb-2 dark:text-white light:text-black">
-          {timeUtil.formatToReadableDate(from)} - {timeUtil.formatToReadableDate(to)}
-        </p>
-        <p className="text-xl font-semibold text-center dark:text-white light:text-black mb-2">
-          {role} at {company}
-        </p>
+    <article className="exp">
+      <div className="exp-date">
+        <span className="yr">{yr}</span>
+        <span className="range">{range}</span>
+        {isCurrent ? <span className="current">Active</span> : null}
       </div>
-      <p className="font-bold text-center dark:text-white light:text-black mb-2" dangerouslySetInnerHTML={{ __html: summary }} />
-      <p className="font-bold text-center dark:text-white light:text-black mb-2">{keyTakeaway}</p>
-      <ul className="list-disc pl-8 w-full flex flex-col items-start">
-        {highlights.map((h, index) => (
-          <li key={index} className="text-sm dark:text-gray-300 light:text-gray-700 mb-1">
-            {h}
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div className="exp-body">
+        <h3>{role}</h3>
+        <div className="co">
+          {companyHref ? (
+            <a href={companyHref} target="_blank" rel="noopener noreferrer">
+              {company}
+            </a>
+          ) : (
+            company
+          )}
+          {companyDescriptor ? <> · {companyDescriptor}</> : null}
+        </div>
+        {summary ? <p dangerouslySetInnerHTML={{ __html: summary }} /> : null}
+        <ul>
+          {highlights.map((h, i) => (
+            <li key={i} dangerouslySetInnerHTML={{ __html: h }} />
+          ))}
+        </ul>
+      </div>
+    </article>
   )
 }

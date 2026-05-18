@@ -1,83 +1,138 @@
-import { Button } from '@nextui-org/react'
 import React from 'react'
 
-const WhatsAppLogo = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-10 h-10 rounded-full bg-white shadow p-1">
-    <circle cx="16" cy="16" r="16" fill="#25D366" />
-    <path
-      d="M23.472 19.458c-.355-.177-2.104-1.037-2.43-1.155-.326-.119-.563-.177-.8.177-.237.355-.914 1.155-1.12 1.392-.207.237-.412.266-.767.089-.355-.178-1.5-.553-2.86-1.763-1.057-.944-1.77-2.108-1.977-2.463-.207-.355-.022-.546.155-.723.159-.158.355-.412.533-.619.178-.207.237-.355.355-.592.119-.237.06-.444-.03-.622-.089-.178-.8-1.924-1.096-2.637-.289-.693-.583-.599-.8-.61-.207-.009-.444-.011-.681-.011-.237 0-.622.089-.948.444-.326.355-1.24 1.211-1.24 2.955 0 1.744 1.269 3.429 1.447 3.666.178.237 2.5 3.82 6.063 5.215.849.292 1.51.466 2.026.596.851.204 1.626.175 2.238.106.682-.077 2.104-.859 2.403-1.689.296-.83.296-1.541.207-1.689-.089-.148-.326-.237-.681-.414z"
-      fill="#fff"
-    />
-  </svg>
-)
-
-const Project = ({
-  title,
-  description,
-  link,
-  linkLabel,
-  extraLinks,
-}: {
+type StandardProject = {
+  num: string
+  tag: string
   title: string
+  domain: string
   description: string
-  link: string
-  linkLabel: string
-  extraLinks?: { href: string; label?: string; icon?: React.ReactNode }[]
-}) => (
-  <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 flex flex-col items-center w-full">
-    <h2 className="text-2xl font-semibold mb-4 text-center">{title}</h2>
-    <p className="text-gray-700 dark:text-gray-200 mb-4 text-center">{description}</p>
-    <Button as="a" type="button" color="primary" href={link} target="_blank" rel="noopener noreferrer">
-      {linkLabel}
-    </Button>
-    {extraLinks && (
-      <div className="flex flex-col gap-2 mt-2 items-center">
-        {extraLinks.map((l) => (
-          <a
-            key={l.href}
-            href={l.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:scale-105 transition-transform"
-          >
-            {l.icon ? l.icon : l.label}
-          </a>
-        ))}
-      </div>
-    )}
-  </div>
+  href: string
+  cta: string
+}
+
+const projects: StandardProject[] = [
+  {
+    num: '02',
+    tag: 'SaaS · Finance',
+    title: 'Biller',
+    domain: 'biller.elands.studio',
+    description:
+      'Professional invoicing for freelancers. Create, send, and track invoices in seconds — one-time purchase, no subscriptions.',
+    href: 'https://biller.elands.studio/',
+    cta: 'Visit Biller',
+  },
+  {
+    num: '03',
+    tag: 'Civic · Dutch market',
+    title: 'Bouwen',
+    domain: 'bouwen.elands.studio',
+    description:
+      'Renovation project communication for the Dutch market. Print a QR code for your window and let neighbours follow your renovation in real time.',
+    href: 'https://bouwen.elands.studio/',
+    cta: 'Visit Bouwen',
+  },
+  {
+    num: '04',
+    tag: 'Tax · Calculator',
+    title: '2e-woning.nl',
+    domain: '2e-woning.nl',
+    description:
+      'Box 3 tax calculator: easily calculate your tax for a second home and other investments. Built for the Dutch market.',
+    href: 'http://2e-woning.nl',
+    cta: 'Visit 2e-woning.nl',
+  },
+  {
+    num: '05',
+    tag: 'LLM · WhatsApp bot',
+    title: 'brAIn',
+    domain: 'github.com/dexpetkovic/brAIn-demo',
+    description:
+      'WhatsApp AI assistant built with NestJS and Google Gemini. Handles webhooks, stores memories, creates calendar events, and provides automated replies.',
+    href: 'https://github.com/dexpetkovic/brAIn-demo',
+    cta: 'View on GitHub',
+  },
+]
+
+const ProjectCard = ({ p }: { p: StandardProject }) => (
+  <article className="proj">
+    <span className="proj-num">{p.num}</span>
+    <span className="proj-tag">{p.tag}</span>
+    <h3>{p.title}</h3>
+    <div className="domain">{p.domain}</div>
+    <p>{p.description}</p>
+    <a className="visit" href={p.href} target="_blank" rel="noopener noreferrer">
+      {p.cta} <span className="arrow">→</span>
+    </a>
+  </article>
 )
 
 export const PersonalProjects = (): React.ReactElement => {
   return (
-    <div>
-      <p className="text-xl md:text-4xl dark:text-white light:text-black text-center mt-16 mb-16">Projects &amp; Services</p>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
-        <Project
-          title="Biller"
-          description="Professional invoicing for freelancers. Create, send, and track invoices in seconds — one-time purchase, no subscriptions."
-          link="https://biller.elands.studio/"
-          linkLabel="Visit Biller"
-        />
-        <Project
-          title="Bouwen"
-          description="Renovation project communication for the Dutch market. Create a project page, print a QR code for your window, and let neighbors follow your renovation progress in real time."
-          link="https://bouwen.elands.studio/"
-          linkLabel="Visit Bouwen"
-        />
-        <Project
-          title="2e-woning.nl"
-          description="Box 3 Tax Calculator: Easily calculate your Box 3 tax for your second home and other investments. Built for the Dutch market."
-          link="http://2e-woning.nl"
-          linkLabel="Visit 2e-woning.nl"
-        />
-        <Project
-          title="brAIn (WhatsApp AI Assistant)"
-          description="AI customer support bot for WhatsApp, built with NestJS and Google Gemini. Handles WhatsApp webhooks, stores memories, creates calendar events and provides automated replies."
-          link="https://github.com/dexpetkovic/brAIn-demo"
-          linkLabel="View brAIn on GitHub"
-        />
+    <section id="projects">
+      <div className="proj-head">
+        <div>
+          <div className="eyebrow">§ 02 — Projects &amp; Services</div>
+          <h2 className="section-title" style={{ marginBottom: 0 }}>
+            Things I have <em>built</em>.
+          </h2>
+        </div>
+        <div className="selected">Selected · 2017–2026</div>
       </div>
-    </div>
+
+      <div className="proj-grid">
+        <article className="proj featured">
+          <div>
+            <span className="proj-num">01 · Featured</span>
+            <span className="proj-tag">Medical AI SaaS · Built from scratch</span>
+            <h3>Delphyr</h3>
+            <div className="domain">delphyr.ai</div>
+            <p>
+              A next-generation AI platform for the medical field — secure, scalable SaaS bringing
+              AI into real clinical workflows.{' '}
+              <strong className="accent-strong">
+                Built together with the founder, I shipped Delphyr practically from scratch as the
+                founding engineer — with a tiny team of one additional engineer and one data
+                scientist
+              </strong>{' '}
+              — owning architecture, infrastructure, backend, mobile, and the AI/ML pipeline end to
+              end.
+            </p>
+            <a className="visit" href="https://delphyr.ai" target="_blank" rel="noopener noreferrer">
+              Visit Delphyr <span className="arrow">→</span>
+            </a>
+            <div className="meta-strip">
+              <div>
+                <div className="k">Team</div>
+                <div className="v">1 + 3</div>
+                <div className="s">Founder + me + eng + DS</div>
+              </div>
+              <div>
+                <div className="k">Stack</div>
+                <div className="v">TS / Py</div>
+                <div className="s">NestJS · React Native</div>
+              </div>
+              <div>
+                <div className="k">Scope</div>
+                <div className="v">E2E</div>
+                <div className="s">Infra → model → UI</div>
+              </div>
+            </div>
+          </div>
+          <div className="built-list">
+            <div className="built-head">What I built</div>
+            <div>· Cloud-native architecture &amp; CI/CD</div>
+            <div>· GenAI fine-tuning &amp; eval pipeline</div>
+            <div>· Observability: Grafana · Tempo · ES</div>
+            <div>· React / React Native frontends</div>
+            <div>· NestJS / Python backends</div>
+            <div>· Compliance &amp; data security model</div>
+          </div>
+        </article>
+
+        {projects.map((p) => (
+          <ProjectCard key={p.title} p={p} />
+        ))}
+      </div>
+    </section>
   )
 }

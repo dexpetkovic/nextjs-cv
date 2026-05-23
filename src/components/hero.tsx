@@ -20,6 +20,15 @@ export const Hero = (): React.ReactElement => {
             <span className="pill">AI · Fullstack · Cloud</span>
           </div>
         </div>
+
+        <figure className="hero-portrait" aria-label="Portrait of Dejan Petković">
+          <img src="/DP-profile.jpg" alt="Dejan Petković, smiling, in Amsterdam" />
+          <figcaption className="badge">
+            <span className="dot" />
+            That&rsquo;s me → Hi.
+          </figcaption>
+        </figure>
+
         <aside className="hero-meta">
           <div className="row">
             <div className="k">Founder of</div>

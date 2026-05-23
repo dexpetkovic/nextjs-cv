@@ -44,7 +44,7 @@ export const ContactForm = (): React.ReactElement => {
 
   return (
     <section id="contact">
-      <div className="eyebrow">§ 05 — Contact</div>
+      <div className="eyebrow">§ 05 · Contact</div>
       <h2 className="section-title">
         Say <em>hello</em>.
       </h2>
@@ -52,7 +52,7 @@ export const ContactForm = (): React.ReactElement => {
       <div className="contact-grid">
         <div className="contact-info">
           <p>
-            Want to get in touch? Send a message — about a project, a role, or just to say hi. I
+            Want to get in touch? Send a message about a project, a role, or just to say hi. I
             read everything.
           </p>
           <Socials />
@@ -101,7 +101,7 @@ export const ContactForm = (): React.ReactElement => {
             />
           </div>
           <button type="submit" disabled={isSending}>
-            {isSending ? 'Sending…' : sendResult === 'success' ? 'Sent ✓' : 'Send message →'}
+            {isSending ? 'Sending…' : sendResult === 'success' ? 'Sent ✓' : 'Send message'}
           </button>
           {sendResult === 'error' ? (
             <div className="form-status error">Could not send. Please try again.</div>

@@ -25,9 +25,9 @@ const plexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dejan Petković — End-to-end Product & AI Engineer',
+  title: 'Dejan Petković · End-to-end Product & AI Engineer',
   description:
-    'End-to-end product and AI engineer. Founder of Elands AI, Founding AI Engineer at Delphyr.AI. Architecture, infrastructure, backend, frontend, mobile, and the AI/ML pipeline — seventeen years across the full stack.',
+    'End-to-end product and AI engineer. Founder of Elands AI, Founding AI Engineer at Delphyr.AI. Architecture, infrastructure, backend, frontend, mobile, and the AI/ML pipeline. Seventeen years across the full stack.',
   keywords: [
     'AI engineer',
     'LLM',
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Dejan Petković', url: 'https://dejan.petkovic.nl' }],
   creator: 'Dejan Petković',
   openGraph: {
-    title: 'Dejan Petković — End-to-end Product & AI Engineer',
+    title: 'Dejan Petković · End-to-end Product & AI Engineer',
     description:
-      'Founder of Elands AI, Founding AI Engineer at Delphyr.AI. End-to-end product and AI engineering — architecture, infrastructure, and the AI/ML pipeline.',
+      'Founder of Elands AI, Founding AI Engineer at Delphyr.AI. End-to-end product and AI engineering: architecture, infrastructure, and the AI/ML pipeline.',
     url: 'https://dejan.petkovic.nl/',
     type: 'profile',
     siteName: 'Dejan Petković',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: 'summary',
     site: '@dexpetkovic',
     creator: '@dexpetkovic',
-    title: 'Dejan Petković — End-to-end Product & AI Engineer',
+    title: 'Dejan Petković · End-to-end Product & AI Engineer',
     description:
       'Founder of Elands AI, Founding AI Engineer at Delphyr.AI. End-to-end product and AI engineering.',
   },

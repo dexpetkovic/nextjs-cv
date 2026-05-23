@@ -17,7 +17,7 @@ const projects: StandardProject[] = [
     title: 'Biller',
     domain: 'biller.elands.studio',
     description:
-      'Professional invoicing for freelancers. Create, send, and track invoices in seconds — one-time purchase, no subscriptions.',
+      'Professional invoicing for freelancers. Create, send, and track invoices in seconds. One-time purchase, no subscriptions.',
     href: 'https://biller.elands.studio/',
     cta: 'Visit Biller',
   },
@@ -61,7 +61,7 @@ const ProjectCard = ({ p }: { p: StandardProject }) => (
     <div className="domain">{p.domain}</div>
     <p>{p.description}</p>
     <a className="visit" href={p.href} target="_blank" rel="noopener noreferrer">
-      {p.cta} <span className="arrow">→</span>
+      {p.cta}
     </a>
   </article>
 )
@@ -71,7 +71,7 @@ export const PersonalProjects = (): React.ReactElement => {
     <section id="projects">
       <div className="proj-head">
         <div>
-          <div className="eyebrow">§ 02 — Projects &amp; Services</div>
+          <div className="eyebrow">§ 02 · Projects &amp; Services</div>
           <h2 className="section-title" style={{ marginBottom: 0 }}>
             Things I have <em>built</em>.
           </h2>
@@ -87,18 +87,18 @@ export const PersonalProjects = (): React.ReactElement => {
             <h3>Delphyr</h3>
             <div className="domain">delphyr.ai</div>
             <p>
-              A next-generation AI platform for the medical field — secure, scalable SaaS bringing
+              A next-generation AI platform for the medical field: secure, scalable SaaS bringing
               AI into real clinical workflows.{' '}
               <strong className="accent-strong">
                 Built together with the founder, I shipped Delphyr practically from scratch as the
-                founding engineer — with a tiny team of one additional engineer and one data
-                scientist
+                founding engineer, alongside a tiny team of one additional engineer and one data
+                scientist.
               </strong>{' '}
-              — owning architecture, infrastructure, backend, mobile, and the AI/ML pipeline end to
+              I own architecture, infrastructure, backend, mobile, and the AI/ML pipeline end to
               end.
             </p>
             <a className="visit" href="https://delphyr.ai" target="_blank" rel="noopener noreferrer">
-              Visit Delphyr <span className="arrow">→</span>
+              Visit Delphyr
             </a>
             <div className="meta-strip">
               <div>
@@ -114,7 +114,7 @@ export const PersonalProjects = (): React.ReactElement => {
               <div>
                 <div className="k">Scope</div>
                 <div className="v">E2E</div>
-                <div className="s">Infra → model → UI</div>
+                <div className="s">Infra · model · UI</div>
               </div>
             </div>
           </div>

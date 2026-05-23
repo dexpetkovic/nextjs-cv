@@ -1,4 +1,4 @@
-# Dejan Petković — AI Engineer & Founder of Elands AI
+# Dejan Petković · AI Engineer & Founder of Elands AI
 
 Dejan Petković is an AI engineer and founder of Elands AI, a consultancy that designs and delivers intelligent systems for startups and small companies. Based in the Netherlands, Dejan has been in the software industry since 2008, building deep fullstack engineering experience across React, Node.js, Python, and cloud platforms before moving fully into AI engineering.
 

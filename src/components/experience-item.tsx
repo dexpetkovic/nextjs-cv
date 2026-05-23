@@ -24,7 +24,7 @@ export const ExperienceItem = ({
 }: ExperienceItemProps): React.ReactElement => {
   const isCurrent = !to
   const yr = format(from, 'yyyy')
-  const range = `${format(from, 'MMM yyyy')} — ${isCurrent ? 'Present' : format(to!, 'MMM yyyy')}`
+  const range = `${format(from, 'MMM yyyy')} to ${isCurrent ? 'Present' : format(to!, 'MMM yyyy')}`
 
   return (
     <article className="exp">

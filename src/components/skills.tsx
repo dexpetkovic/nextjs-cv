@@ -13,7 +13,7 @@ const programmingLanguages: SkillItem[] = [
 const frameworks: SkillItem[] = [
   { label: 'Next.js', primary: true },
   { label: 'FastAPI', primary: true },
-  { label: 'LangWatch', primary: true },
+  { label: 'LangWatch' },
   { label: 'React Native' },
   { label: 'React' },
   { label: 'Strapi' },
@@ -66,7 +66,7 @@ const Group = ({ title, items }: { title: string; items: SkillItem[] }) => (
 export const Skills = (): React.ReactElement => {
   return (
     <section id="skills">
-      <div className="eyebrow">§ 03 — Skills</div>
+      <div className="eyebrow">§ 03 · Skills</div>
       <h2 className="section-title">The toolbox.</h2>
 
       <div>

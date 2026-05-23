@@ -19,7 +19,7 @@ const experiences: ExpEntry[] = [
     role: 'Founder & AI Engineer',
     company: 'Elands AI',
     summary:
-      "Elands AI designs and delivers intelligent systems tailored to our clients' needs. We work primarily with startups and small companies, specialising in turnkey AI platforms and ML systems — handling everything from architecture to production deployment.",
+      "Elands AI designs and delivers intelligent systems tailored to our clients' needs. We work primarily with startups and small companies, specialising in turnkey AI platforms and ML systems, handling everything from architecture to production deployment.",
     highlights: [
       'Designing and delivering custom LLM-based applications and AI platforms for clients',
       'Building MLOps infrastructure and data pipelines from scratch to production',
@@ -34,10 +34,10 @@ const experiences: ExpEntry[] = [
     companyHref: 'https://delphyr.ai',
     companyDescriptor: 'Medical AI SaaS',
     summary:
-      'Leading design and development of a next-gen AI platform built specifically for the medical field — a secure, scalable SaaS that brings AI into real clinical workflows, from hospitals to GP practices, without compromising on usability, privacy, or compliance.',
+      'Leading design and development of a next-gen AI platform built specifically for the medical field: a secure, scalable SaaS that brings AI into real clinical workflows, from hospitals to GP practices, without compromising on usability, privacy, or compliance.',
     highlights: [
       'Technical depth &amp; architecture: scalable AI/data platforms, system integrations, trade-offs between performance, cost, and complexity',
-      'AI/ML expertise: GenAI end-to-end — model development, fine-tuning, evaluation, and deployment',
+      'AI/ML expertise: GenAI end-to-end, covering model development, fine-tuning, evaluation, and deployment',
       'Full-stack: frontend/mobile (React / React Native), backend (Node.js, Python, NestJS), infrastructure (cloud, containers, tracing/logging)',
       'Data &amp; MLOps: production pipelines with Grafana, Tempo, Elasticsearch',
       'Collaboration: mentoring, defining best practices, making technical decisions transparent',
@@ -66,12 +66,12 @@ const experiences: ExpEntry[] = [
     companyHref: 'https://grndhouse.com',
     companyDescriptor: 'On-demand strength training',
     summary:
-      'Team lead managing 5 backend &amp; frontend developers. Streamlined feature development for the MVP — video streaming, payment processing, user management.',
+      'Team lead managing 5 backend &amp; frontend developers. Streamlined feature development for the MVP across video streaming, payment processing, and user management.',
     highlights: [
       'Architected and engineered solutions in React Native, Node.js and AWS',
       'Mentored junior developers, resolved blockers, ensured timely delivery',
       'Tooling: Sentry, RevenueCat, Mixpanel',
-      'Expo for App lifecycle and deployments — with and without App Store / Play Store releases',
+      'Expo for App lifecycle and deployments, with and without App Store / Play Store releases',
     ],
   },
   {
@@ -95,7 +95,7 @@ const experiences: ExpEntry[] = [
     role: 'Senior Software Engineer, Batch & Streaming Data',
     company: 'KPN Technium B.V.',
     summary:
-      'A deep dive into data platforms — the intricacies of transformation to a data-driven company.',
+      'A deep dive into data platforms and the intricacies of transformation to a data-driven company.',
     highlights: [
       'Senior engineer on an ETL automation framework on Azure, Hadoop/Kafka, automated with Terraform',
       'Rendering framework built with Python, Flask, SQLAlchemy',
@@ -129,7 +129,7 @@ const experiences: ExpEntry[] = [
     companyHref: 'https://www.libertyglobal.com/',
     companyDescriptor: 'OTT streaming (Ziggo Go)',
     summary:
-      "Member of Liberty Global's OTT streaming solution architecture &amp; engineering team — combining software and system engineering on complex infrastructure.",
+      "Member of Liberty Global's OTT streaming solution architecture &amp; engineering team, combining software and system engineering on complex infrastructure.",
     highlights: [
       'Developed AWS (micro)services infrastructure, CDN content delivery, Adobe AEM and their integrations',
       'Data analysis with Jupyter, Wireshark, Conviva, Omniture',
@@ -142,7 +142,7 @@ const experiences: ExpEntry[] = [
 export const Experiences = (): React.ReactElement => {
   return (
     <section id="experience">
-      <div className="eyebrow">§ 04 — Experience</div>
+      <div className="eyebrow">§ 04 · Experience</div>
       <h2 className="section-title">
         Seventeen years, <em>compounded</em>.
       </h2>

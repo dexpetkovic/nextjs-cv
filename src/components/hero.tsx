@@ -53,7 +53,7 @@ export const Hero = (): React.ReactElement => {
           </div>
           <div className="row">
             <div className="k">Stack</div>
-            <div className="v">Next.js · FastAPI · AWS</div>
+            <div className="v">TypeScript - Python - GenAI</div>
           </div>
         </aside>
       </div>

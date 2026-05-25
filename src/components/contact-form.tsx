@@ -52,8 +52,7 @@ export const ContactForm = (): React.ReactElement => {
       <div className="contact-grid">
         <div className="contact-info">
           <p>
-            Want to get in touch? Send a message about a project, a role, or just to say hi. I
-            read everything.
+            Want to get in touch? Send a message about a project, a role, or just to say hi.
           </p>
           <Socials />
         </div>

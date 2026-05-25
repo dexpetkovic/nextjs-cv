@@ -7,9 +7,9 @@ export const Recruiters = (): React.ReactElement => {
         <div>
           <div className="eyebrow-inverse">For recruiters</div>
           <h2 style={{ marginTop: 18 }}>
-            You found <em>what you were looking for</em>.
+            Download the <em>CV</em>.
           </h2>
-          <p>Download the PDF and get in touch. I respond to most thoughtful inbound within 48 hours.</p>
+          <p>Grab the PDF or send a message.</p>
         </div>
         <div className="actions">
           <a

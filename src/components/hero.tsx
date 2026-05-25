@@ -12,10 +12,6 @@ export const Hero = (): React.ReactElement => {
             <span className="it">Petković</span>
           </h1>
           <div className="hero-role">
-            <span className="pill">
-              <span className="dot" />
-              Open to new projects
-            </span>
             <span className="pill">End-to-end product</span>
             <span className="pill">AI · Fullstack · Cloud</span>
           </div>

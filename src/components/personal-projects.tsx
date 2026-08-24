@@ -43,12 +43,12 @@ const projects: StandardProject[] = [
   },
   {
     num: '05',
-    tag: 'LLM · WhatsApp bot',
+    tag: 'LLM · WhatsApp · MCP',
     title: 'brAIn',
-    domain: 'github.com/dexpetkovic/brAIn-demo',
+    domain: 'github.com/dexpetkovic/brAIn',
     description:
-      'WhatsApp AI assistant built with NestJS and Google Gemini. Handles webhooks, stores memories, creates calendar events, and provides automated replies.',
-    href: 'https://github.com/dexpetkovic/brAIn-demo',
+      'WhatsApp-based AI assistant built with NestJS and Google Gemini. Handles WhatsApp webhook events and generates contextual replies, with an MCP server that lets the model store, update and retrieve memories.',
+    href: 'https://github.com/dexpetkovic/brAIn',
     cta: 'View on GitHub',
   },
 ]
@@ -76,56 +76,55 @@ export const PersonalProjects = (): React.ReactElement => {
             Things I have <em>built</em>.
           </h2>
         </div>
-        <div className="selected">Selected · 2017–2026</div>
+        <div className="selected">Selected · 2017 to 2026</div>
       </div>
 
       <div className="proj-grid">
         <article className="proj featured">
           <div>
             <span className="proj-num">01 · Featured</span>
-            <span className="proj-tag">Medical AI SaaS · Built from scratch</span>
+            <span className="proj-tag">AI for the medical field</span>
             <h3>Delphyr</h3>
             <div className="domain">delphyr.ai</div>
             <p>
-              A next-generation AI platform for the medical field: secure, scalable SaaS bringing
-              AI into real clinical workflows.{' '}
+              A next-gen AI platform built specifically for the medical field.{' '}
               <strong className="accent-strong">
-                Built together with the founder, I shipped Delphyr practically from scratch as the
-                founding engineer, alongside a tiny team of one additional engineer and one data
-                scientist.
+                I founded the engineering effort behind it and led it through its first year.
               </strong>{' '}
-              I own architecture, infrastructure, backend, mobile, and the AI/ML pipeline end to
-              end.
+              We are bringing AI into real clinical workflows, from hospitals to GP practices,
+              without compromising on usability, privacy, or compliance. I now focus on the AI
+              layer: prompt design, safety and grounding evaluation, and the observability that
+              keeps model behavior measurable in production.
             </p>
             <a className="visit" href="https://delphyr.ai" target="_blank" rel="noopener noreferrer">
               Visit Delphyr
             </a>
             <div className="meta-strip">
               <div>
-                <div className="k">Team</div>
-                <div className="v">1 + 3</div>
-                <div className="s">Founder + me + eng + DS</div>
+                <div className="k">Role</div>
+                <div className="v">Lead</div>
+                <div className="s">Founded the eng. effort</div>
               </div>
               <div>
                 <div className="k">Stack</div>
-                <div className="v">TS / Py</div>
-                <div className="s">NestJS · React Native</div>
+                <div className="v">Py / TS</div>
+                <div className="s">FastAPI · Kubernetes</div>
               </div>
               <div>
-                <div className="k">Scope</div>
-                <div className="v">E2E</div>
-                <div className="s">Infra · model · UI</div>
+                <div className="k">Focus</div>
+                <div className="v">AI layer</div>
+                <div className="s">Prompts · safety · obs.</div>
               </div>
             </div>
           </div>
           <div className="built-list">
             <div className="built-head">What I built</div>
-            <div>· Cloud-native architecture &amp; CI/CD</div>
-            <div>· GenAI fine-tuning &amp; eval pipeline</div>
-            <div>· Observability: Grafana · Tempo · ES</div>
-            <div>· React / React Native frontends</div>
-            <div>· NestJS / Python backends</div>
-            <div>· Compliance &amp; data security model</div>
+            <div>· Adversarial guardrail evaluation suite</div>
+            <div>· Jailbreak &amp; prompt-extraction testing</div>
+            <div>· Prompt design &amp; grounding for ambient clinical documentation</div>
+            <div>· Per-specialism templates &amp; transcript-level verification</div>
+            <div>· Evaluation harness &amp; release gating on regressions</div>
+            <div>· LangWatch observability &amp; PHI-safe tracing</div>
           </div>
         </article>
 

@@ -6,6 +6,7 @@ import React from 'react'
 import { AboutMe } from '@/components/about-me'
 import { CanalBand } from '@/components/canal-band'
 import { ContactForm } from '@/components/contact-form'
+import { Education } from '@/components/education'
 import { Experiences } from '@/components/experiences'
 import { Footer } from '@/components/footer'
 import { Hero } from '@/components/hero'
@@ -29,6 +30,7 @@ const App = (): React.ReactElement => {
         <PersonalProjects />
         <Skills />
         <Experiences />
+        <Education />
         <Recruiters />
         <ContactForm />
       </main>

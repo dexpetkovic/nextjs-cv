@@ -3,7 +3,7 @@ import React from 'react'
 import { ExperienceItem } from '@/components/experience-item'
 
 type ExpEntry = {
-  from: string
+  from?: string
   to?: string
   role: string
   company: string
@@ -15,47 +15,42 @@ type ExpEntry = {
 
 const experiences: ExpEntry[] = [
   {
-    from: '2025-01-01',
     role: 'Founder & AI Engineer',
     company: 'Elands AI',
     summary:
-      "Elands AI designs and delivers intelligent systems tailored to our clients' needs. We work primarily with startups and small companies, specialising in turnkey AI platforms and ML systems, handling everything from architecture to production deployment.",
+      'Elands AI designs and delivers intelligent systems for startups and small companies. Building with generative AI is no longer just a learning interest: it is my day job.',
     highlights: [
-      'Designing and delivering custom LLM-based applications and AI platforms for clients',
-      'Building MLOps infrastructure and data pipelines from scratch to production',
-      'Working across the full stack with TypeScript and Python, combining cloud-native engineering with cutting-edge AI capabilities',
-      'Shipping robust, scalable products that deliver real business value',
+      'Designing and shipping LLM-based applications for clients',
+      'Building evaluation infrastructure for LLM systems',
+      'Building real-time AI services',
     ],
   },
   {
-    from: '2025-07-01',
-    role: 'Founding AI Engineer',
+    from: '2025-06-01',
+    role: 'Lead AI Engineer',
     company: 'Delphyr B.V.',
     companyHref: 'https://delphyr.ai',
-    companyDescriptor: 'Medical AI SaaS',
+    companyDescriptor: 'AI for the medical field',
     summary:
-      'Leading design and development of a next-gen AI platform built specifically for the medical field: a secure, scalable SaaS that brings AI into real clinical workflows, from hospitals to GP practices, without compromising on usability, privacy, or compliance.',
+      'I founded the engineering effort behind a next-gen AI platform built specifically for the medical field, and led it through its first year. We are bringing AI into real clinical workflows, from hospitals to GP practices, without compromising on usability, privacy, or compliance. I now focus on the AI layer: prompt design, safety and grounding evaluation, and the observability that keeps model behavior measurable in production. I work mainly in Python and FastAPI, across the Kubernetes and TypeScript surfaces around it.',
     highlights: [
-      'Technical depth &amp; architecture: scalable AI/data platforms, system integrations, trade-offs between performance, cost, and complexity',
-      'AI/ML expertise: GenAI end-to-end, covering model development, fine-tuning, evaluation, and deployment',
-      'Full-stack: frontend/mobile (React / React Native), backend (Node.js, Python, NestJS), infrastructure (cloud, containers, tracing/logging)',
-      'Data &amp; MLOps: production pipelines with Grafana, Tempo, Elasticsearch',
-      'Collaboration: mentoring, defining best practices, making technical decisions transparent',
+      'Architecting and building the adversarial guardrail evaluation suite our safety layer is graded against: jailbreaks, prompt extraction, medical misinformation, balanced against safe controls',
+      'Owning prompt design and grounding for ambient clinical documentation, from per-specialism templates to transcript-level verification of every generated statement',
+      'Building production-grade LLM systems: from evaluation harness and release gating on measured regressions to LangWatch observability and PHI-safe tracing',
     ],
   },
   {
     from: '2024-09-01',
-    to: '2025-07-01',
+    to: '2025-06-01',
     role: 'Expert Software Engineer',
     company: 'Totally Gifts',
-    companyHref: 'https://app.live.totallygiftcards.com',
-    companyDescriptor: 'Greenfield gift redemption platform',
-    summary: 'Helping build a new gift redemption platform from scratch with a modern tech stack.',
+    companyDescriptor: 'Greenfield gift card platform',
+    summary: 'Development of a greenfield project with a new tech stack, from scratch.',
     highlights: [
-      'Applied GenAI to generate images and video for the platform (Replicate, HuggingFace, OpenAI)',
-      'Next.js, TailwindCSS, Clerk, Sentry, NestJS, PostgreSQL, Docker, AWS',
-      'Event-driven architecture for capturing and processing gift card events in real time',
+      'Next.js, TailwindCSS, Clerk, Sentry, NestJS, PostgreSQL, Docker and AWS used to build the solution',
+      'Event-driven architecture to capture gift card events and process them in real time',
       'Contributed across the stack with a cross-functional team of three engineers, a designer, and a product owner',
+      'Management of App Store and Play Store releases',
     ],
   },
   {
@@ -66,12 +61,14 @@ const experiences: ExpEntry[] = [
     companyHref: 'https://grndhouse.com',
     companyDescriptor: 'On-demand strength training',
     summary:
-      'Team lead managing 5 backend &amp; frontend developers. Streamlined feature development for the MVP across video streaming, payment processing, and user management.',
+      'Team lead managing a team of 5 backend and frontend developers on grndhouse.com, a platform for on-demand strength training.',
     highlights: [
-      'Architected and engineered solutions in React Native, Node.js and AWS',
-      'Mentored junior developers, resolved blockers, ensured timely delivery',
-      'Tooling: Sentry, RevenueCat, Mixpanel',
-      'Expo for App lifecycle and deployments, with and without App Store / Play Store releases',
+      'Led the development of the initial MVP after a successful funding round',
+      'Took regular meetings with stakeholders to streamline delivery of video streaming, payment processing, and user management features',
+      'Architected and implemented features using React Native, Node.js and AWS',
+      'Mentored junior developers, resolved blockers, and ensured timely project delivery',
+      'Tooling: Sentry for event monitoring, RevenueCat for payments, Mixpanel for analytics',
+      'Expo to manage app lifecycle and deployments, with or without App Store / Play Store releases',
     ],
   },
   {
@@ -82,27 +79,28 @@ const experiences: ExpEntry[] = [
     companyHref: 'https://fertifa.com',
     companyDescriptor: 'Reproductive healthcare',
     summary:
-      "IC and later team lead managing 5 backend &amp; frontend developers at Europe's most comprehensive reproductive healthcare provider.",
+      "Progressed from individual contributor to team lead, managing a team of 5 backend and frontend developers on fertifa.com, Europe's most comprehensive reproductive healthcare provider.",
     highlights: [
+      'Defined and developed features in collaboration with the product owner and stakeholders',
       'Engineered solutions in React Native, Node.js and AWS',
-      'Tooling: Sentry, Strapi, Google Analytics, Meta Pixel, Drip, Amplitude',
-      'Manually managed app lifecycle and deployments',
+      'Mentored junior developers and led sprints to ensure timely delivery',
+      'Tooling: Strapi for content management, Sentry for monitoring, Google Analytics, Meta Pixel, Drip and Amplitude for analytics',
+      'Manual app lifecycle management and deployments',
     ],
   },
   {
-    from: '2018-05-01',
+    from: '2018-06-01',
     to: '2021-12-01',
-    role: 'Senior Software Engineer, Batch & Streaming Data',
+    role: 'Senior Software Engineer',
     company: 'KPN Technium B.V.',
     summary:
-      'A deep dive into data platforms and the intricacies of transformation to a data-driven company.',
+      'Senior engineer in the team developing an ETL automation framework and platform in Azure, based on the Hadoop &amp; Kafka ecosystem, automated by Terraform.',
     highlights: [
-      'Senior engineer on an ETL automation framework on Azure, Hadoop/Kafka, automated with Terraform',
-      'Rendering framework built with Python, Flask, SQLAlchemy',
-      'Led part of story mapping for migrating on-prem data services to Azure / AKS',
-      'Distributed event-sourcing application for real-time analysis of the KPN customer journey',
-      'Scala / Akka / Alpakka microservices and Flink applications',
-      'Fully automated CI/CD, monitoring, and alerting',
+      'Rendering framework built with Python, Flask and SQLAlchemy',
+      'Led story mapping for migration of on-premise data platform services to Azure',
+      'Development of a distributed event-sourcing application for real-time analysis of the KPN customer journey, where multiple touch points are combined, analysed and visualised',
+      'Scala stack with Akka / Alpakka used to build microservices and Flink applications',
+      'DevOps methodology with fully automated CI/CD, monitoring and alerting',
     ],
   },
   {
@@ -110,15 +108,14 @@ const experiences: ExpEntry[] = [
     to: '2018-05-01',
     role: 'Software Engineer, Cognitive Implementation',
     company: 'IPsoft B.V.',
-    companyDescriptor: 'Automated Vodafone customer service with Amelia AI',
+    companyDescriptor: 'Amelia AI framework',
     summary:
-      'Where I learned machine learning, prompt engineering and how to make data-driven decisions. Led a team that automated Vodafone\'s customer service agents using the <a href="https://amelia.ai/" target="_blank" rel="noopener noreferrer">Amelia</a> AI framework.',
+      'As technical lead of a 3-member agile team I was responsible for development of human-machine interaction on the artificial intelligence framework <a href="https://amelia.ai/" target="_blank" rel="noopener noreferrer">Amelia</a>.',
     highlights: [
-      'Technical lead of a 3-member agile team building human-machine interaction on Amelia',
-      'Hands-on development, code reviews, mentoring, Scrum rituals',
-      'Managed business requirements and solution architecture',
-      'Stack: Groovy / Python / Java · Kafka · Camel · Mule · Elasticsearch · Spring · Grails · Docker',
-      'Data analysis with Pandas / Jupyter, d3.js for visualisation',
+      'Mostly hands-on development, code reviewing, mentoring and Scrum rituals',
+      'Development mostly in Groovy / Python and in Java',
+      'Stack: Kafka · Camel · Mule · Elasticsearch · Spring · Grails · Docker',
+      'Data analysis with Pandas and Jupyter, visualisation with d3.js, and making new feature (or refactoring) decisions from the insights',
     ],
   },
   {
@@ -126,15 +123,14 @@ const experiences: ExpEntry[] = [
     to: '2017-01-01',
     role: 'Senior System Engineer',
     company: 'Liberty Global B.V.',
-    companyHref: 'https://www.libertyglobal.com/',
-    companyDescriptor: 'OTT streaming (Ziggo Go)',
+    companyDescriptor: 'OTT streaming',
     summary:
-      "Member of Liberty Global's OTT streaming solution architecture &amp; engineering team, combining software and system engineering on complex infrastructure.",
+      "As member of Liberty Global's OTT streaming solution architecture &amp; engineering team, I worked on the architecture of various system components, developing AWS (micro)services infrastructure, CDN content delivery, Adobe AEM and their integration.",
     highlights: [
-      'Developed AWS (micro)services infrastructure, CDN content delivery, Adobe AEM and their integrations',
-      'Data analysis with Jupyter, Wireshark, Conviva, Omniture',
-      'Code reviews and overall system troubleshooting',
-      'Deep web/backend, streaming, HA scalable infrastructure, AWS, and network protocol experience',
+      'Microservices development in Python',
+      'Deep knowledge of web and backend application design, streaming technologies, HA scalable infrastructure, AWS cloud and full stack network protocols, acquired through work with high availability services',
+      'Data analysis with Jupyter, Wireshark, Conviva and Omniture',
+      'Performing code reviews and overall system troubleshooting',
     ],
   },
 ]
@@ -144,20 +140,20 @@ export const Experiences = (): React.ReactElement => {
     <section id="experience">
       <div className="eyebrow">§ 04 · Experience</div>
       <h2 className="section-title">
-        Seventeen years, <em>compounded</em>.
+        Since 2008, <em>compounded</em>.
       </h2>
 
       <div className="exp-list">
         {experiences.map((e) => (
           <ExperienceItem
-            key={`${e.company}-${e.from}`}
+            key={`${e.company}-${e.from ?? 'now'}`}
             role={e.role}
             company={e.company}
             companyHref={e.companyHref}
             companyDescriptor={e.companyDescriptor}
             summary={e.summary}
             highlights={e.highlights}
-            from={new Date(e.from)}
+            from={e.from ? new Date(e.from) : undefined}
             to={e.to ? new Date(e.to) : undefined}
           />
         ))}

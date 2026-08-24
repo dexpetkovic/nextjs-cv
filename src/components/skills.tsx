@@ -2,52 +2,66 @@ import React from 'react'
 
 type SkillItem = { label: string; primary?: boolean }
 
+const aiAndLlm: SkillItem[] = [
+  { label: 'LLM APIs (OpenAI-compatible)', primary: true },
+  { label: 'Azure ML' },
+  { label: 'Nebius' },
+  { label: 'Google Gemini' },
+  { label: 'MCP servers', primary: true },
+  { label: 'Agentic tool use', primary: true },
+  { label: 'Pydantic AI' },
+  { label: 'pydantic-evals' },
+  { label: 'Prompt design & grounding', primary: true },
+  { label: 'LLM-as-judge evaluation' },
+  { label: 'Guardrails & adversarial testing' },
+  { label: 'LangWatch' },
+  { label: 'PHI de-identification (Deduce)' },
+]
+
 const programmingLanguages: SkillItem[] = [
-  { label: 'TypeScript', primary: true },
   { label: 'Python', primary: true },
+  { label: 'TypeScript', primary: true },
   { label: 'Scala' },
-  { label: 'Groovy' },
   { label: 'Java' },
 ]
 
 const frameworks: SkillItem[] = [
-  { label: 'Next.js', primary: true },
   { label: 'FastAPI', primary: true },
-  { label: 'LangWatch' },
-  { label: 'React Native' },
-  { label: 'React' },
-  { label: 'Strapi' },
-  { label: 'Spring' },
-  { label: 'Flask' },
+  { label: 'Next.js', primary: true },
+  { label: 'Pydantic' },
+  { label: 'SQLAlchemy / Alembic' },
+  { label: 'PostgreSQL' },
+  { label: 'Node.js / NestJS' },
+  { label: 'Kafka' },
+  { label: 'Spark / Databricks' },
+  { label: 'Flink' },
   { label: 'pandas' },
-  { label: 'Akka' },
-  { label: 'Protobuf / Avro' },
-  { label: 'Camel' },
-  { label: 'Jenkins (CI/CD)' },
-  { label: 'Terraform (IaC)' },
-  { label: 'Git' },
+  { label: 'React' },
+  { label: 'React Native' },
+  { label: 'TailwindCSS' },
+  { label: 'Playwright' },
+  { label: 'Jest' },
 ]
 
 const platforms: SkillItem[] = [
   { label: 'AWS', primary: true },
   { label: 'Azure', primary: true },
-  { label: 'MLOps tooling', primary: true },
-  { label: 'Kubernetes' },
+  { label: 'Kubernetes', primary: true },
   { label: 'Docker' },
-  { label: 'Kafka' },
-  { label: 'Spark / Databricks' },
-  { label: 'Flink' },
-  { label: 'MuleSoft' },
-  { label: 'apache / nginx' },
-  { label: 'Linux' },
-  { label: 'Wireshark' },
+  { label: 'ArgoCD' },
+  { label: 'Terraform' },
+  { label: 'GitHub Actions' },
+  { label: 'OpenTelemetry' },
+  { label: 'Prometheus / Grafana' },
+  { label: 'Sentry' },
 ]
 
 const spokenLanguages: SkillItem[] = [
-  { label: 'English · Proficient' },
-  { label: 'Dutch · Proficient (NT2)' },
-  { label: 'Serbian · Native' },
+  { label: 'English · Fluent' },
+  { label: 'Dutch · Fluent (NT2)' },
+  { label: 'Serbian · Fluent' },
   { label: 'German · Intermediate' },
+  { label: 'Russian · Intermediate' },
 ]
 
 const Group = ({ title, items }: { title: string; items: SkillItem[] }) => (
@@ -70,9 +84,10 @@ export const Skills = (): React.ReactElement => {
       <h2 className="section-title">The toolbox.</h2>
 
       <div>
+        <Group title="AI and LLM Systems" items={aiAndLlm} />
         <Group title="Programming Languages" items={programmingLanguages} />
-        <Group title="Frameworks" items={frameworks} />
-        <Group title="Software Platforms" items={platforms} />
+        <Group title="Frameworks and Libraries" items={frameworks} />
+        <Group title="Platforms and Infrastructure" items={platforms} />
         <Group title="Spoken Languages" items={spokenLanguages} />
       </div>
     </section>

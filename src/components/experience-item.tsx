@@ -8,7 +8,7 @@ export type ExperienceItemProps = {
   companyDescriptor?: string
   summary: string
   highlights: string[]
-  from: Date
+  from?: Date
   to?: Date
 }
 
@@ -23,8 +23,10 @@ export const ExperienceItem = ({
   to,
 }: ExperienceItemProps): React.ReactElement => {
   const isCurrent = !to
-  const yr = format(from, 'yyyy')
-  const range = `${format(from, 'MMM yyyy')} to ${isCurrent ? 'Present' : format(to!, 'MMM yyyy')}`
+  const yr = from ? format(from, 'yyyy') : 'Now'
+  const range = from
+    ? `${format(from, 'MMM yyyy')} to ${isCurrent ? 'Present' : format(to!, 'MMM yyyy')}`
+    : 'Ongoing'
 
   return (
     <article className="exp">

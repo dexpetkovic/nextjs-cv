@@ -12,8 +12,8 @@ export const Hero = (): React.ReactElement => {
             <span className="it">Petković</span>
           </h1>
           <div className="hero-role">
-            <span className="pill">End-to-end product</span>
-            <span className="pill">AI · Fullstack · Cloud</span>
+            <span className="pill">AI engineering</span>
+            <span className="pill">Fullstack · Cloud</span>
           </div>
         </div>
 
@@ -33,23 +33,23 @@ export const Hero = (): React.ReactElement => {
           <div className="row">
             <div className="k">Currently</div>
             <div className="v">
-              Founding AI Eng. at{' '}
+              Lead AI Engineer at{' '}
               <a href="https://delphyr.ai" target="_blank" rel="noopener noreferrer">
-                Delphyr.AI
+                Delphyr B.V.
               </a>
             </div>
           </div>
           <div className="row">
-            <div className="k">Based in</div>
-            <div className="v">Amsterdam, NL 🇳🇱</div>
+            <div className="k">Citizenship</div>
+            <div className="v">Dutch 🇳🇱</div>
           </div>
           <div className="row">
             <div className="k">Languages</div>
-            <div className="v">EN · NL · SR · DE</div>
+            <div className="v">EN · NL · SR · DE · RU</div>
           </div>
           <div className="row">
             <div className="k">Stack</div>
-            <div className="v">TypeScript - Python - GenAI</div>
+            <div className="v">Python - TypeScript - GenAI</div>
           </div>
         </aside>
       </div>
@@ -57,9 +57,10 @@ export const Hero = (): React.ReactElement => {
       <div className="hero-bio">
         <div className="eyebrow">Intro</div>
         <p>
-          I take products <em>from zero to live</em>: architecture, infrastructure, backend,
-          frontend, mobile, and the AI/ML pipeline. Seventeen years of engineering across the full
-          stack means I can own the entire solution, not just one layer of it.
+          I started my career as a system engineer back in 2008, and over the years built up deep
+          fullstack engineering experience across React, Node.js, Python, and cloud platforms.
+          That hands-on breadth is what I <em>now bring to AI engineering</em> as the founder of
+          Elands AI.
         </p>
       </div>
     </section>

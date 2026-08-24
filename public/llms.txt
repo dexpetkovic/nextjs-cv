@@ -1,30 +1,44 @@
 # Dejan Petković · AI Engineer & Founder of Elands AI
 
-Dejan Petković is an AI engineer and founder of Elands AI, a consultancy that designs and delivers intelligent systems for startups and small companies. Based in the Netherlands, Dejan has been in the software industry since 2008, building deep fullstack engineering experience across React, Node.js, Python, and cloud platforms before moving fully into AI engineering.
+Dejan Petković is an AI engineer and founder of Elands AI, which designs and delivers intelligent systems for startups and small companies. A Dutch citizen, Dejan started his career as a system engineer in 2008 and over the years built up deep fullstack engineering experience across React, Node.js, Python, and cloud platforms. That hands-on breadth is what he now brings to AI engineering.
 
 ## What I do
 
-- Design and build LLM-based applications with RAG, tool use, and agentic patterns
-- Build MLOps infrastructure: model evaluation, monitoring, retraining pipelines, guardrails
-- Develop real-time AI services and data pipelines from scratch to production
+- Design and ship LLM-based applications
+- Build evaluation infrastructure for LLM systems: evaluation harnesses, LLM-as-judge, guardrails and adversarial testing
+- Build real-time AI services
+- Prompt design and grounding, MCP servers and agentic tool use
 - Full-stack work with TypeScript/Next.js and Python/FastAPI
 
 ## Current engagements
 
-- **Elands AI** (Founder & AI Engineer, 2025-present): Turnkey AI platforms and ML systems for startups
-- **Delphyr B.V.** (Founding AI Engineer, 2025-present): Cloud-native AI platform for clinical workflows in hospitals and GP practices
+- **Elands AI** (Founder & AI Engineer): LLM-based applications, evaluation infrastructure, and real-time AI services for startups and small companies
+- **Delphyr B.V.** (Lead AI Engineer, since 06/2025): founded the engineering effort behind a next-gen AI platform built for the medical field and led it through its first year. Now focused on the AI layer: prompt design, safety and grounding evaluation, and observability that keeps model behavior measurable in production
 
 ## Products & services
 
 - **Biller** (https://biller.elands.studio/): Professional invoicing for freelancers. Create, send, and track invoices in seconds. One-time purchase, no subscriptions.
 - **Bouwen** (https://bouwen.elands.studio/): Renovation project communication for the Dutch market. Create a project page, generate a QR code for your window, and let neighbors follow your renovation progress in real time.
+- **2e-woning.nl** (http://2e-woning.nl): Box 3 tax calculator to work out the tax on a second home and other investments. Built for the Dutch market.
+- **brAIn** (https://github.com/dexpetkovic/brAIn): WhatsApp-based AI assistant built with NestJS and Google Gemini, with an MCP server for storing and retrieving memories.
 
 ## Skills
 
-- **Languages**: TypeScript, Python, Scala, Java
-- **AI/ML**: LLM applications, RAG, agentic systems, MLOps, model evaluation, continual learning, guardrails
-- **Frameworks**: Next.js, FastAPI, React, Node.js, Flask
-- **Platforms**: AWS, Azure, Kubernetes, Docker, Kafka
+- **AI and LLM systems**: LLM APIs (OpenAI-compatible: Azure ML, Nebius; Google Gemini), MCP servers and agentic tool use, Pydantic AI and pydantic-evals, prompt design and grounding, LLM-as-judge evaluation, guardrails and adversarial testing, LangWatch, PHI de-identification (Deduce)
+- **Languages**: Python, TypeScript, Scala, Java
+- **Frameworks and libraries**: FastAPI, Pydantic, SQLAlchemy/Alembic, PostgreSQL, Node.js/NestJS, Kafka, Spark/Databricks, Flink, pandas, React, React Native, Next.js, TailwindCSS, Playwright, Jest
+- **Platforms**: Kubernetes, Docker, ArgoCD, AWS, Azure, Terraform, GitHub Actions, OpenTelemetry, Prometheus/Grafana, Sentry
+- **Spoken languages**: Fluent in English, Dutch (NT2) and Serbian. Intermediate German and Russian.
+
+## Education
+
+- Masters Course: System Engineering and Radio Communications, Faculty of Electrical Engineering, University of Belgrade (2009 to 2011)
+- BSc of Electrical Engineering, Faculty of Electrical Engineering, University of Belgrade (2002 to 2007)
+
+## Certificates
+
+- Acclaim badges: https://www.credly.com/users/dejan-petkovic/badges
+- Coursera certificates: https://coursera.org/share/32a42acb44082359b7c10bfea2f765ee
 
 ## How to contact
 

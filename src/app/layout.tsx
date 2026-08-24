@@ -25,32 +25,32 @@ const plexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dejan Petković · End-to-end Product & AI Engineer',
+  title: 'Dejan Petković · AI Engineer & Founder of Elands AI',
   description:
-    'End-to-end product and AI engineer. Founder of Elands AI, Founding AI Engineer at Delphyr.AI. Architecture, infrastructure, backend, frontend, mobile, and the AI/ML pipeline. Seventeen years across the full stack.',
+    'AI engineer and founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services. Deep fullstack engineering experience since 2008 across React, Node.js, Python, and cloud platforms.',
   keywords: [
     'AI engineer',
     'LLM',
     'fullstack engineer',
     'product engineer',
-    'MLOps',
-    'RAG',
+    'LLM evaluation',
+    'MCP servers',
+    'guardrails',
     'Next.js',
     'FastAPI',
     'TypeScript',
     'Python',
     'Elands AI',
     'Delphyr',
-    'Amsterdam',
     'Netherlands',
     'generative AI',
   ],
   authors: [{ name: 'Dejan Petković', url: 'https://dejan.petkovic.nl' }],
   creator: 'Dejan Petković',
   openGraph: {
-    title: 'Dejan Petković · End-to-end Product & AI Engineer',
+    title: 'Dejan Petković · AI Engineer & Founder of Elands AI',
     description:
-      'Founder of Elands AI, Founding AI Engineer at Delphyr.AI. End-to-end product and AI engineering: architecture, infrastructure, and the AI/ML pipeline.',
+      'Founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services.',
     url: 'https://dejan.petkovic.nl/',
     type: 'profile',
     siteName: 'Dejan Petković',
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     card: 'summary',
     site: '@dexpetkovic',
     creator: '@dexpetkovic',
-    title: 'Dejan Petković · End-to-end Product & AI Engineer',
+    title: 'Dejan Petković · AI Engineer & Founder of Elands AI',
     description:
-      'Founder of Elands AI, Founding AI Engineer at Delphyr.AI. End-to-end product and AI engineering.',
+      'Founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services.',
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://dejan.petkovic.nl/' },
@@ -72,7 +72,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Dejan Petković',
-  jobTitle: 'End-to-end Product & AI Engineer',
+  jobTitle: 'AI Engineer',
   worksFor: {
     '@type': 'Organization',
     name: 'Elands AI',
@@ -83,17 +83,19 @@ const jsonLd = {
     itemListElement: [
       { '@type': 'Offer', name: 'Biller', url: 'https://biller.elands.studio/' },
       { '@type': 'Offer', name: 'Bouwen', url: 'https://bouwen.elands.studio/' },
+      { '@type': 'Offer', name: '2e-woning.nl', url: 'http://2e-woning.nl' },
     ],
   },
   url: 'https://dejan.petkovic.nl/',
   description:
-    'End-to-end product and AI engineer. Founder of Elands AI, Founding AI Engineer at Delphyr.AI. Architecture, infrastructure, backend, frontend, mobile, and the AI/ML pipeline.',
+    'AI engineer and founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services, built on deep fullstack engineering experience since 2008.',
   knowsAbout: [
     'LLM applications',
-    'RAG',
     'agentic AI systems',
-    'MLOps',
-    'continual learning',
+    'MCP servers',
+    'LLM evaluation',
+    'guardrails and adversarial testing',
+    'prompt design and grounding',
     'FastAPI',
     'Next.js',
     'TypeScript',
@@ -102,10 +104,25 @@ const jsonLd = {
     'Azure',
     'Kubernetes',
   ],
+  alumniOf: [
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'Faculty of Electrical Engineering, University of Belgrade',
+      description:
+        'Masters Course: System Engineering and Radio Communications. Specialization: Telecommunications and software engineering.',
+    },
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'Faculty of Electrical Engineering, University of Belgrade',
+      description:
+        'BSc of Electrical Engineering. Specialization: Telecommunications and computer science.',
+    },
+  ],
   sameAs: [
     'https://linkedin.com/in/dejanpetkovic',
     'https://github.com/dexpetkovic',
     'https://x.com/dexpetkovic',
+    'https://www.credly.com/users/dejan-petkovic/badges',
   ],
   contactPoint: {
     '@type': 'ContactPoint',

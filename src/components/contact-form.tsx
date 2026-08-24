@@ -44,7 +44,7 @@ export const ContactForm = (): React.ReactElement => {
 
   return (
     <section id="contact">
-      <div className="eyebrow">§ 05 · Contact</div>
+      <div className="eyebrow">§ 06 · Contact</div>
       <h2 className="section-title">
         Say <em>hello</em>.
       </h2>

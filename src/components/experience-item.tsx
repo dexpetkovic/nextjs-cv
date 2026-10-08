@@ -8,6 +8,7 @@ export type ExperienceItemProps = {
   companyDescriptor?: string
   summary: string
   highlights: string[]
+  stack?: string[]
   from?: Date
   to?: Date
 }
@@ -19,6 +20,7 @@ export const ExperienceItem = ({
   companyDescriptor,
   summary,
   highlights,
+  stack,
   from,
   to,
 }: ExperienceItemProps): React.ReactElement => {
@@ -53,6 +55,15 @@ export const ExperienceItem = ({
             <li key={i} dangerouslySetInnerHTML={{ __html: h }} />
           ))}
         </ul>
+        {stack ? (
+          <div className="skill-tags exp-stack">
+            {stack.map((item) => (
+              <span key={item} className="tag">
+                {item}
+              </span>
+            ))}
+          </div>
+        ) : null}
       </div>
     </article>
   )

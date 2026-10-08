@@ -5,7 +5,7 @@ export const Footer = (): React.ReactElement => {
     <footer className="site-footer">
       <div>© 2026 Dejan Petković · Elands Studio</div>
       <div>
-        Made with <span className="heart">passion</span> in ❌❌❌
+        Made in Amsterdam ❌❌❌
       </div>
     </footer>
   )

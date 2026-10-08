@@ -14,43 +14,39 @@ export const AboutMe = (): React.ReactElement => {
         </div>
         <div className="body">
           <p>
-            I started my career as a system engineer back in 2008, and over the years built up
-            deep fullstack engineering experience across React, Node.js, Python, and cloud
-            platforms. That hands-on breadth is what I now bring to AI engineering as the founder
-            of Elands AI, where we design and deliver intelligent systems for startups and small
-            companies.
+            I started my career as a system engineer back in 2008, and over the years built up deep fullstack engineering
+            experience across Python, TypeScript and cloud platforms. That gives me hands-on breadth and enables me to quickly get
+            up to speed with any kind of challenge.
           </p>
           <p>
-            As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked
-            extensively with <span className="flag">Dutch 🇳🇱</span>,{' '}
-            <span className="flag">American 🇺🇸</span> and{' '}
+            As a Dutch citizen and fluent speaker of English, Dutch and Serbian, I have worked extensively with{' '}
+            <span className="flag">Dutch 🇳🇱</span>, <span className="flag">American 🇺🇸</span> and{' '}
             <span className="flag">British 🇬🇧</span> customers.
           </p>
           <p>
-            Building with generative AI is no longer just a learning interest: it is my day job.
-            Through Elands AI, I design and ship LLM-based applications, evaluation
-            infrastructure, and real-time AI services for clients. You can browse some of my
-            experiments on{' '}
+            I design and ship LLM-based applications, evals infrastructure, and realtime AI services. It has started with Amelia,
+            a first classifier-based implementation of agentic workflow up to Delphyr, where we are building a custom LLM harness
+            and the integrations with third parties.
+          </p>
+          <p>
+            You can browse some of my experiments on{' '}
             <a href="https://github.com/dexpetkovic" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
             , including{' '}
-            <a
-              href="https://github.com/dexpetkovic/brAIn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/dexpetkovic/brAIn" target="_blank" rel="noopener noreferrer">
               agentic usage with MCP servers
             </a>
             .
           </p>
           <p>
-            I spend my free time with family, learning Dutch, exploring emerging technologies and
-            taking care of my health via balanced diet and strength training.
+            I love to spend my free time with family, to explore emerging technologies and take care of my health via balanced
+            diet and strength training. I became fluent in Dutch a long time ago, and I love to keep it brushed up by using it
+            daily at work.
           </p>
           <p>
-            And as a Dutchman, I ride kids to school in our Urban Arrow <em>bakfiets</em>{' '}
-            (cargobike), so fun and <em>gezellig</em> 🎉 (joyful in Dutch).
+            And as a Dutchman, I take my kids to school in our Urban Arrow <em>bakfiets</em> (cargobike). So fun and{' '}
+            <em>gezellig</em> 🎉 (joyful in Dutch)
           </p>
 
           <div className="about-aside">

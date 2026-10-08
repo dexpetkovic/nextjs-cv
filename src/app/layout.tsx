@@ -27,7 +27,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: 'Dejan Petković · AI Engineer & Founder of Elands AI',
   description:
-    'AI engineer and founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services. Deep fullstack engineering experience since 2008 across React, Node.js, Python, and cloud platforms.',
+    'AI engineer and founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services. Deep fullstack engineering experience since 2008 across Python, TypeScript and cloud platforms.',
   keywords: [
     'AI engineer',
     'LLM',

@@ -58,9 +58,9 @@ export const Hero = (): React.ReactElement => {
         <div className="eyebrow">Intro</div>
         <p>
           I started my career as a system engineer back in 2008, and over the years built up deep
-          fullstack engineering experience across React, Node.js, Python, and cloud platforms.
-          That hands-on breadth is what I <em>now bring to AI engineering</em> as the founder of
-          Elands AI.
+          fullstack engineering experience across Python, TypeScript and cloud platforms. That
+          gives me hands-on breadth and enables me to quickly get up to speed with any kind of
+          challenge.
         </p>
       </div>
     </section>

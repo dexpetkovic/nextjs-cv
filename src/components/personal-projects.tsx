@@ -87,14 +87,10 @@ export const PersonalProjects = (): React.ReactElement => {
             <h3>Delphyr</h3>
             <div className="domain">delphyr.ai</div>
             <p>
-              A next-gen AI platform built specifically for the medical field.{' '}
-              <strong className="accent-strong">
-                I founded the engineering effort behind it and led it through its first year.
-              </strong>{' '}
-              We are bringing AI into real clinical workflows, from hospitals to GP practices,
-              without compromising on usability, privacy, or compliance. I now focus on the AI
-              layer: prompt design, safety and grounding evaluation, and the observability that
-              keeps model behavior measurable in production.
+              An AI platform built specifically for the medical field. We are bringing AI into
+              real clinical workflows, from hospitals to GP practices. With the product platform
+              in place, I now focus on the AI layer: prompt design, guardrails, evals,
+              integrations and observability.
             </p>
             <a className="visit" href="https://delphyr.ai" target="_blank" rel="noopener noreferrer">
               Visit Delphyr
@@ -103,7 +99,7 @@ export const PersonalProjects = (): React.ReactElement => {
               <div>
                 <div className="k">Role</div>
                 <div className="v">Lead</div>
-                <div className="s">Founded the eng. effort</div>
+                <div className="s">AI Engineer since 07/2025</div>
               </div>
               <div>
                 <div className="k">Stack</div>
@@ -113,18 +109,18 @@ export const PersonalProjects = (): React.ReactElement => {
               <div>
                 <div className="k">Focus</div>
                 <div className="v">AI layer</div>
-                <div className="s">Prompts · safety · obs.</div>
+                <div className="s">Prompts · evals · obs.</div>
               </div>
             </div>
           </div>
           <div className="built-list">
             <div className="built-head">What I built</div>
-            <div>· Adversarial guardrail evaluation suite</div>
-            <div>· Jailbreak &amp; prompt-extraction testing</div>
-            <div>· Prompt design &amp; grounding for ambient clinical documentation</div>
-            <div>· Per-specialism templates &amp; transcript-level verification</div>
-            <div>· Evaluation harness &amp; release gating on regressions</div>
+            <div>· EHR integrations across four vendors</div>
+            <div>· KEK/DEK envelope encryption</div>
+            <div>· Release gating on eval regressions</div>
             <div>· LangWatch observability &amp; PHI-safe tracing</div>
+            <div>· Prompt design &amp; grounding for ambient clinical documentation</div>
+            <div>· Nebius Kubernetes cluster &amp; ArgoCD GitOps</div>
           </div>
         </article>
 

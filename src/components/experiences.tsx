@@ -11,14 +11,14 @@ type ExpEntry = {
   companyDescriptor?: string
   summary: string
   highlights: string[]
+  stack?: string[]
 }
 
 const experiences: ExpEntry[] = [
   {
     role: 'Founder & AI Engineer',
     company: 'Elands AI',
-    summary:
-      'Elands AI designs and delivers intelligent systems for startups and small companies. Building with generative AI is no longer just a learning interest: it is my day job.',
+    summary: 'Elands AI designs and delivers intelligent systems for startups and small companies.',
     highlights: [
       'Designing and shipping LLM-based applications for clients',
       'Building evaluation infrastructure for LLM systems',
@@ -26,17 +26,42 @@ const experiences: ExpEntry[] = [
     ],
   },
   {
-    from: '2025-06-01',
+    from: '2025-07-01',
     role: 'Lead AI Engineer',
     company: 'Delphyr B.V.',
     companyHref: 'https://delphyr.ai',
     companyDescriptor: 'AI for the medical field',
     summary:
-      'I founded the engineering effort behind a next-gen AI platform built specifically for the medical field, and led it through its first year. We are bringing AI into real clinical workflows, from hospitals to GP practices, without compromising on usability, privacy, or compliance. I now focus on the AI layer: prompt design, safety and grounding evaluation, and the observability that keeps model behavior measurable in production. I work mainly in Python and FastAPI, across the Kubernetes and TypeScript surfaces around it.',
+      'I joined Delphyr to build an AI platform specifically for the medical field. We are bringing AI into real clinical workflows, from hospitals to GP practices.',
     highlights: [
-      'Architecting and building the adversarial guardrail evaluation suite our safety layer is graded against: jailbreaks, prompt extraction, medical misinformation, balanced against safe controls',
-      'Owning prompt design and grounding for ambient clinical documentation, from per-specialism templates to transcript-level verification of every generated statement',
-      'Building production-grade LLM systems: from evaluation harness and release gating on measured regressions to LangWatch observability and PHI-safe tracing',
+      'We won our first contract with a Dutch mental health provider, by successfully completing integration with an EHR. On top of that I lead EHR integrations across four vendors',
+      'AI-native engineering is the core of my workflow, with several coding agents in parallel, each running on a plan from Linear and reviewed by a second model',
+      'I led the effort to encrypt data with KEK/DEK envelope encryption and to iterate on pentests to harden the system. I automated the UDI-PI release process',
+      'With the product platform in place, I now focus on the AI layer. This consists of prompt design for various workflows, guardrails, evals, integrations and the observability that keeps model behavior measurable in production',
+      'I built release gating on measured eval regressions and cut the eval suite runtime from 55 to 25 minutes. LangWatch observability with PHI-safe tracing shows where the chat harness needs improvement',
+      'I ran embedding migration from Azure to Nebius, first evaluating and then implementing the migration. I migrated inference providers (Nebius, Baseten) and enabled visibility into token spending',
+      'I worked on prompt design and grounding for ambient clinical documentation, from per-specialism templates to transcript-level verification of every generated statement',
+      'I set up the Nebius Kubernetes cluster, ArgoCD-based GitOps and self-hosted CI runners. Fully automated tag-driven releases run evals and integration tests to validate deployment',
+      'I lead incident command and write postmortem analysis for our production incidents',
+    ],
+    stack: [
+      'Python',
+      'FastAPI',
+      'Pydantic AI',
+      'PostgreSQL',
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'Auth0',
+      'Pinecone',
+      'LangWatch',
+      'Sentry',
+      'Grafana',
+      'Docker',
+      'Kubernetes',
+      'ArgoCD',
+      'Nebius',
+      'Azure',
     ],
   },
   {
@@ -45,13 +70,13 @@ const experiences: ExpEntry[] = [
     role: 'Expert Software Engineer',
     company: 'Totally Gifts',
     companyDescriptor: 'Greenfield gift card platform',
-    summary: 'Development of a greenfield project with a new tech stack, from scratch.',
+    summary: 'I built a greenfield gift card platform on a new tech stack.',
     highlights: [
-      'Next.js, TailwindCSS, Clerk, Sentry, NestJS, PostgreSQL, Docker and AWS used to build the solution',
       'Event-driven architecture to capture gift card events and process them in real time',
-      'Contributed across the stack with a cross-functional team of three engineers, a designer, and a product owner',
+      'Worked across the stack in a team of three engineers, a designer and a product owner',
       'Management of App Store and Play Store releases',
     ],
+    stack: ['Next.js', 'TailwindCSS', 'Clerk', 'Sentry', 'NestJS', 'PostgreSQL', 'Docker', 'AWS'],
   },
   {
     from: '2023-11-01',
@@ -64,12 +89,12 @@ const experiences: ExpEntry[] = [
       'Team lead managing a team of 5 backend and frontend developers on grndhouse.com, a platform for on-demand strength training.',
     highlights: [
       'Led the development of the initial MVP after a successful funding round',
-      'Took regular meetings with stakeholders to streamline delivery of video streaming, payment processing, and user management features',
-      'Architected and implemented features using React Native, Node.js and AWS',
-      'Mentored junior developers, resolved blockers, and ensured timely project delivery',
-      'Tooling: Sentry for event monitoring, RevenueCat for payments, Mixpanel for analytics',
+      'Met stakeholders regularly to plan the video streaming, payment processing and user management features',
+      'Designed and built features with React Native, Node.js and AWS',
+      'Mentored junior developers and cleared blockers for the team',
       'Expo to manage app lifecycle and deployments, with or without App Store / Play Store releases',
     ],
+    stack: ['React Native', 'Node.js', 'AWS', 'Expo', 'Sentry', 'RevenueCat', 'Mixpanel'],
   },
   {
     from: '2021-12-01',
@@ -82,11 +107,11 @@ const experiences: ExpEntry[] = [
       "Progressed from individual contributor to team lead, managing a team of 5 backend and frontend developers on fertifa.com, Europe's most comprehensive reproductive healthcare provider.",
     highlights: [
       'Defined and developed features in collaboration with the product owner and stakeholders',
-      'Engineered solutions in React Native, Node.js and AWS',
-      'Mentored junior developers and led sprints to ensure timely delivery',
-      'Tooling: Strapi for content management, Sentry for monitoring, Google Analytics, Meta Pixel, Drip and Amplitude for analytics',
+      'Built features in React Native, Node.js and AWS',
+      'Mentored junior developers and led sprints',
       'Manual app lifecycle management and deployments',
     ],
+    stack: ['React Native', 'Node.js', 'AWS', 'Strapi', 'Sentry', 'Google Analytics', 'Meta Pixel', 'Drip', 'Amplitude'],
   },
   {
     from: '2018-06-01',
@@ -114,9 +139,9 @@ const experiences: ExpEntry[] = [
     highlights: [
       'Mostly hands-on development, code reviewing, mentoring and Scrum rituals',
       'Development mostly in Groovy / Python and in Java',
-      'Stack: Kafka · Camel · Mule · Elasticsearch · Spring · Grails · Docker',
       'Data analysis with Pandas and Jupyter, visualisation with d3.js, and making new feature (or refactoring) decisions from the insights',
     ],
+    stack: ['Kafka', 'Camel', 'Mule', 'Elasticsearch', 'Spring', 'Grails', 'Docker'],
   },
   {
     from: '2012-06-01',
@@ -140,7 +165,7 @@ export const Experiences = (): React.ReactElement => {
     <section id="experience">
       <div className="eyebrow">§ 04 · Experience</div>
       <h2 className="section-title">
-        Since 2008, <em>compounded</em>.
+        Where I have <em>worked</em>.
       </h2>
 
       <div className="exp-list">
@@ -153,6 +178,7 @@ export const Experiences = (): React.ReactElement => {
             companyDescriptor={e.companyDescriptor}
             summary={e.summary}
             highlights={e.highlights}
+            stack={e.stack}
             from={e.from ? new Date(e.from) : undefined}
             to={e.to ? new Date(e.to) : undefined}
           />

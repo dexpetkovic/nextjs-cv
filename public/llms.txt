@@ -5,7 +5,7 @@ Dejan Petković is an AI engineer and founder of Elands AI, which designs and de
 ## What I do
 
 - Design and ship LLM-based applications
-- Build evaluation infrastructure for LLM systems: evaluation harnesses, LLM-as-judge, guardrails and adversarial testing
+- Build evaluation infrastructure for LLM systems: evaluation harnesses, LLM-as-judge and guardrails
 - Build real-time AI services
 - Prompt design and grounding, MCP servers and agentic tool use
 - Full-stack work with TypeScript/Next.js and Python/FastAPI
@@ -18,17 +18,17 @@ Dejan Petković is an AI engineer and founder of Elands AI, which designs and de
 ## Products & services
 
 - **Biller** (https://biller.elands.studio/): Professional invoicing for freelancers. Create, send, and track invoices in seconds. One-time purchase, no subscriptions.
-- **Bouwen** (https://bouwen.elands.studio/): Renovation project communication for the Dutch market. Create a project page, generate a QR code for your window, and let neighbors follow your renovation progress in real time.
-- **2e-woning.nl** (http://2e-woning.nl): Box 3 tax calculator to work out the tax on a second home and other investments. Built for the Dutch market.
+- **Bouwen** (https://bouwen.elands.studio/): Renovation project communication for the Dutch market. Print a QR code for your window and let neighbours follow your renovation in real time.
+- **2e-woning.nl** (https://2e-woning.nl): Box 3 tax calculator for a second home and other investments. Built for the Dutch market.
 - **brAIn** (https://github.com/dexpetkovic/brAIn): WhatsApp-based AI assistant built with NestJS and Google Gemini, with an MCP server for storing and retrieving memories.
 
 ## Skills
 
-- **AI and LLM systems**: LLM APIs (OpenAI-compatible: Azure ML, Nebius; Google Gemini), MCP servers and agentic tool use, Pydantic AI and pydantic-evals, prompt design and grounding, LLM-as-judge evaluation, guardrails and adversarial testing, LangWatch, PHI de-identification (Deduce)
+- **AI and LLM systems**: LLM APIs (OpenAI-compatible: Azure ML, Nebius; Google Gemini), MCP servers and agentic tool use, Pydantic AI and pydantic-evals, prompt design and grounding, LLM-as-judge evaluation, guardrails, LangWatch, PHI de-identification (Deduce)
 - **Languages**: Python, TypeScript, Scala, Java
 - **Frameworks and libraries**: FastAPI, Pydantic, SQLAlchemy/Alembic, PostgreSQL, Node.js/NestJS, Kafka, Spark/Databricks, Flink, pandas, React, React Native, Next.js, TailwindCSS, Playwright, Jest
 - **Platforms**: Kubernetes, Docker, ArgoCD, AWS, Azure, Terraform, GitHub Actions, OpenTelemetry, Prometheus/Grafana, Sentry
-- **Spoken languages**: Fluent in English, Dutch (NT2) and Serbian. Intermediate German and Russian.
+- **Spoken languages**: Fluent in English, Dutch (NT2) and Serbian. Intermediate German.
 
 ## Education
 

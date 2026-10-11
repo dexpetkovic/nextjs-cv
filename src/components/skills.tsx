@@ -13,7 +13,7 @@ const aiAndLlm: SkillItem[] = [
   { label: 'pydantic-evals' },
   { label: 'Prompt design & grounding', primary: true },
   { label: 'LLM-as-judge evaluation' },
-  { label: 'Guardrails & adversarial testing' },
+  { label: 'Guardrails' },
   { label: 'LangWatch' },
   { label: 'PHI de-identification (Deduce)' },
 ]
@@ -61,7 +61,6 @@ const spokenLanguages: SkillItem[] = [
   { label: 'Dutch · Fluent (NT2)' },
   { label: 'Serbian · Fluent' },
   { label: 'German · Intermediate' },
-  { label: 'Russian · Intermediate' },
 ]
 
 const Group = ({ title, items }: { title: string; items: SkillItem[] }) => (

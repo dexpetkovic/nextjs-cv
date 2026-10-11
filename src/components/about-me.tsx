@@ -57,8 +57,8 @@ export const AboutMe = (): React.ReactElement => {
             </div>
             <div className="stat">
               <div className="k">Languages</div>
-              <div className="v">5</div>
-              <div className="s">EN · NL · SR · DE · RU</div>
+              <div className="v">4</div>
+              <div className="s">EN · NL · SR · DE</div>
             </div>
             <div className="stat">
               <div className="k">Companies</div>

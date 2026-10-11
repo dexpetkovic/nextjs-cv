@@ -45,7 +45,7 @@ export const Hero = (): React.ReactElement => {
           </div>
           <div className="row">
             <div className="k">Languages</div>
-            <div className="v">EN · NL · SR · DE · RU</div>
+            <div className="v">EN · NL · SR · DE</div>
           </div>
           <div className="row">
             <div className="k">Stack</div>

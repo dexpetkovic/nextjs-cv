@@ -83,7 +83,7 @@ const jsonLd = {
     itemListElement: [
       { '@type': 'Offer', name: 'Biller', url: 'https://biller.elands.studio/' },
       { '@type': 'Offer', name: 'Bouwen', url: 'https://bouwen.elands.studio/' },
-      { '@type': 'Offer', name: '2e-woning.nl', url: 'http://2e-woning.nl' },
+      { '@type': 'Offer', name: '2e-woning.nl', url: 'https://2e-woning.nl' },
     ],
   },
   url: 'https://dejan.petkovic.nl/',
@@ -94,7 +94,7 @@ const jsonLd = {
     'agentic AI systems',
     'MCP servers',
     'LLM evaluation',
-    'guardrails and adversarial testing',
+    'guardrails',
     'prompt design and grounding',
     'FastAPI',
     'Next.js',

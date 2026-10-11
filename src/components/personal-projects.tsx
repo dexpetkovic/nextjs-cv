@@ -37,8 +37,8 @@ const projects: StandardProject[] = [
     title: '2e-woning.nl',
     domain: '2e-woning.nl',
     description:
-      'Box 3 tax calculator: easily calculate your tax for a second home and other investments. Built for the Dutch market.',
-    href: 'http://2e-woning.nl',
+      'Box 3 tax calculator for a second home and other investments. Built for the Dutch market.',
+    href: 'https://2e-woning.nl',
     cta: 'Visit 2e-woning.nl',
   },
   {

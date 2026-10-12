@@ -18,7 +18,7 @@ const experiences: ExpEntry[] = [
   {
     role: 'Founder & AI Engineer',
     company: 'Elands AI',
-    summary: 'Elands AI designs and delivers intelligent systems for startups and small companies.',
+    summary: 'Elands AI designs and delivers AI platforms for startups and small companies.',
     highlights: [
       'Designing and shipping LLM-based applications for clients',
       'Building evaluation infrastructure for LLM systems',
@@ -35,7 +35,7 @@ const experiences: ExpEntry[] = [
       'I joined Delphyr to build an AI platform specifically for the medical field. We are bringing AI into real clinical workflows, from hospitals to GP practices.',
     highlights: [
       'We won our first contract with a Dutch mental health provider, by successfully completing integration with an EHR. On top of that I lead EHR integrations across four vendors',
-      'AI-native engineering is the core of my workflow, with several coding agents in parallel, each running on a plan from Linear and reviewed by a second model',
+      'I work with several coding agents in parallel. Each runs on a plan from Linear and a second model reviews its work',
       'I led the effort to encrypt data with KEK/DEK envelope encryption and to iterate on pentests to harden the system. I automated the UDI-PI release process',
       'With the product platform in place, I now focus on the AI layer. This consists of prompt design for various workflows, guardrails, evals, integrations and the observability that keeps model behavior measurable in production',
       'I built release gating on measured eval regressions and cut the eval suite runtime from 55 to 25 minutes. LangWatch observability with PHI-safe tracing shows where the chat harness needs improvement',
@@ -73,7 +73,7 @@ const experiences: ExpEntry[] = [
     summary: 'Development of a greenfield project with a new tech stack, from scratch.',
     highlights: [
       'Event-driven architecture was used to capture gift card events and process them in real-time',
-      'I contributed across the stack, collaborating closely with a cross-functional team of three engineers, a designer, and a product owner',
+      'I worked across the stack in a team of three engineers, a designer, and a product owner',
       'Management of App Store and Play Store releases',
     ],
     stack: ['Next.js', 'TailwindCSS', 'Clerk', 'Sentry', 'NestJS', 'PostgreSQL', 'Docker', 'AWS'],
@@ -89,9 +89,9 @@ const experiences: ExpEntry[] = [
       'Team lead managing a team of 5 backend and frontend developers on grndhouse.com, a platform for on-demand strength training.',
     highlights: [
       'Led the development of the initial MVP after a successful funding round',
-      'Took regular meetings with stakeholders to streamline delivery of video streaming, payment processing, and user management features',
-      'Architected and implemented features using React Native, Node.js, and AWS',
-      'Mentored junior developers, resolved blockers, and ensured timely project delivery',
+      'Met stakeholders regularly to plan the video streaming, payment processing, and user management features',
+      'Designed and built features with React Native, Node.js, and AWS',
+      'Mentored junior developers and cleared blockers for the team',
     ],
     stack: ['React Native', 'Node.js', 'AWS', 'Expo', 'Sentry', 'RevenueCat', 'Mixpanel'],
   },
@@ -106,7 +106,7 @@ const experiences: ExpEntry[] = [
       'Progressed from individual contributor to team lead, managing a team of 5 backend and frontend developers on fertifa.com, a reproductive healthcare provider.',
     highlights: [
       'Defined and developed features in collaboration with the product owner and stakeholders',
-      'Engineered solutions in React Native, Node.js, and AWS',
+      'Built features in React Native, Node.js, and AWS',
     ],
     stack: ['React Native', 'Node.js', 'AWS', 'Strapi', 'Sentry', 'Google Analytics', 'Meta Pixel', 'Drip', 'Amplitude'],
   },
@@ -160,10 +160,7 @@ const experiences: ExpEntry[] = [
 export const Experiences = (): React.ReactElement => {
   return (
     <section id="experience">
-      <div className="eyebrow">§ 04 · Experience</div>
-      <h2 className="section-title">
-        Where I have <em>worked</em>.
-      </h2>
+      <h2 className="section-title">Experience</h2>
 
       <div className="exp-list">
         {experiences.map((e) => (

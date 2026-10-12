@@ -79,8 +79,7 @@ const Group = ({ title, items }: { title: string; items: SkillItem[] }) => (
 export const Skills = (): React.ReactElement => {
   return (
     <section id="skills">
-      <div className="eyebrow">§ 03 · Skills</div>
-      <h2 className="section-title">The toolbox.</h2>
+      <h2 className="section-title">Skills</h2>
 
       <div>
         <Group title="AI and LLM Systems" items={aiAndLlm} />

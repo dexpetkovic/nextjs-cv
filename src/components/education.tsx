@@ -36,10 +36,7 @@ const certificates = [
 export const Education = (): React.ReactElement => {
   return (
     <section id="education">
-      <div className="eyebrow">§ 05 · Education</div>
-      <h2 className="section-title">
-        Where it <em>started</em>.
-      </h2>
+      <h2 className="section-title">Education</h2>
 
       <div className="exp-list">
         {education.map((e) => (

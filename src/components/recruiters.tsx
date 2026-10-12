@@ -5,10 +5,7 @@ export const Recruiters = (): React.ReactElement => {
     <section id="recruiters">
       <div className="cta">
         <div>
-          <div className="eyebrow-inverse">For recruiters</div>
-          <h2 style={{ marginTop: 18 }}>
-            Download the <em>CV</em>.
-          </h2>
+          <h2>Download the CV</h2>
           <p>Grab the PDF or send a message.</p>
         </div>
         <div className="actions">

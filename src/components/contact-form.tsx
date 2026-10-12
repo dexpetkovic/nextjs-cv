@@ -44,10 +44,7 @@ export const ContactForm = (): React.ReactElement => {
 
   return (
     <section id="contact">
-      <div className="eyebrow">§ 06 · Contact</div>
-      <h2 className="section-title">
-        Say <em>hello</em>.
-      </h2>
+      <h2 className="section-title">Contact</h2>
 
       <div className="contact-grid">
         <div className="contact-info">
@@ -94,7 +91,7 @@ export const ContactForm = (): React.ReactElement => {
             <label htmlFor="contact-message">Message</label>
             <textarea
               id="contact-message"
-              placeholder="Tell me about your project, role, or idea…"
+              placeholder="Your message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />

@@ -5,7 +5,6 @@ export const Hero = (): React.ReactElement => {
     <section className="hero" id="top">
       <div className="hero-grid">
         <div>
-          <div className="eyebrow">Portfolio · 2008 to Today</div>
           <h1 className="hero-name">
             Dejan
             <br />
@@ -55,7 +54,6 @@ export const Hero = (): React.ReactElement => {
       </div>
 
       <div className="hero-bio">
-        <div className="eyebrow">Intro</div>
         <p>
           I started my career as a system engineer back in 2008, and over the years built up deep
           fullstack engineering experience across Python, TypeScript and cloud platforms. That

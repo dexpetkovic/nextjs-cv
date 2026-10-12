@@ -1,7 +1,6 @@
 import React from 'react'
 
 type StandardProject = {
-  num: string
   tag: string
   title: string
   domain: string
@@ -12,7 +11,6 @@ type StandardProject = {
 
 const projects: StandardProject[] = [
   {
-    num: '02',
     tag: 'SaaS · Finance',
     title: 'Biller',
     domain: 'biller.elands.studio',
@@ -22,7 +20,6 @@ const projects: StandardProject[] = [
     cta: 'Visit Biller',
   },
   {
-    num: '03',
     tag: 'Civic · Dutch market',
     title: 'Bouwen',
     domain: 'bouwen.elands.studio',
@@ -32,17 +29,14 @@ const projects: StandardProject[] = [
     cta: 'Visit Bouwen',
   },
   {
-    num: '04',
     tag: 'Tax · Calculator',
     title: '2e-woning.nl',
     domain: '2e-woning.nl',
-    description:
-      'Box 3 tax calculator for a second home and other investments. Built for the Dutch market.',
+    description: 'Box 3 tax calculator for a second home and other investments. Built for the Dutch market.',
     href: 'https://2e-woning.nl',
     cta: 'Visit 2e-woning.nl',
   },
   {
-    num: '05',
     tag: 'LLM · WhatsApp · MCP',
     title: 'brAIn',
     domain: 'github.com/dexpetkovic/brAIn',
@@ -55,7 +49,6 @@ const projects: StandardProject[] = [
 
 const ProjectCard = ({ p }: { p: StandardProject }) => (
   <article className="proj">
-    <span className="proj-num">{p.num}</span>
     <span className="proj-tag">{p.tag}</span>
     <h3>{p.title}</h3>
     <div className="domain">{p.domain}</div>
@@ -71,26 +64,22 @@ export const PersonalProjects = (): React.ReactElement => {
     <section id="projects">
       <div className="proj-head">
         <div>
-          <div className="eyebrow">§ 02 · Projects &amp; Services</div>
           <h2 className="section-title" style={{ marginBottom: 0 }}>
-            Things I have <em>built</em>.
+            Projects
           </h2>
         </div>
-        <div className="selected">Selected · 2017 to 2026</div>
       </div>
 
       <div className="proj-grid">
         <article className="proj featured">
           <div>
-            <span className="proj-num">01 · Featured</span>
             <span className="proj-tag">AI for the medical field</span>
             <h3>Delphyr</h3>
             <div className="domain">delphyr.ai</div>
             <p>
-              An AI platform built specifically for the medical field. We are bringing AI into
-              real clinical workflows, from hospitals to GP practices. With the product platform
-              in place, I now focus on the AI layer: prompt design, guardrails, evals,
-              integrations and observability.
+              An AI platform built specifically for the medical field. We are bringing AI into real clinical workflows, from
+              hospitals to GP practices. With the product platform in place, I now focus on the AI layer: prompt design,
+              guardrails, evals, integrations and observability.
             </p>
             <a className="visit" href="https://delphyr.ai" target="_blank" rel="noopener noreferrer">
               Visit Delphyr

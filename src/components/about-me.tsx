@@ -3,15 +3,9 @@ import React from 'react'
 export const AboutMe = (): React.ReactElement => {
   return (
     <section id="about">
-      <div className="eyebrow">§ 01 · About</div>
-      <h2 className="section-title">
-        I build the <em>whole product</em>.
-      </h2>
+      <h2 className="section-title">About me</h2>
 
       <div className="about">
-        <div className="eyebrow" style={{ paddingTop: '8px' }}>
-          Bio
-        </div>
         <div className="body">
           <p>
             I started my career as a system engineer back in 2008, and over the years built up deep fullstack engineering

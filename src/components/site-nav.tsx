@@ -5,9 +5,7 @@ export const SiteNav = (): React.ReactElement => {
     <nav className="nav">
       <div className="nav-inner">
         <div className="nav-left">
-          <span className="nav-dot" aria-hidden="true" />
           <span>DEJAN&nbsp;PETKOVIĆ</span>
-          <span className="nav-desc">/ AI ENGINEER &amp; FOUNDER OF ELANDS AI</span>
         </div>
         <div className="nav-right">
           <a href="#about">About</a>

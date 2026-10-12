@@ -2,12 +2,12 @@ import React from 'react'
 
 export const AboutMe = (): React.ReactElement => {
   return (
-    <section id="about">
+    <section id="about" className="rail">
       <h2 className="section-title">About me</h2>
 
       <div className="about">
         <div className="body">
-          <p>
+          <p className="lead">
             I started my career as a system engineer back in 2008, and over the years built up deep fullstack engineering
             experience across Python, TypeScript and cloud platforms. That gives me hands-on breadth and enables me to quickly get
             up to speed with any kind of challenge.
@@ -42,24 +42,6 @@ export const AboutMe = (): React.ReactElement => {
             And as a Dutchman, I take my kids to school in our Urban Arrow <em>bakfiets</em> (cargobike). So fun and{' '}
             <em>gezellig</em> 🎉 (joyful in Dutch)
           </p>
-
-          <div className="about-aside">
-            <div className="stat">
-              <div className="k">Experience</div>
-              <div className="v">Since 2008</div>
-              <div className="s">System engineer to AI engineer</div>
-            </div>
-            <div className="stat">
-              <div className="k">Languages</div>
-              <div className="v">4</div>
-              <div className="s">EN · NL · SR · DE</div>
-            </div>
-            <div className="stat">
-              <div className="k">Companies</div>
-              <div className="v">8</div>
-              <div className="s">From Liberty Global to Delphyr</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

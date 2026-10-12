@@ -43,7 +43,7 @@ export const ContactForm = (): React.ReactElement => {
   }
 
   return (
-    <section id="contact">
+    <section id="contact" className="rail">
       <h2 className="section-title">Contact</h2>
 
       <div className="contact-grid">

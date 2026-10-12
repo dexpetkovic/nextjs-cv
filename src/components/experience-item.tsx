@@ -5,7 +5,6 @@ export type ExperienceItemProps = {
   role: string
   company: string
   companyHref?: string
-  companyDescriptor?: string
   summary: string
   highlights: string[]
   stack?: string[]
@@ -17,29 +16,21 @@ export const ExperienceItem = ({
   role,
   company,
   companyHref,
-  companyDescriptor,
   summary,
   highlights,
   stack,
   from,
   to,
 }: ExperienceItemProps): React.ReactElement => {
-  const isCurrent = !to
-  const yr = from ? format(from, 'yyyy') : 'Now'
   const range = from
-    ? `${format(from, 'MMM yyyy')} to ${isCurrent ? 'Present' : format(to!, 'MMM yyyy')}`
+    ? `${format(from, 'MMM yyyy')} to ${to ? format(to, 'MMM yyyy') : 'present'}`
     : 'Ongoing'
 
   return (
     <article className="exp">
-      <div className="exp-date">
-        <span className="yr">{yr}</span>
-        <span className="range">{range}</span>
-        {isCurrent ? <span className="current">Active</span> : null}
-      </div>
-      <div className="exp-body">
-        <h3>{role}</h3>
-        <div className="co">
+      <div className="exp-head">
+        <h3>
+          {role},{' '}
           {companyHref ? (
             <a href={companyHref} target="_blank" rel="noopener noreferrer">
               {company}
@@ -47,24 +38,16 @@ export const ExperienceItem = ({
           ) : (
             company
           )}
-          {companyDescriptor ? <> · {companyDescriptor}</> : null}
-        </div>
-        {summary ? <p dangerouslySetInnerHTML={{ __html: summary }} /> : null}
-        <ul>
-          {highlights.map((h, i) => (
-            <li key={i} dangerouslySetInnerHTML={{ __html: h }} />
-          ))}
-        </ul>
-        {stack ? (
-          <div className="skill-tags exp-stack">
-            {stack.map((item) => (
-              <span key={item} className="tag">
-                {item}
-              </span>
-            ))}
-          </div>
-        ) : null}
+        </h3>
+        <span className="exp-range">{range}</span>
       </div>
+      {summary ? <p dangerouslySetInnerHTML={{ __html: summary }} /> : null}
+      <ul>
+        {highlights.map((h, i) => (
+          <li key={i} dangerouslySetInnerHTML={{ __html: h }} />
+        ))}
+      </ul>
+      {stack ? <div className="exp-stack">{stack.join(' · ')}</div> : null}
     </article>
   )
 }

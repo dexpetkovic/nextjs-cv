@@ -3,64 +3,47 @@ import React from 'react'
 export const Hero = (): React.ReactElement => {
   return (
     <section className="hero" id="top">
-      <div className="hero-grid">
-        <div>
+      <div className="hero-head">
+        <div className="hero-intro">
           <h1 className="hero-name">
             Dejan
             <br />
             <span className="it">Petković</span>
           </h1>
-          <div className="hero-role">
-            <span className="pill">AI engineering</span>
-            <span className="pill">Fullstack · Cloud</span>
-          </div>
+          <p className="hero-role">
+            Lead AI Engineer at{' '}
+            <a href="https://delphyr.ai" target="_blank" rel="noopener noreferrer">
+              Delphyr B.V.
+            </a>{' '}
+            and founder of Elands AI.
+          </p>
         </div>
 
-        <figure className="hero-portrait" aria-label="Portrait of Dejan Petković">
-          <img src="/DP-profile.jpg" alt="Dejan Petković, smiling, in Amsterdam" />
-          <figcaption className="badge">
-            <span className="dot" />
-            That&rsquo;s me. Hi.
-          </figcaption>
-        </figure>
-
-        <aside className="hero-meta">
-          <div className="row">
-            <div className="k">Founder of</div>
-            <div className="v">Elands AI</div>
-          </div>
-          <div className="row">
-            <div className="k">Currently</div>
-            <div className="v">
-              Lead AI Engineer at{' '}
-              <a href="https://delphyr.ai" target="_blank" rel="noopener noreferrer">
-                Delphyr B.V.
-              </a>
-            </div>
-          </div>
-          <div className="row">
-            <div className="k">Citizenship</div>
-            <div className="v">Dutch 🇳🇱</div>
-          </div>
-          <div className="row">
-            <div className="k">Languages</div>
-            <div className="v">EN · NL · SR · DE</div>
-          </div>
-          <div className="row">
-            <div className="k">Stack</div>
-            <div className="v">Python - TypeScript - GenAI</div>
-          </div>
-        </aside>
+        <img
+          className="hero-portrait"
+          src="/DP-profile.jpg"
+          alt="Dejan Petković, smiling, in Amsterdam"
+        />
       </div>
 
-      <div className="hero-bio">
-        <p>
-          I started my career as a system engineer back in 2008, and over the years built up deep
-          fullstack engineering experience across Python, TypeScript and cloud platforms. That
-          gives me hands-on breadth and enables me to quickly get up to speed with any kind of
-          challenge.
-        </p>
-      </div>
+      <dl className="hero-meta">
+        <div>
+          <dt>Citizenship</dt>
+          <dd>Dutch 🇳🇱</dd>
+        </div>
+        <div>
+          <dt>Languages</dt>
+          <dd>English, Dutch, Serbian, German</dd>
+        </div>
+        <div>
+          <dt>Stack</dt>
+          <dd>Python, TypeScript, GenAI</dd>
+        </div>
+        <div>
+          <dt>Experience</dt>
+          <dd>Since 2008</dd>
+        </div>
+      </dl>
     </section>
   )
 }

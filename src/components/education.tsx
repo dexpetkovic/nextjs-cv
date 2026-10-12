@@ -1,7 +1,6 @@
 import React from 'react'
 
 type EduEntry = {
-  yr: string
   range: string
   degree: string
   school: string
@@ -10,14 +9,12 @@ type EduEntry = {
 
 const education: EduEntry[] = [
   {
-    yr: '2009',
     range: 'Sep 2009 to Feb 2011',
     degree: 'Masters Course: System Engineering and Radio Communications',
     school: 'Faculty of Electrical Engineering, University of Belgrade',
     specialization: 'Telecommunications and software engineering',
   },
   {
-    yr: '2002',
     range: 'Oct 2002 to Aug 2007',
     degree: 'BSc of Electrical Engineering',
     school: 'Faculty of Electrical Engineering, University of Belgrade',
@@ -35,27 +32,24 @@ const certificates = [
 
 export const Education = (): React.ReactElement => {
   return (
-    <section id="education">
+    <section id="education" className="rail">
       <h2 className="section-title">Education</h2>
 
-      <div className="exp-list">
-        {education.map((e) => (
-          <article className="exp" key={e.yr}>
-            <div className="exp-date">
-              <span className="yr">{e.yr}</span>
-              <span className="range">{e.range}</span>
-            </div>
-            <div className="exp-body">
-              <h3>{e.degree}</h3>
-              <div className="co">{e.school}</div>
+      <div>
+        <div className="exp-list">
+          {education.map((e) => (
+            <article className="exp" key={e.degree}>
+              <div className="exp-head">
+                <h3>{e.degree}</h3>
+                <span className="exp-range">{e.range}</span>
+              </div>
+              <p>{e.school}</p>
               <p>Specialization: {e.specialization}</p>
-            </div>
-          </article>
-        ))}
-      </div>
+            </article>
+          ))}
+        </div>
 
-      <div style={{ marginTop: 24 }}>
-        <div className="skill-group">
+        <div className="skill-group edu-certs">
           <h4>Certificates</h4>
           <div className="skill-tags">
             {certificates.map((c) => (

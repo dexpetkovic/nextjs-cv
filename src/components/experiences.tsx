@@ -8,7 +8,6 @@ type ExpEntry = {
   role: string
   company: string
   companyHref?: string
-  companyDescriptor?: string
   summary: string
   highlights: string[]
   stack?: string[]
@@ -30,7 +29,6 @@ const experiences: ExpEntry[] = [
     role: 'Lead AI Engineer',
     company: 'Delphyr B.V.',
     companyHref: 'https://delphyr.ai',
-    companyDescriptor: 'AI for the medical field',
     summary:
       'I joined Delphyr to build an AI platform specifically for the medical field. We are bringing AI into real clinical workflows, from hospitals to GP practices.',
     highlights: [
@@ -69,7 +67,6 @@ const experiences: ExpEntry[] = [
     to: '2025-07-01',
     role: 'Expert Software Engineer',
     company: 'Totally Gifts',
-    companyDescriptor: 'Greenfield gift card platform',
     summary: 'Development of a greenfield project with a new tech stack, from scratch.',
     highlights: [
       'Event-driven architecture was used to capture gift card events and process them in real-time',
@@ -84,7 +81,6 @@ const experiences: ExpEntry[] = [
     role: 'Lead Fullstack Software Engineer',
     company: 'Grndhouse',
     companyHref: 'https://grndhouse.com',
-    companyDescriptor: 'On-demand strength training',
     summary:
       'Team lead managing a team of 5 backend and frontend developers on grndhouse.com, a platform for on-demand strength training.',
     highlights: [
@@ -101,7 +97,6 @@ const experiences: ExpEntry[] = [
     role: 'Fullstack Software Engineer',
     company: 'Fertifa',
     companyHref: 'https://fertifa.com',
-    companyDescriptor: 'Reproductive healthcare',
     summary:
       'Progressed from individual contributor to team lead, managing a team of 5 backend and frontend developers on fertifa.com, a reproductive healthcare provider.',
     highlights: [
@@ -130,7 +125,6 @@ const experiences: ExpEntry[] = [
     to: '2018-05-01',
     role: 'Software Engineer, Cognitive Implementation',
     company: 'IPsoft B.V.',
-    companyDescriptor: 'Amelia AI framework',
     summary:
       'As technical lead of a 3-member agile team I was responsible for development of human-machine interaction on the artificial intelligence framework <a href="https://amelia.ai/" target="_blank" rel="noopener noreferrer">Amelia</a>.',
     highlights: [
@@ -145,7 +139,6 @@ const experiences: ExpEntry[] = [
     to: '2017-01-01',
     role: 'Senior System Engineer',
     company: 'Liberty Global B.V.',
-    companyDescriptor: 'OTT streaming',
     summary:
       "As member of Liberty Global's OTT streaming solution architecture &amp; engineering team, I worked on the architecture of various system components, developing AWS (micro)services infrastructure, CDN content delivery, Adobe AEM and their integration.",
     highlights: [
@@ -159,7 +152,7 @@ const experiences: ExpEntry[] = [
 
 export const Experiences = (): React.ReactElement => {
   return (
-    <section id="experience">
+    <section id="experience" className="rail">
       <h2 className="section-title">Experience</h2>
 
       <div className="exp-list">
@@ -169,7 +162,6 @@ export const Experiences = (): React.ReactElement => {
             role={e.role}
             company={e.company}
             companyHref={e.companyHref}
-            companyDescriptor={e.companyDescriptor}
             summary={e.summary}
             highlights={e.highlights}
             stack={e.stack}

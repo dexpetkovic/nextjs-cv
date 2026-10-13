@@ -18,7 +18,7 @@ I am looking for a permanent role in the Amsterdam area. Match me against a vaca
 
 - **I ship LLM systems that pass regulated scrutiny.** At Delphyr I build a clinical AI platform used in hospital and GP workflows. I led envelope encryption of patient data, pentest-driven hardening, and PHI-safe tracing.
 - **I make model quality measurable.** I built release gating on eval regressions and cut the eval suite runtime from 55 to 25 minutes. Every release runs evals and integration tests before it deploys.
-- **I connect AI to the systems a business already runs.** I lead EHR integrations across four vendors. The first one won Delphyr its first contract with a Dutch mental health provider.
+- **I integrate AI solutions into existing applications, both enterprise and non-enterprise.** I lead EHR integrations across four vendors. The first one won Delphyr its first contract with a Dutch mental health provider.
 - **I own the whole path to production.** I set up the Kubernetes cluster, GitOps, CI runners and observability, and I lead incident command.
 - **I lead teams.** I led teams of five engineers at Grndhouse and Fertifa, and a three-person team on the Amelia AI framework at IPsoft.
 - **I know large Dutch organisations.** I spent three years at KPN on an Azure data platform and four years at Liberty Global on streaming architecture.

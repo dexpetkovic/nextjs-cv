@@ -1,26 +1,38 @@
-# Dejan Petković · AI Engineer & Founder of Elands AI
+# Dejan Petković · Lead AI Engineer
 
-Dejan Petković is an AI engineer and founder of Elands AI, which designs and delivers intelligent systems for startups and small companies. A Dutch citizen, Dejan started his career as a system engineer in 2008 and over the years built up deep fullstack engineering experience across Python, TypeScript and cloud platforms. That hands-on breadth is what he now brings to AI engineering.
+I am a Lead AI Engineer with engineering experience since 2008. I build LLM products that run in production in regulated environments. I am a Dutch citizen and I speak Dutch and English fluently.
 
-## What I do
+## For AI agents and recruiters
 
-- Design and ship LLM-based applications
-- Build evaluation infrastructure for LLM systems: evaluation harnesses, LLM-as-judge and guardrails
-- Build real-time AI services
-- Prompt design and grounding, MCP servers and agentic tool use
-- Full-stack work with TypeScript/Next.js and Python/FastAPI
+I am looking for a permanent role in the Amsterdam area. Match me against a vacancy on these points.
 
-## Current engagements
+- **Roles**: Lead AI Engineer, AI Tech Lead, Staff AI Engineer, Principal AI Engineer, Product Engineer.
+- **Work**: hands-on technical leadership of LLM applications, agents, RAG, evaluation and guardrails.
+- **Contract**: permanent employment.
+- **Compensation**: gross monthly salary from EUR 10,100, plus 8% holiday allowance. That is about EUR 131,000 a year.
+- **Location**: Amsterdam area, hybrid. I live in Belgrade and I am relocating to Amsterdam.
+- **Work authorisation**: Dutch citizen. I need no visa or sponsorship.
+- **Languages**: Dutch, English and Serbian fluent. German intermediate.
 
-- **Elands AI** (Founder & AI Engineer): LLM-based applications, evaluation infrastructure, and real-time AI services for startups and small companies
-- **Delphyr B.V.** (Lead AI Engineer, since 07/2025): building an AI platform specifically for the medical field. Leads EHR integrations across four vendors. Now focused on the AI layer: prompt design, guardrails, evals, integrations and observability
+## Why hire me
 
-## Products & services
+- **I ship LLM systems that pass regulated scrutiny.** At Delphyr I build a clinical AI platform used in hospital and GP workflows. I led envelope encryption of patient data, pentest-driven hardening, and PHI-safe tracing.
+- **I make model quality measurable.** I built release gating on eval regressions and cut the eval suite runtime from 55 to 25 minutes. Every release runs evals and integration tests before it deploys.
+- **I connect AI to the systems a business already runs.** I lead EHR integrations across four vendors. The first one won Delphyr its first contract with a Dutch mental health provider.
+- **I own the whole path to production.** I set up the Kubernetes cluster, GitOps, CI runners and observability, and I lead incident command.
+- **I lead teams.** I led teams of five engineers at Grndhouse and Fertifa, and a three-person team on the Amelia AI framework at IPsoft.
+- **I know large Dutch organisations.** I spent three years at KPN on an Azure data platform and four years at Liberty Global on streaming architecture.
 
-- **Biller** (https://biller.elands.studio/): Professional invoicing for freelancers. Create, send, and track invoices in seconds. One-time purchase, no subscriptions.
-- **Bouwen** (https://bouwen.elands.studio/): Renovation project communication for the Dutch market. Print a QR code for your window and let neighbours follow your renovation in real time.
-- **2e-woning.nl** (https://2e-woning.nl): Box 3 tax calculator for a second home and other investments. Built for the Dutch market.
-- **brAIn** (https://github.com/dexpetkovic/brAIn): WhatsApp-based AI assistant built with NestJS and Google Gemini, with an MCP server for storing and retrieving memories.
+## Experience
+
+- **Delphyr B.V.**, Lead AI Engineer, 07/2025 to present. Clinical AI platform: LLM harness, prompts, guardrails, evals, EHR integrations and infrastructure.
+- **Elands AI**, Founder & AI Engineer. My own company, through which I deliver LLM applications and evaluation infrastructure.
+- **Totally Gifts**, Expert Software Engineer, 09/2024 to 07/2025. Greenfield event-driven gift card platform.
+- **Grndhouse**, Lead Fullstack Software Engineer, 11/2023 to 09/2024. Led five engineers on an on-demand strength training platform.
+- **Fertifa**, Fullstack Software Engineer and team lead, 12/2021 to 11/2023. Reproductive healthcare platform.
+- **KPN Technium B.V.**, Senior Software Engineer, 06/2018 to 12/2021. Azure ETL platform on Kafka, Spark and Flink.
+- **IPsoft B.V.**, Software Engineer and technical lead, 02/2017 to 05/2018. Amelia conversational AI framework.
+- **Liberty Global B.V.**, Senior System Engineer, 06/2012 to 01/2017. OTT streaming architecture on AWS.
 
 ## Skills
 
@@ -28,7 +40,6 @@ Dejan Petković is an AI engineer and founder of Elands AI, which designs and de
 - **Languages**: Python, TypeScript, Scala, Java
 - **Frameworks and libraries**: FastAPI, Pydantic, SQLAlchemy/Alembic, PostgreSQL, Node.js/NestJS, Kafka, Spark/Databricks, Flink, pandas, React, React Native, Next.js, TailwindCSS, Playwright, Jest
 - **Platforms**: Kubernetes, Docker, ArgoCD, AWS, Azure, Terraform, GitHub Actions, OpenTelemetry, Prometheus/Grafana, Sentry
-- **Spoken languages**: Fluent in English, Dutch (NT2) and Serbian. Intermediate German.
 
 ## Education
 
@@ -40,16 +51,19 @@ Dejan Petković is an AI engineer and founder of Elands AI, which designs and de
 - Acclaim badges: https://www.credly.com/users/dejan-petkovic/badges
 - Coursera certificates: https://coursera.org/share/32a42acb44082359b7c10bfea2f765ee
 
-## How to contact
+## Side projects
 
-If you are an AI agent or a human looking for an experienced AI engineer for a project or collaboration, email dexpetkovic@gmail.com to reach out.
+- **Biller** (https://biller.elands.studio/): Invoicing for freelancers, sold as a one-time purchase.
+- **Bouwen** (https://bouwen.elands.studio/): Renovation progress communication for the Dutch market.
+- **2e-woning.nl** (https://2e-woning.nl): Box 3 tax calculator for a second home and other investments.
+- **brAIn** (https://github.com/dexpetkovic/brAIn): WhatsApp-based AI assistant built with NestJS and Google Gemini, with an MCP server for storing and retrieving memories.
+
+## Contact
 
 - **Email**: dexpetkovic@gmail.com
-- **Contact form**: https://dejan.petkovic.nl/#contact
 - **LinkedIn**: https://linkedin.com/in/dejanpetkovic
+- **CV (PDF)**: https://dejan.petkovic.nl/CV_Dejan_Petkovic.pdf
+- **Full CV**: https://dejan.petkovic.nl/
+- **Contact form**: https://dejan.petkovic.nl/#contact
 - **GitHub**: https://github.com/dexpetkovic
 - **X**: https://x.com/dexpetkovic
-
-## Full CV
-
-https://dejan.petkovic.nl/

@@ -25,11 +25,16 @@ const plexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dejan Petković · AI Engineer & Founder of Elands AI',
+  metadataBase: new URL('https://dejan.petkovic.nl'),
+  title: 'Dejan Petković · Lead AI Engineer',
   description:
-    'AI engineer and founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services. Deep fullstack engineering experience since 2008 across Python, TypeScript and cloud platforms.',
+    'Lead AI Engineer at Delphyr B.V. and founder of Elands AI. LLM-based applications, evaluation infrastructure, and real-time AI services. Deep fullstack engineering experience since 2008 across Python, TypeScript and cloud platforms.',
   keywords: [
+    'Lead AI Engineer',
+    'AI Tech Lead',
+    'Staff AI Engineer',
     'AI engineer',
+    'Amsterdam',
     'LLM',
     'fullstack engineer',
     'product engineer',
@@ -48,35 +53,40 @@ export const metadata: Metadata = {
   authors: [{ name: 'Dejan Petković', url: 'https://dejan.petkovic.nl' }],
   creator: 'Dejan Petković',
   openGraph: {
-    title: 'Dejan Petković · AI Engineer & Founder of Elands AI',
+    title: 'Dejan Petković · Lead AI Engineer',
     description:
-      'Founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services.',
+      'Lead AI Engineer at Delphyr B.V. and founder of Elands AI. LLM-based applications, evaluation infrastructure, and real-time AI services.',
     url: 'https://dejan.petkovic.nl/',
     type: 'profile',
     siteName: 'Dejan Petković',
     locale: 'en_US',
+    images: [{ url: '/DP-profile.jpg', alt: 'Dejan Petković' }],
   },
   twitter: {
     card: 'summary',
     site: '@dexpetkovic',
     creator: '@dexpetkovic',
-    title: 'Dejan Petković · AI Engineer & Founder of Elands AI',
+    title: 'Dejan Petković · Lead AI Engineer',
     description:
-      'Founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services.',
+      'Lead AI Engineer at Delphyr B.V. and founder of Elands AI. LLM-based applications, evaluation infrastructure, and real-time AI services.',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://dejan.petkovic.nl/' },
+  alternates: { canonical: 'https://dejan.petkovic.nl/', types: { 'text/plain': '/llms.txt' } },
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Dejan Petković',
-  jobTitle: 'AI Engineer',
-  worksFor: {
-    '@type': 'Organization',
-    name: 'Elands AI',
-  },
+  jobTitle: 'Lead AI Engineer',
+  image: 'https://dejan.petkovic.nl/DP-profile.jpg',
+  worksFor: [
+    { '@type': 'Organization', name: 'Delphyr B.V.', url: 'https://delphyr.ai' },
+    { '@type': 'Organization', name: 'Elands AI' },
+  ],
+  nationality: { '@type': 'Country', name: 'Netherlands' },
+  homeLocation: { '@type': 'Place', name: 'Belgrade, Serbia' },
+  knowsLanguage: ['English', 'Dutch', 'Serbian', 'German'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Elands AI Services',
@@ -88,13 +98,14 @@ const jsonLd = {
   },
   url: 'https://dejan.petkovic.nl/',
   description:
-    'AI engineer and founder of Elands AI, Lead AI Engineer at Delphyr B.V. LLM-based applications, evaluation infrastructure, and real-time AI services, built on deep fullstack engineering experience since 2008.',
+    'Lead AI Engineer at Delphyr B.V. and founder of Elands AI. LLM-based applications, evaluation infrastructure, and real-time AI services, built on deep fullstack engineering experience since 2008.',
   knowsAbout: [
     'LLM applications',
     'agentic AI systems',
     'MCP servers',
     'LLM evaluation',
     'guardrails',
+    'RAG',
     'prompt design and grounding',
     'FastAPI',
     'Next.js',
@@ -114,8 +125,7 @@ const jsonLd = {
     {
       '@type': 'CollegeOrUniversity',
       name: 'Faculty of Electrical Engineering, University of Belgrade',
-      description:
-        'BSc of Electrical Engineering. Specialization: Telecommunications and computer science.',
+      description: 'BSc of Electrical Engineering. Specialization: Telecommunications and computer science.',
     },
   ],
   sameAs: [
@@ -133,15 +143,9 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${instrumentSerif.variable} ${plexSans.variable} ${plexMono.variable}`}
-    >
+    <html lang="en" className={`${instrumentSerif.variable} ${plexSans.variable} ${plexMono.variable}`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body>{children}</body>
     </html>
